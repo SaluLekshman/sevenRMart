@@ -5,7 +5,7 @@
 <parameter name="browser" value="firefox"></parameter>
 <parameter name="browser" value="chrome"></parameter>
 <listeners>
-<listener class-name="com.SevenRSuperMarket.Test.Listeners"/>
+<listener class-name="com.sevenRMartSuperMarketTest.Listeners"/>
 </listeners>
   <test thread-count="5" name="Test">
 <parameter name="usernameInput" value="admin" ></parameter>
