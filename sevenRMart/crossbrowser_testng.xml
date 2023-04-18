@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" >
+  <parameter name="usernameInput" value="admin" ></parameter>
+<parameter name="PasswordInput" value="admin" ></parameter>
+<listeners>
+<listener class-name="com.sevenRMartSuperMarketTest.Listeners"/>
+</listeners>
+<test name="ChromeTest ">
+<parameter name="browser" value="chrome"></parameter>
+   <classes>
+      <class name="com.sevenRMartSuperMarketTest.SiteNameTest"/>
+      <class name="com.sevenRMartSuperMarketTest.ManageProductsTest"/>
+      <class name="com.sevenRMartSuperMarketTest.Verify_LoginTest"/>
+      <class name="com.sevenRMartSuperMarketTest.ManageUsersTest"/>
+      <class name="com.sevenRMartSuperMarketTest.VerifyUsersTest"/>
+      <class name="com.sevenRMartSuperMarketTest.PushNotificationsTest"/>
+    </classes>
+</test>
+<test name="FireFoxTest">
+<parameter name="browser" value="firefox"></parameter>
+  <classes>
+      <class name="com.sevenRMartSuperMarketTest.SiteNameTest"/>
+      <class name="com.sevenRMartSuperMarketTest.ManageProductsTest"/>
+      <class name="com.sevenRMartSuperMarketTest.Verify_LoginTest"/>
+      <class name="com.sevenRMartSuperMarketTest.ManageUsersTest"/>
+      <class name="com.sevenRMartSuperMarketTest.VerifyUsersTest"/>
+      <class name="com.sevenRMartSuperMarketTest.PushNotificationsTest"/>
+  </classes>
+</test>
+<test name="EdgeTest">
+<parameter name="browser" value="Edge"></parameter>
+  <classes>
+      <class name="com.sevenRMartSuperMarketTest.SiteNameTest"/>
+      <class name="com.sevenRMartSuperMarketTest.ManageProductsTest"/>
+      <class name="com.sevenRMartSuperMarketTest.Verify_LoginTest"/>
+      <class name="com.sevenRMartSuperMarketTest.ManageUsersTest"/>
+      <class name="com.sevenRMartSuperMarketTest.VerifyUsersTest"/>
+      <class name="com.sevenRMartSuperMarketTest.PushNotificationsTest"/>
+  </classes>
+</test>
+    
+  <!-- Test -->
+</suite> <!-- Suite -->
