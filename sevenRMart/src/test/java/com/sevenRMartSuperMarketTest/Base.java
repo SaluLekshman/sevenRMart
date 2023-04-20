@@ -14,6 +14,7 @@ import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 import Utilities.ScreenShotUtility;
 import Utilities.WaitUtility;
@@ -64,30 +65,32 @@ public class Base {
 	}
 	if(browser.equalsIgnoreCase("firefox")){
 
-	System.setProperty("webdriver.firefox.driver", System.getProperty("user.dir") +constants.Constants.firefoxdriverpath);
-	driver = new FirefoxDriver();
+		driver = WebDriverManager.firefoxdriver().create();
 	}
 
-	else if(browser.equalsIgnoreCase("chrome")){
+	else if(browser.equalsIgnoreCase("chrome"))
+	{
 
-	System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir") +constants.Constants.chromedriverpath);
-	ChromeOptions options = new ChromeOptions();
-	options.addArguments("--remote-allow-origins=*");
-	driver=new ChromeDriver(options);
+		ChromeOptions chromeOptions = new ChromeOptions();
+		chromeOptions.addArguments("--remote-allow-origins=*");
+		WebDriverManager.chromedriver().create();
+		driver = new ChromeDriver(chromeOptions);
 	}
 
-	else if(browser.equalsIgnoreCase("edge")){
+	else if(browser.equalsIgnoreCase("edge"))
+	{
+		EdgeOptions edgeOptions = new EdgeOptions();
+		edgeOptions.addArguments("--remote-allow-origins=*");
+		WebDriverManager.edgedriver().create();
+		driver = new EdgeDriver(edgeOptions);
 
-	System.setProperty("webdriver.edge.driver",System.getProperty("user.dir") +constants.Constants.edgedriverpath);
-	EdgeOptions options = new EdgeOptions();
-	options.addArguments("--remote-allow-origins=*");
-	driver = new EdgeDriver(options);
 	}
-	else{
+	else
+	{
 	throw new Exception("Browser is not correct");
 	}
 
-	driver.get(prop.getProperty("url1"));
+	driver.get(prop.getProperty("url"));
 	driver.manage().window().maximize();
 	waitutility.pageLoadTimeout(driver);
 	}

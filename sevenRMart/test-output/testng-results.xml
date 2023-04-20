@@ -1,372 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-18T12:28:20 IST" name="Suite" finished-at="2023-04-18T12:29:17 IST" duration-ms="56191">
+  <suite started-at="2023-04-20T16:02:10 IST" name="Suite" finished-at="2023-04-20T16:02:27 IST" duration-ms="16918">
     <groups>
-      <group name="regression">
-        <method signature="ManageOffedCodeTest.manageoffercode(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTest.ManageOffedCodeTest@64a40280]" name="manageoffercode" class="com.sevenRMartSuperMarketTest.ManageOffedCodeTest"/>
-        <method signature="ManagePaymentMethodsTest.managePayment(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTest.ManagePaymentMethodsTest@4b40f651]" name="managePayment" class="com.sevenRMartSuperMarketTest.ManagePaymentMethodsTest"/>
-        <method signature="ManageProductsTest.manageProducts(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTest.ManageProductsTest@2bd08376]" name="manageProducts" class="com.sevenRMartSuperMarketTest.ManageProductsTest"/>
-      </group> <!-- regression -->
     </groups>
-    <test started-at="2023-04-18T12:28:20 IST" name="Test" finished-at="2023-04-18T12:29:17 IST" duration-ms="56191">
-      <class name="com.sevenRMartSuperMarketTest.VerifyUsersTest">
-        <test-method is-config="true" signature="initialiseBrowser(java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTest.VerifyUsersTest@e70f13a]" started-at="2023-04-18T12:28:55 IST" name="initialiseBrowser" finished-at="2023-04-18T12:28:57 IST" duration-ms="2205" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialiseBrowser -->
-        <test-method signature="verifyUsers(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTest.VerifyUsersTest@e70f13a]" started-at="2023-04-18T12:28:57 IST" name="verifyUsers" finished-at="2023-04-18T12:29:00 IST" duration-ms="2664" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUsers -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.sevenRMartSuperMarketTest.VerifyUsersTest@e70f13a]" started-at="2023-04-18T12:29:00 IST" name="browserQuit" finished-at="2023-04-18T12:29:00 IST" duration-ms="264" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyUsers status=SUCCESS method=VerifyUsersTest.verifyUsers(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTest.VerifyUsersTest@e70f13a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserQuit -->
-      </class> <!-- com.sevenRMartSuperMarketTest.VerifyUsersTest -->
-      <class name="com.sevenRMartSuperMarketTest.ManageOffedCodeTest">
-        <test-method is-config="true" signature="initialiseBrowser(java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTest.ManageOffedCodeTest@64a40280]" started-at="2023-04-18T12:29:06 IST" name="initialiseBrowser" finished-at="2023-04-18T12:29:09 IST" duration-ms="3692" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialiseBrowser -->
-        <test-method signature="manageoffercode(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTest.ManageOffedCodeTest@64a40280]" started-at="2023-04-18T12:29:09 IST" name="manageoffercode" finished-at="2023-04-18T12:29:11 IST" duration-ms="1613" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- manageoffercode -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.sevenRMartSuperMarketTest.ManageOffedCodeTest@64a40280]" started-at="2023-04-18T12:29:11 IST" name="browserQuit" finished-at="2023-04-18T12:29:11 IST" duration-ms="260" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=manageoffercode status=SUCCESS method=ManageOffedCodeTest.manageoffercode(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTest.ManageOffedCodeTest@64a40280] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserQuit -->
-      </class> <!-- com.sevenRMartSuperMarketTest.ManageOffedCodeTest -->
-      <class name="com.sevenRMartSuperMarketTest.PushNotificationsTest">
-        <test-method is-config="true" signature="initialiseBrowser(java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTest.PushNotificationsTest@3d3e5463]" started-at="2023-04-18T12:29:00 IST" name="initialiseBrowser" finished-at="2023-04-18T12:29:02 IST" duration-ms="2440" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialiseBrowser -->
-        <test-method signature="pushNotifications(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTest.PushNotificationsTest@3d3e5463]" started-at="2023-04-18T12:29:02 IST" name="pushNotifications" finished-at="2023-04-18T12:29:05 IST" duration-ms="3018" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- pushNotifications -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.sevenRMartSuperMarketTest.PushNotificationsTest@3d3e5463]" started-at="2023-04-18T12:29:05 IST" name="browserQuit" finished-at="2023-04-18T12:29:06 IST" duration-ms="252" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=pushNotifications status=SUCCESS method=PushNotificationsTest.pushNotifications(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTest.PushNotificationsTest@3d3e5463] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserQuit -->
-      </class> <!-- com.sevenRMartSuperMarketTest.PushNotificationsTest -->
-      <class name="com.sevenRMartSuperMarketTest.ManageProductsTest">
-        <test-method is-config="true" signature="initialiseBrowser(java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTest.ManageProductsTest@2bd08376]" started-at="2023-04-18T12:28:49 IST" name="initialiseBrowser" finished-at="2023-04-18T12:28:52 IST" duration-ms="2326" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialiseBrowser -->
-        <test-method signature="manageProducts(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTest.ManageProductsTest@2bd08376]" started-at="2023-04-18T12:28:52 IST" name="manageProducts" finished-at="2023-04-18T12:28:54 IST" duration-ms="2787" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- manageProducts -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.sevenRMartSuperMarketTest.ManageProductsTest@2bd08376]" started-at="2023-04-18T12:28:54 IST" name="browserQuit" finished-at="2023-04-18T12:28:55 IST" duration-ms="308" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=manageProducts status=SUCCESS method=ManageProductsTest.manageProducts(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTest.ManageProductsTest@2bd08376] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserQuit -->
-      </class> <!-- com.sevenRMartSuperMarketTest.ManageProductsTest -->
-      <class name="com.sevenRMartSuperMarketTest.ManagePaymentMethodsTest">
-        <test-method is-config="true" signature="initialiseBrowser(java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTest.ManagePaymentMethodsTest@4b40f651]" started-at="2023-04-18T12:29:11 IST" name="initialiseBrowser" finished-at="2023-04-18T12:29:14 IST" duration-ms="2868" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialiseBrowser -->
-        <test-method signature="managePayment(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTest.ManagePaymentMethodsTest@4b40f651]" started-at="2023-04-18T12:29:14 IST" name="managePayment" finished-at="2023-04-18T12:29:16 IST" duration-ms="2329" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- managePayment -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.sevenRMartSuperMarketTest.ManagePaymentMethodsTest@4b40f651]" started-at="2023-04-18T12:29:16 IST" name="browserQuit" finished-at="2023-04-18T12:29:17 IST" duration-ms="257" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=managePayment status=SUCCESS method=ManagePaymentMethodsTest.managePayment(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTest.ManagePaymentMethodsTest@4b40f651] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserQuit -->
-      </class> <!-- com.sevenRMartSuperMarketTest.ManagePaymentMethodsTest -->
-      <class name="com.sevenRMartSuperMarketTest.Verify_LoginTest">
-        <test-method is-config="true" signature="initialiseBrowser(java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTest.Verify_LoginTest@50d13246]" started-at="2023-04-18T12:28:37 IST" name="initialiseBrowser" finished-at="2023-04-18T12:28:39 IST" duration-ms="2081" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialiseBrowser -->
-        <test-method signature="loginWithValidCredentials(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTest.Verify_LoginTest@50d13246]" started-at="2023-04-18T12:28:39 IST" name="loginWithValidCredentials" data-provider="LoginProvider" finished-at="2023-04-18T12:28:40 IST" duration-ms="864" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginWithValidCredentials -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.sevenRMartSuperMarketTest.Verify_LoginTest@50d13246]" started-at="2023-04-18T12:28:40 IST" name="browserQuit" finished-at="2023-04-18T12:28:40 IST" duration-ms="280" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=loginWithValidCredentials status=SUCCESS method=Verify_LoginTest.loginWithValidCredentials(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTest.Verify_LoginTest@50d13246] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserQuit -->
-        <test-method is-config="true" signature="initialiseBrowser(java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTest.Verify_LoginTest@50d13246]" started-at="2023-04-18T12:28:40 IST" name="initialiseBrowser" finished-at="2023-04-18T12:28:43 IST" duration-ms="2729" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialiseBrowser -->
-        <test-method signature="loginWithValidCredentials(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTest.Verify_LoginTest@50d13246]" started-at="2023-04-18T12:28:43 IST" name="loginWithValidCredentials" data-provider="LoginProvider" finished-at="2023-04-18T12:28:43 IST" duration-ms="523" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginWithValidCredentials -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.sevenRMartSuperMarketTest.Verify_LoginTest@50d13246]" started-at="2023-04-18T12:28:43 IST" name="browserQuit" finished-at="2023-04-18T12:28:43 IST" duration-ms="219" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=loginWithValidCredentials status=SUCCESS method=Verify_LoginTest.loginWithValidCredentials(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTest.Verify_LoginTest@50d13246] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserQuit -->
-        <test-method is-config="true" signature="initialiseBrowser(java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTest.Verify_LoginTest@50d13246]" started-at="2023-04-18T12:28:43 IST" name="initialiseBrowser" finished-at="2023-04-18T12:28:46 IST" duration-ms="2131" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialiseBrowser -->
-        <test-method signature="loginWithValidCredentials(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTest.Verify_LoginTest@50d13246]" started-at="2023-04-18T12:28:46 IST" name="loginWithValidCredentials" data-provider="LoginProvider" finished-at="2023-04-18T12:28:46 IST" duration-ms="557" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin1]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginWithValidCredentials -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.sevenRMartSuperMarketTest.Verify_LoginTest@50d13246]" started-at="2023-04-18T12:28:46 IST" name="browserQuit" finished-at="2023-04-18T12:28:46 IST" duration-ms="245" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=loginWithValidCredentials status=SUCCESS method=Verify_LoginTest.loginWithValidCredentials(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTest.Verify_LoginTest@50d13246] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserQuit -->
-        <test-method is-config="true" signature="initialiseBrowser(java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTest.Verify_LoginTest@50d13246]" started-at="2023-04-18T12:28:46 IST" name="initialiseBrowser" finished-at="2023-04-18T12:28:49 IST" duration-ms="2100" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialiseBrowser -->
-        <test-method signature="loginWithValidCredentials(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTest.Verify_LoginTest@50d13246]" started-at="2023-04-18T12:28:49 IST" name="loginWithValidCredentials" data-provider="LoginProvider" finished-at="2023-04-18T12:28:49 IST" duration-ms="566" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[adminnew]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginWithValidCredentials -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.sevenRMartSuperMarketTest.Verify_LoginTest@50d13246]" started-at="2023-04-18T12:28:49 IST" name="browserQuit" finished-at="2023-04-18T12:28:49 IST" duration-ms="267" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=loginWithValidCredentials status=SUCCESS method=Verify_LoginTest.loginWithValidCredentials(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTest.Verify_LoginTest@50d13246] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserQuit -->
-      </class> <!-- com.sevenRMartSuperMarketTest.Verify_LoginTest -->
+    <test started-at="2023-04-20T16:02:10 IST" name="Test" finished-at="2023-04-20T16:02:27 IST" duration-ms="16918">
       <class name="com.sevenRMartSuperMarketTest.ManageUsersTest">
-        <test-method is-config="true" signature="initialiseBrowser(java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTest.ManageUsersTest@5ba88be8]" started-at="2023-04-18T12:28:20 IST" name="initialiseBrowser" finished-at="2023-04-18T12:28:25 IST" duration-ms="4487" status="PASS">
+        <test-method is-config="true" signature="initialiseBrowser(java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTest.ManageUsersTest@1f81aa00]" started-at="2023-04-20T16:02:10 IST" name="initialiseBrowser" finished-at="2023-04-20T16:02:14 IST" duration-ms="4176" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -377,22 +18,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialiseBrowser -->
-        <test-method signature="manageUsersResetButtonBorderColor()[pri:0, instance:com.sevenRMartSuperMarketTest.ManageUsersTest@5ba88be8]" started-at="2023-04-18T12:28:25 IST" name="manageUsersResetButtonBorderColor" finished-at="2023-04-18T12:28:28 IST" duration-ms="2828" status="PASS">
+        <test-method signature="manageUsersResetButtonBorderColor()[pri:0, instance:com.sevenRMartSuperMarketTest.ManageUsersTest@1f81aa00]" started-at="2023-04-20T16:02:14 IST" name="manageUsersResetButtonBorderColor" finished-at="2023-04-20T16:02:17 IST" duration-ms="2790" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- manageUsersResetButtonBorderColor -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.sevenRMartSuperMarketTest.ManageUsersTest@5ba88be8]" started-at="2023-04-18T12:28:28 IST" name="browserQuit" finished-at="2023-04-18T12:28:28 IST" duration-ms="263" status="PASS">
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.sevenRMartSuperMarketTest.ManageUsersTest@1f81aa00]" started-at="2023-04-20T16:02:17 IST" name="browserQuit" finished-at="2023-04-20T16:02:17 IST" duration-ms="242" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=manageUsersResetButtonBorderColor status=SUCCESS method=ManageUsersTest.manageUsersResetButtonBorderColor()[pri:0, instance:com.sevenRMartSuperMarketTest.ManageUsersTest@5ba88be8] output={null}]]]>
+                <![CDATA[[TestResult name=manageUsersResetButtonBorderColor status=SUCCESS method=ManageUsersTest.manageUsersResetButtonBorderColor()[pri:0, instance:com.sevenRMartSuperMarketTest.ManageUsersTest@1f81aa00] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserQuit -->
-        <test-method is-config="true" signature="initialiseBrowser(java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTest.ManageUsersTest@5ba88be8]" started-at="2023-04-18T12:28:28 IST" name="initialiseBrowser" finished-at="2023-04-18T12:28:31 IST" duration-ms="2971" status="PASS">
+        <test-method is-config="true" signature="initialiseBrowser(java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTest.ManageUsersTest@1f81aa00]" started-at="2023-04-20T16:02:17 IST" name="initialiseBrowser" finished-at="2023-04-20T16:02:20 IST" duration-ms="3180" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -403,15 +44,41 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialiseBrowser -->
-        <test-method signature="manageUsersSearchButtonBackGround()[pri:0, instance:com.sevenRMartSuperMarketTest.ManageUsersTest@5ba88be8]" started-at="2023-04-18T12:28:31 IST" name="manageUsersSearchButtonBackGround" finished-at="2023-04-18T12:28:33 IST" duration-ms="1527" status="PASS">
+        <test-method signature="manageUsersSearchButtonBackGround()[pri:0, instance:com.sevenRMartSuperMarketTest.ManageUsersTest@1f81aa00]" started-at="2023-04-20T16:02:20 IST" name="manageUsersSearchButtonBackGround" finished-at="2023-04-20T16:02:22 IST" duration-ms="1331" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- manageUsersSearchButtonBackGround -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.sevenRMartSuperMarketTest.ManageUsersTest@5ba88be8]" started-at="2023-04-18T12:28:33 IST" name="browserQuit" finished-at="2023-04-18T12:28:33 IST" duration-ms="265" status="PASS">
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.sevenRMartSuperMarketTest.ManageUsersTest@1f81aa00]" started-at="2023-04-20T16:02:22 IST" name="browserQuit" finished-at="2023-04-20T16:02:22 IST" duration-ms="235" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=manageUsersSearchButtonBackGround status=SUCCESS method=ManageUsersTest.manageUsersSearchButtonBackGround()[pri:0, instance:com.sevenRMartSuperMarketTest.ManageUsersTest@5ba88be8] output={null}]]]>
+                <![CDATA[[TestResult name=manageUsersSearchButtonBackGround status=SUCCESS method=ManageUsersTest.manageUsersSearchButtonBackGround()[pri:0, instance:com.sevenRMartSuperMarketTest.ManageUsersTest@1f81aa00] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method is-config="true" signature="initialiseBrowser(java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTest.ManageUsersTest@1f81aa00]" started-at="2023-04-20T16:02:22 IST" name="initialiseBrowser" finished-at="2023-04-20T16:02:25 IST" duration-ms="2908" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseBrowser -->
+        <test-method signature="searchUsersInManageUsers()[pri:0, instance:com.sevenRMartSuperMarketTest.ManageUsersTest@1f81aa00]" started-at="2023-04-20T16:02:25 IST" name="searchUsersInManageUsers" finished-at="2023-04-20T16:02:27 IST" duration-ms="1717" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchUsersInManageUsers -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.sevenRMartSuperMarketTest.ManageUsersTest@1f81aa00]" started-at="2023-04-20T16:02:27 IST" name="browserQuit" finished-at="2023-04-20T16:02:27 IST" duration-ms="306" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searchUsersInManageUsers status=SUCCESS method=ManageUsersTest.searchUsersInManageUsers()[pri:0, instance:com.sevenRMartSuperMarketTest.ManageUsersTest@1f81aa00] output={null}]]]>
               </value>
             </param>
           </params>
@@ -419,46 +86,6 @@
           </reporter-output>
         </test-method> <!-- browserQuit -->
       </class> <!-- com.sevenRMartSuperMarketTest.ManageUsersTest -->
-      <class name="com.sevenRMartSuperMarketTest.SiteNameTest">
-        <test-method is-config="true" signature="initialiseBrowser(java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTest.SiteNameTest@ab7395e]" started-at="2023-04-18T12:28:33 IST" name="initialiseBrowser" finished-at="2023-04-18T12:28:35 IST" duration-ms="2418" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialiseBrowser -->
-        <test-method signature="siteName(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTest.SiteNameTest@ab7395e]" started-at="2023-04-18T12:28:35 IST" name="siteName" finished-at="2023-04-18T12:28:37 IST" duration-ms="1238" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- siteName -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.sevenRMartSuperMarketTest.SiteNameTest@ab7395e]" started-at="2023-04-18T12:28:37 IST" name="browserQuit" finished-at="2023-04-18T12:28:37 IST" duration-ms="276" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=siteName status=SUCCESS method=SiteNameTest.siteName(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTest.SiteNameTest@ab7395e] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserQuit -->
-      </class> <!-- com.sevenRMartSuperMarketTest.SiteNameTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

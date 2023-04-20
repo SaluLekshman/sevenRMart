@@ -35,13 +35,11 @@ public class PushNotificationsTest extends Base {
 		pushnotificationpage.ClickOnpushNotificationelement();
 		hamburgermenupage=new HamburgerMenuPage(driver);
 		hamburgermenupage.selectMenu(inputMainMenu);
-		//driver.navigate().to("https://groceryapp.uniqassosiates.com/admin/list-notifications");
 		pushnotificationpage.enterTitleElement();
 		pushnotificationpage.descriptionElement();
 		pushnotificationpage.sendElement();
 		String actualAlertMessageText=pushnotificationpage.getTextalertMessageElement();
 		boolean actualAlertMessageIsDisplayed=pushnotificationpage.alertMessageElementIsDisplayed();
-		//assertEquals(actualAlertMessageText,expectedAlertMessage,"The alert message  send is incorrect ");
 		assertTrue(actualAlertMessageIsDisplayed,"The alert message is not displayed");
 		
 		

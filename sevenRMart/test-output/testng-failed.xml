@@ -1,29 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="2" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <parameter name="usernameInput" value="admin"/>
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <parameter name="browser" value="chrome"/>
-  <parameter name="PasswordInput" value="admin"/>
   <listeners>
     <listener class-name="com.sevenRMartSuperMarketTest.Listeners"/>
   </listeners>
-  <test thread-count="2" parallel="tests" name="Test2(failed)">
-    <parameter name="browser" value="firefox"/>
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="usernameInput" value="admin"/>
+    <parameter name="PasswordInput" value="admin"/>
     <classes>
-      <class name="com.sevenRMartSuperMarketTest.Verify_LoginTest">
+      <class name="com.sevenRMartSuperMarketTest.VerifyUsersTest">
         <methods>
-          <include name="loginWithValidCredentials"/>
           <include name="initialiseBrowser"/>
+          <include name="verifyUsers" invocation-numbers="0"/>
           <include name="browserQuit"/>
         </methods>
-      </class> <!-- com.sevenRMartSuperMarketTest.Verify_LoginTest -->
-      <class name="com.sevenRMartSuperMarketTest.ManageUsersTest">
-        <methods>
-          <include name="manageUsersSearchButtonBackGround"/>
-          <include name="initialiseBrowser"/>
-          <include name="browserQuit"/>
-        </methods>
-      </class> <!-- com.sevenRMartSuperMarketTest.ManageUsersTest -->
+      </class> <!-- com.sevenRMartSuperMarketTest.VerifyUsersTest -->
     </classes>
-  </test> <!-- Test2(failed) -->
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

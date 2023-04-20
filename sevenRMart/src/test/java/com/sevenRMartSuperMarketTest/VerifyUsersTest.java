@@ -1,9 +1,15 @@
 package com.sevenRMartSuperMarketTest;
 
+
+import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -23,7 +29,8 @@ public class VerifyUsersTest extends Base {
 	{
 		String inputMainMenu=ExcelUtility.getString(0,2,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"hamBurgerMenuData");
 	    String enterNameValue=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"listUsersData");
-	    String expectedSearchResult=ExcelUtility.getString(1,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"listUsersData");
+	    String expectedSearchResultNotFound=ExcelUtility.getString(1,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"listUsersData");
+	    String expectedSearchResult=ExcelUtility.getString(1,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"listUsersData");
 		loginpage=new Verify_LoginPage(driver);
 	    loginpage.userNameElement(usernameInput);
 		loginpage.passwordElement(PasswordInput);
@@ -41,7 +48,18 @@ public class VerifyUsersTest extends Base {
 		boolean searchListUsersSearchButtonElementIsenabled=verifyuserpage.searchListUsersSearchButtonElementIsenabled();
         VerifyUsersPage.clickOnsearchListUsersSearchButtonElement();
         String actualSearchResult=verifyuserpage.searchListUsersSearchResultElement();
-        
-		
+        assertEquals(actualSearchResult,expectedSearchResultNotFound,"The search result is not correct");
+	    /*List<WebElement> row=driver.findElements(By.xpath("//tr//th//following::tr"));
+	    for(WebElement tablerow:row)
+	    {
+		  ArrayList<String> rowvalue=new ArrayList<String>();
+		  String tableRowName= tablerow.getText();
+		  boolean actualSearchValue=rowvalue.add(tableRowName);
+		  assertEquals(actualSearchValue, expectedSearchResult,"The search result is not correct");
+		  System.out.println(rowvalue);
+	    }
+	   System.out.println("no of rows are :"+row.size());*/
+ 
 	}
 }
+

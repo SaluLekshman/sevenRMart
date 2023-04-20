@@ -3,11 +3,15 @@ package com.sevenRMartSuperMarketTest;
 import static org.testng.Assert.assertEquals;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
 import com.sevenRMartSuperMarketPages.HamburgerMenuPage;
-import com.sevenRMartSuperMarketPages.ManagrUsersPage;
+import com.sevenRMartSuperMarketPages.ManageUsersPage;
 import com.sevenRMartSuperMarketPages.Verify_LoginPage;
 
 import Utilities.ExcelUtility;
@@ -15,7 +19,7 @@ import Utilities.ExcelUtility;
 public class ManageUsersTest extends Base
 {
 	HamburgerMenuPage hamburgermenupage;
-    ManagrUsersPage manageuserspage;
+    ManageUsersPage manageuserspage;
 	Verify_LoginPage loginpage;
 	@Test
 	public void manageUsersSearchButtonBackGround() throws IOException
@@ -23,14 +27,14 @@ public class ManageUsersTest extends Base
 		  String usernameInput=ExcelUtility.getString(1,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"loginData");
 		  String PasswordInput=ExcelUtility.getString(1,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"loginData");
 		  String inputMainMenu=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"hamBurgerMenuData");
-		  String expectedBackGroundColor="rgba(0, 123, 255, 1)";
+		  String expectedBackGroundColor=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"manageUsersData");
 		  loginpage=new Verify_LoginPage(driver);
 		  loginpage.userNameElement(usernameInput);
 		  loginpage.passwordElement(PasswordInput);
 		  loginpage.signInElement();
 		  hamburgermenupage=new HamburgerMenuPage(driver);
 		  hamburgermenupage.selectMenu(inputMainMenu);
-		  manageuserspage=new ManagrUsersPage(driver);
+		  manageuserspage=new ManageUsersPage(driver);
 	      String actualBackgroundColor= manageuserspage.searchButtonElement();
 	      assertEquals(actualBackgroundColor,expectedBackGroundColor,"The background color is not"+expectedBackGroundColor);
 	     
@@ -41,15 +45,39 @@ public class ManageUsersTest extends Base
 	{
 		  String usernameInput=ExcelUtility.getString(1,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"loginData");
 		  String PasswordInput=ExcelUtility.getString(1,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"loginData");
-		  String ExpectedBorderColor="rgb(255, 193, 7)";
+		  String inputMainMenu=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"hamBurgerMenuData");
+		  String expectedBorderColor =ExcelUtility.getString(1,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"manageUsersData");
 		  loginpage=new Verify_LoginPage(driver);
 		  loginpage.userNameElement(usernameInput);
 		  loginpage.passwordElement(PasswordInput);
 		  loginpage.signInElement();
-		  driver.navigate().to("https://groceryapp.uniqassosiates.com/admin/list-user");
-		  manageuserspage=new ManagrUsersPage(driver);
+		  hamburgermenupage=new HamburgerMenuPage(driver);
+		  hamburgermenupage.selectMenu(inputMainMenu);
+		  manageuserspage=new ManageUsersPage(driver);
 		  String actualBorderColor= manageuserspage.resetButtonElement();
-		  assertEquals(actualBorderColor,ExpectedBorderColor,"The border color is not blue");
+		  assertEquals(actualBorderColor,expectedBorderColor,"The border color is not blue");
 		  
+	}
+	@Test
+	public void searchUsersInManageUsers() throws IOException
+	{
+		  String usernameInput=ExcelUtility.getString(1,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"loginData");
+		  String PasswordInput=ExcelUtility.getString(1,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"loginData");
+		  String inputMainMenu=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"hamBurgerMenuData");
+		  String expectedSearchValue=ExcelUtility.getString(0,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"manageUsersData");
+		  String enterTextOnNameValue=ExcelUtility.getString(0,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"manageUsersData");
+		  loginpage=new Verify_LoginPage(driver);
+		  loginpage.userNameElement(usernameInput);
+		  loginpage.passwordElement(PasswordInput);
+		  loginpage.signInElement();
+		  hamburgermenupage=new HamburgerMenuPage(driver);
+		  hamburgermenupage.selectMenu(inputMainMenu);
+		  manageuserspage=new ManageUsersPage(driver);
+		  manageuserspage.clickOnlistUsersSearchButtonElement().click();
+		  manageuserspage.enterTextOnNameElement().sendKeys(enterTextOnNameValue);
+		  manageuserspage.searchListUsersButtonElement().click();
+		  manageuserspage.searchResultListUser(expectedSearchValue);
+	
+		   
 	}
 }
