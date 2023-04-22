@@ -11,7 +11,7 @@
    <classes>
      <class name="com.sevenRMartSuperMarketTest.SiteNameTest"/>
       <class name="com.sevenRMartSuperMarketTest.ManageProductsTest"/>
-      <class name="com.sevenRMartSuperMarketTest.Verify_LoginTest"/>
+      <class name="com.sevenRMartSuperMarketTest.LoginTest"/>
     </classes>
 </test>
 <test name="FireFoxTest">

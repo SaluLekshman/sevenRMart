@@ -48,9 +48,7 @@ public class ManageUsersTest extends Base
 		  String inputMainMenu=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"hamBurgerMenuData");
 		  String expectedBorderColor =ExcelUtility.getString(1,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"manageUsersData");
 		  loginpage=new LoginPage(driver);
-		  loginpage.userNameElement(usernameInput);
-		  loginpage.passwordElement(PasswordInput);
-		  loginpage.signInElement();
+		  loginpage.userNameElement(usernameInput).passwordElement(PasswordInput).signInElement();
 		  hamburgermenupage=new HamburgerMenuPage(driver);
 		  hamburgermenupage.selectMenu(inputMainMenu);
 		  manageuserspage=new ManageUsersPage(driver);
@@ -68,16 +66,13 @@ public class ManageUsersTest extends Base
 		  String expectedSearchValue=ExcelUtility.getString(0,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"manageUsersData");
 		  String enterTextOnNameValue=ExcelUtility.getString(0,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"manageUsersData");
 		  loginpage=new LoginPage(driver);
-		  loginpage.userNameElement(usernameInput);
-		  loginpage.passwordElement(PasswordInput);
-		  loginpage.signInElement();
+		  loginpage.userNameElement(usernameInput).passwordElement(PasswordInput).signInElement();
 		  hamburgermenupage=new HamburgerMenuPage(driver);
 		  hamburgermenupage.selectMenu(inputMainMenu);
 		  manageuserspage=new ManageUsersPage(driver);
-		  manageuserspage.clickOnlistUsersSearchButtonElement();
-		  manageuserspage.enterTextOnNameElement(enterTextOnNameValue);
-		  manageuserspage.ClickOnsearchUsersButtonElement();
-		  manageuserspage.searchResultListUser(expectedSearchValue);
+		  manageuserspage.clickOnlistUsersSearchButtonElement().enterTextOnNameElement(enterTextOnNameValue).ClickOnsearchUsersButtonElement();
+		  String actualResult=manageuserspage.searchResultListUser(expectedSearchValue);
+		  assertEquals(actualResult,expectedSearchValue,"The search result is not coorect");
 		  
 	
 		   
