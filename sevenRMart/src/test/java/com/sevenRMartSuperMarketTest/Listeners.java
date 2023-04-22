@@ -17,17 +17,12 @@ public class Listeners extends Base implements ITestListener{
 
 	ExtentReports extent=ExtentReportUtility.createExtentReports();
 	ThreadLocal<ExtentTest> extentTest =new ThreadLocal<ExtentTest>();
-
-
-
 	public void onTestStart(ITestResult result) {
 		// TODO Auto-generated method stub
 		ITestListener.super.onTestStart(result);
 		test =extent.createTest(result.getMethod().getMethodName());
 		extentTest.set(test);
-
 	}
-
 	public void onTestSuccess(ITestResult result) {
 		// TODO Auto-generated method stub
 		ITestListener.super.onTestSuccess(result);
@@ -88,7 +83,6 @@ public class Listeners extends Base implements ITestListener{
 		// TODO Auto-generated method stub
 		ITestListener.super.onStart(context);
 	}
-
 	public void onFinish(ITestContext context) {
 		// TODO Auto-generated method stub
 		ITestListener.super.onFinish(context);

@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 import com.sevenRMartSuperMarketPages.HamburgerMenuPage;
 import com.sevenRMartSuperMarketPages.ManageProductsPage;
-import com.sevenRMartSuperMarketPages.Verify_LoginPage;
+import com.sevenRMartSuperMarketPages.LoginPage;
 
 import Utilities.ExcelUtility;
 
@@ -17,35 +17,49 @@ public class ManageProductsTest extends Base{
 	
 		HamburgerMenuPage hamburgermenupage;
 		ManageProductsPage manageproductpage;
-		Verify_LoginPage loginpage;
-		private boolean vegProductTypeElementIsEnabled;
-		
-		@Test(groups = {"regression" })
+		LoginPage loginpage;
+		@Test(groups = {"regression" },retryAnalyzer = Retry.class)
 		@Parameters({"usernameInput","PasswordInput"})
-		public void manageProducts(String usernameInput,String PasswordInput) throws IOException 
+		public void manageProductsAddProductTypeRadioButton(String usernameInput,String PasswordInput) throws IOException 
 		{
 			
 		    String inputMainMenu=ExcelUtility.getString(0,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"hamBurgerMenuData");
 		    String inputTitleText=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"manageProductData");
 		    String inputCategory=ExcelUtility.getString(0,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"manageProductData");
 			manageproductpage=new ManageProductsPage(driver);
-			loginpage=new Verify_LoginPage(driver);
-			loginpage.userNameElement(usernameInput);
-			loginpage.passwordElement(PasswordInput);
-			loginpage.signInElement();
+			loginpage=new LoginPage(driver);
+			loginpage.userNameElement(usernameInput).passwordElement(PasswordInput).signInElement();
 			manageproductpage.clickOnmanageaproductElement();
 			hamburgermenupage=new HamburgerMenuPage(driver);
 			hamburgermenupage.selectMenu(inputMainMenu);
-			boolean isDisplayedListproduct=manageproductpage.isdisplayedlistProductElement();
-			assertTrue(isDisplayedListproduct,"The List Prodcut is not displyed");
 			manageproductpage.clickOnnewElement();
 			manageproductpage.EnterTitleElement(inputTitleText);
-			boolean vegProductTypeElemenIsEnabled=manageproductpage.vegProductTypeElementIsEnabled();
-			assertTrue(vegProductTypeElemenIsEnabled,"The veg prodct type is enabled");
+			boolean nonVegProductTypeElemenIsEnabled=manageproductpage.nonVegProductTypeElementIsEnabled();
 			manageproductpage.clickNonVegProductTypeElement();
-			manageproductpage.EntercategoryElement(inputCategory);
+			boolean isEnabledpricetypeLitreRadioButton=manageproductpage.isEnabledpricetypeLitreRadioButtonElement();
+			manageproductpage.clickOnpricetypeLitreRadioButtonElement();
+			assertTrue(nonVegProductTypeElemenIsEnabled,"The Non veg radio button  is  not enabled");
+			assertTrue(isEnabledpricetypeLitreRadioButton,"The price type liter is not enabled");
 			
+		}
+		@Test(groups = {"regression" },retryAnalyzer = Retry.class)
+		@Parameters({"usernameInput","PasswordInput"})
+		public void manageProductsfaker(String usernameInput,String PasswordInput) throws IOException 
+		{
 			
-			
+		    String inputMainMenu=ExcelUtility.getString(0,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"hamBurgerMenuData");
+		    String inputTitleText=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"manageProductData");
+		    String inputCategory=ExcelUtility.getString(0,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"manageProductData");
+			manageproductpage=new ManageProductsPage(driver);
+			loginpage=new LoginPage(driver);
+			loginpage.userNameElement(usernameInput).passwordElement(PasswordInput).signInElement();
+			manageproductpage.clickOnmanageaproductElement();
+			hamburgermenupage=new HamburgerMenuPage(driver);
+			hamburgermenupage.selectMenu(inputMainMenu);
+			manageproductpage.clickOnnewElement();
+			manageproductpage.EnterTitleElement(inputTitleText);
+			manageproductpage.categoryElementFaker();
+			manageproductpage.subCategoryElementFaker();
+		
 		}
 }

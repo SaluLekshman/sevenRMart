@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import Utilities.PageUtility;
+import Utilities.WaitUtility;
 
 public class VerifyUsersPage {
 	public WebDriver driver ;
@@ -16,20 +17,17 @@ public class VerifyUsersPage {
 	}
 	 @FindBy(xpath="//p[text()='Verify Users']") WebElement verifyuserElement;
 	 @FindBy(xpath="//a[@class=\"btn btn-rounded btn-primary\"]") static  WebElement verifyUserSearchButtonelement;
-	 @FindBy(xpath="//input[@id=\"un\"] ")
-	static WebElement enterNameElement;
-	 @FindBy(xpath="//button[@name='Search']")
-	static WebElement searchListUsersSearchButtonElement;
-	 @FindBy(xpath="//center[text()='.........RESULT NOT FOUND.......']")
-	static WebElement searchListUsersSearchResultElement;
+	 @FindBy(xpath="//input[@id=\"un\"] ") WebElement enterNameElement;
+	 @FindBy(xpath="//button[@name='Search']") WebElement searchListUsersSearchButtonElement;
+	 @FindBy(xpath="//center[text()='.........RESULT NOT FOUND.......']") WebElement searchListUsersSearchResultElement;
 	 public boolean verifyUserElementIsEnabled()
 	 {
-		 //WaitUtility.waitForElement(driver,verifyuserElement );
+		 WaitUtility.waitForElement(driver,verifyuserElement );
 		 return PageUtility.elementIsEnabled(verifyuserElement);
 	 }
 	 public boolean clickOnverifyUserElement()
 	 {
-		 //WaitUtility.waitForElementClickable(driver, verifyuserElement);
+		 WaitUtility.waitForElementClickable(driver, verifyuserElement);
 		 return PageUtility.clickOnElement(verifyuserElement);
 	 }
 	
@@ -43,9 +41,10 @@ public class VerifyUsersPage {
 		 PageUtility.clickOnElement(verifyUserSearchButtonelement);
 	 }
 	 
-	 public static void enterNameElement(String enterNameValue) 
+	 public  void enterNameElement(String enterNameValue) 
 	 {
-		
+
+		 WaitUtility.waitForElement(driver, enterNameElement);
 		 PageUtility.enterText(enterNameElement,enterNameValue);
 	 }
 	 public boolean searchListUsersSearchButtonElementIsenabled()
@@ -53,12 +52,13 @@ public class VerifyUsersPage {
 		 
 		return PageUtility.elementIsEnabled(searchListUsersSearchButtonElement);
 	 }
-	 public static void clickOnsearchListUsersSearchButtonElement()
+	 public  void clickOnsearchListUsersSearchButtonElement()
 	 {
-		
-		PageUtility.clickOnElement(searchListUsersSearchButtonElement);
+
+		 WaitUtility.waitForElementClickable(driver, searchListUsersSearchButtonElement);
+		 PageUtility.clickOnElement(searchListUsersSearchButtonElement);
 	 }
-	 public static String searchListUsersSearchResultElement()
+	 public String searchListUsersSearchResultGetTextElement()
 	 {
 		 
 		return PageUtility.getElementText(searchListUsersSearchResultElement);

@@ -19,6 +19,12 @@ public class FakerUtility
        String lastName= faker.name().lastName().toString();
        System.out.println("The first name is "+lastName);
 	}
+	public static void fakerFoodName(WebElement element)
+	{
+	   Faker faker=new Faker();
+       String foodName= faker.food().dish();
+       System.out.println("The name of food  is "+foodName);
+	}
 	public static void fakerCityName(WebElement element)
 	{
 		 Faker faker=new Faker();

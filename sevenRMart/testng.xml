@@ -16,18 +16,17 @@
 <parameter name="usernameInput" value="Admin"/>
 <parameter name="PasswordInput" value="adminnew"/>-->
  <classes>
-     <class name="com.sevenRMartSuperMarketTest.ManageUsersTest"/>
-      
-	  <!--  <class name="com.sevenRMartSuperMarketTest.ManageUsersTest"/>
       <class name="com.sevenRMartSuperMarketTest.VerifyUsersTest"/>
-      <class name="com.sevenRMartSuperMarketTest.SiteNameTest"/>
-      <class name="com.sevenRMartSuperMarketTest.Verify_LoginTest"/>
-      <class name="com.sevenRMartSuperMarketTest.ManageUsersTest"/>
       <class name="com.sevenRMartSuperMarketTest.ManageProductsTest"/>
+      <class name="com.sevenRMartSuperMarketTest.ManageUsersTest"/>
+      <class name="com.sevenRMartSuperMarketTest.ManagePaymentMethodsTest"/>
+	  <class name="com.sevenRMartSuperMarketTest.ManageUsersTest"/>
       
+      <class name="com.sevenRMartSuperMarketTest.SiteNameTest"/>
+      <class name="com.sevenRMartSuperMarketTest.LoginTest"/>
       <class name="com.sevenRMartSuperMarketTest.PushNotificationsTest"/>
-      <class name="com.sevenRMartSuperMarketTest.ManageOffedCodeTest"/>
-      <class name="com.sevenRMartSuperMarketTest.ManagePaymentMethodsTest"/> --> 
+      <class name="com.sevenRMartSuperMarketTest.ManageOfferCodeTest"/> 
+     
   </classes>
   </test>
 </suite> 

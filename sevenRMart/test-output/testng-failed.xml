@@ -9,13 +9,13 @@
     <parameter name="usernameInput" value="admin"/>
     <parameter name="PasswordInput" value="admin"/>
     <classes>
-      <class name="com.sevenRMartSuperMarketTest.VerifyUsersTest">
+      <class name="com.sevenRMartSuperMarketTest.ManageProductsTest">
         <methods>
+          <include name="manageProductsAddProductTypeRadioButton" invocation-numbers="0"/>
           <include name="initialiseBrowser"/>
-          <include name="verifyUsers" invocation-numbers="0"/>
           <include name="browserQuit"/>
         </methods>
-      </class> <!-- com.sevenRMartSuperMarketTest.VerifyUsersTest -->
+      </class> <!-- com.sevenRMartSuperMarketTest.ManageProductsTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

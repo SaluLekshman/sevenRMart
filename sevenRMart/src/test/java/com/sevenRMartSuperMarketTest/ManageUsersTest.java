@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 
 import com.sevenRMartSuperMarketPages.HamburgerMenuPage;
 import com.sevenRMartSuperMarketPages.ManageUsersPage;
-import com.sevenRMartSuperMarketPages.Verify_LoginPage;
+import com.sevenRMartSuperMarketPages.LoginPage;
 
 import Utilities.ExcelUtility;
 
@@ -20,15 +20,15 @@ public class ManageUsersTest extends Base
 {
 	HamburgerMenuPage hamburgermenupage;
     ManageUsersPage manageuserspage;
-	Verify_LoginPage loginpage;
+	LoginPage loginpage;
 	@Test
 	public void manageUsersSearchButtonBackGround() throws IOException
 	{
-		  String usernameInput=ExcelUtility.getString(1,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"loginData");
-		  String PasswordInput=ExcelUtility.getString(1,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"loginData");
+		  String usernameInput=ExcelUtility.getString(1,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"loginPageData");
+		  String PasswordInput=ExcelUtility.getString(1,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"loginPageData");
 		  String inputMainMenu=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"hamBurgerMenuData");
 		  String expectedBackGroundColor=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"manageUsersData");
-		  loginpage=new Verify_LoginPage(driver);
+		  loginpage=new LoginPage(driver);
 		  loginpage.userNameElement(usernameInput);
 		  loginpage.passwordElement(PasswordInput);
 		  loginpage.signInElement();
@@ -43,11 +43,11 @@ public class ManageUsersTest extends Base
 	@Test
 	public void manageUsersResetButtonBorderColor() throws IOException
 	{
-		  String usernameInput=ExcelUtility.getString(1,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"loginData");
-		  String PasswordInput=ExcelUtility.getString(1,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"loginData");
+		  String usernameInput=ExcelUtility.getString(1,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"loginPageData");
+		  String PasswordInput=ExcelUtility.getString(1,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"loginPageData");
 		  String inputMainMenu=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"hamBurgerMenuData");
 		  String expectedBorderColor =ExcelUtility.getString(1,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"manageUsersData");
-		  loginpage=new Verify_LoginPage(driver);
+		  loginpage=new LoginPage(driver);
 		  loginpage.userNameElement(usernameInput);
 		  loginpage.passwordElement(PasswordInput);
 		  loginpage.signInElement();
@@ -58,25 +58,27 @@ public class ManageUsersTest extends Base
 		  assertEquals(actualBorderColor,expectedBorderColor,"The border color is not blue");
 		  
 	}
+	
 	@Test
 	public void searchUsersInManageUsers() throws IOException
 	{
-		  String usernameInput=ExcelUtility.getString(1,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"loginData");
-		  String PasswordInput=ExcelUtility.getString(1,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"loginData");
+		  String usernameInput=ExcelUtility.getString(1,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"loginPageData");
+		  String PasswordInput=ExcelUtility.getString(1,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"loginPageData");
 		  String inputMainMenu=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"hamBurgerMenuData");
 		  String expectedSearchValue=ExcelUtility.getString(0,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"manageUsersData");
 		  String enterTextOnNameValue=ExcelUtility.getString(0,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"manageUsersData");
-		  loginpage=new Verify_LoginPage(driver);
+		  loginpage=new LoginPage(driver);
 		  loginpage.userNameElement(usernameInput);
 		  loginpage.passwordElement(PasswordInput);
 		  loginpage.signInElement();
 		  hamburgermenupage=new HamburgerMenuPage(driver);
 		  hamburgermenupage.selectMenu(inputMainMenu);
 		  manageuserspage=new ManageUsersPage(driver);
-		  manageuserspage.clickOnlistUsersSearchButtonElement().click();
-		  manageuserspage.enterTextOnNameElement().sendKeys(enterTextOnNameValue);
-		  manageuserspage.searchListUsersButtonElement().click();
+		  manageuserspage.clickOnlistUsersSearchButtonElement();
+		  manageuserspage.enterTextOnNameElement(enterTextOnNameValue);
+		  manageuserspage.ClickOnsearchUsersButtonElement();
 		  manageuserspage.searchResultListUser(expectedSearchValue);
+		  
 	
 		   
 	}

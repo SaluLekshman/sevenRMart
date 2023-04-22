@@ -51,10 +51,10 @@ public class WaitUtility
 		wait.until(ExpectedConditions.elementToBeClickable(target));
 	}
 
-	public static void waitForElementIsPresent(WebDriver driver, By target) 
+	public static void waitForElementIsPresent(WebDriver driver, WebElement target) 
 	{
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(EXPLICIT_WAIT));
-		wait.until(ExpectedConditions.presenceOfElementLocated(target));
+		wait.until(ExpectedConditions.presenceOfElementLocated((By) target));
 	}
 
 	public static void waitForAlterIsPresent(WebDriver driver, By target) 
@@ -244,6 +244,11 @@ public class WaitUtility
 	}
 
 	public static void pageLoadTimeOutWait(WebDriver driver) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public static void waitForTextToBePresentInElementLocated(WebDriver driver, WebElement alertMessageElement) {
 		// TODO Auto-generated method stub
 		
 	}

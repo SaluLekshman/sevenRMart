@@ -12,16 +12,14 @@
 <parameter name="PasswordInput" value="admin" ></parameter>
 <groups>
 <run>
-<!-- <exclude name="Regression"></exclude>-->
 <include name="regression"></include>
 <!--<exclude name="Sanity"></exclude>-->
 </run>
 </groups>
  
     <classes>
-      <class name="com.sevenRMartSuperMarketTest.LoginTest"/>
-      <class name="com.sevenRMartSuperMarketTest.ManageProductsTest"/>
-      <!--<class name="com.SevenRSuperMarket.Project.PushNotificationsTest"/> -->
+       <class name="com.sevenRMartSuperMarketTest.ManagePaymentMethodsTest"/>
+       <class name="com.sevenRMartSuperMarketTest.ManageProductsTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

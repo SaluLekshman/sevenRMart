@@ -14,11 +14,9 @@ public class ExtentReportUtility {
 		reporter.config().setDocumentTitle("Test Results");
 		extent =new ExtentReports();
 		extent.attachReporter(reporter);
-		extent.setSystemInfo("Tester", "SALU");
-	    extent.setSystemInfo("Blog Name", "SevenRmartSuperMarket");
-		extent.setSystemInfo("purpose", "Online purchase");
+		extent.setSystemInfo("Tester","SALU");
+	    extent.setSystemInfo("Blog Name","SevenRmartSuperMarket");
+		extent.setSystemInfo("purpose","Online purchase");
 		return extent;
-        
-		
 }
 }

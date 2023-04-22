@@ -7,18 +7,18 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.sevenRMartSuperMarketPages.SiteNamePage;
-import com.sevenRMartSuperMarketPages.Verify_LoginPage;
+import com.sevenRMartSuperMarketPages.LoginPage;
 
 
 public class SiteNameTest extends Base
 {
-	Verify_LoginPage loginpage;
+	LoginPage loginpage;
 	SiteNamePage sitenamepage;
 	@Test
 	@Parameters({"usernameInput","PasswordInput"})
 	public void siteName(String usernameInput,String PasswordInput)
 	{
-		loginpage=new Verify_LoginPage(driver);
+		loginpage=new LoginPage(driver);
 		sitenamepage=new SiteNamePage(driver);
 		String expectedSiteName="7rmart supermarket";
 	    loginpage.userNameElement(usernameInput);

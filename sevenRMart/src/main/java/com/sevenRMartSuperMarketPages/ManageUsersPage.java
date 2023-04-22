@@ -24,46 +24,34 @@ public WebDriver driver;
 	}
 @FindBy(xpath="//a[@href='javascript:void(0)']") WebElement searchButtonElement;
 @FindBy(xpath="//a[@class='btn btn-rounded btn-warning']") WebElement resetButtonElement;
-By listUsersSearchButton=By.xpath("//a[@href='javascript:void(0)']");
-By enterTextOnName=By.xpath("//input[@id='un']");
-By searchListUsersButton=By.xpath("//a[@href='javascript:void(0)']");
+@FindBy(xpath="//a[@href='javascript:void(0)']")WebElement listUsersSearchButtonElement;
+@FindBy(xpath="//input[@id='un']")WebElement enterTextOnNameElement;
+@FindBy(xpath="//a[@href='javascript:void(0)']")WebElement searchUsersButtonElement;
 
-public WebElement clickOnlistUsersSearchButtonElement()
+public void clickOnlistUsersSearchButtonElement()
 {
-	WebElement clickOnlistUsersSearchButtonElement =driver.findElement(listUsersSearchButton);
-	return clickOnlistUsersSearchButtonElement;
-	
+	listUsersSearchButtonElement.click();
 }
-public WebElement enterTextOnNameElement()
+public void enterTextOnNameElement(String inputText)
 {
-	WebElement enterTextOnNameElement =driver.findElement(enterTextOnName);
-	return enterTextOnNameElement;
-	
+	WaitUtility.waitForElement(driver, enterTextOnNameElement);
+	PageUtility.enterText(enterTextOnNameElement, inputText);
 }
-public WebElement searchListUsersButtonElement()
+public void ClickOnsearchUsersButtonElement()
 {
-	WebElement searchListUsersButtonElement =driver.findElement(searchListUsersButton);
-	return searchListUsersButtonElement;
-	
+	searchUsersButtonElement.click();
 }
 
 public String searchButtonElement()
 {
 	WaitUtility.waitForElement(driver, searchButtonElement);
 	return PageUtility. stylePropertyValidation(searchButtonElement, "background-color");
-	/*
-	 * PageUtility. stylePropertyValidation(searchButtonElement, "color"); return
-	 * PageUtility. stylePropertyValidation(searchButtonElement, "border-color");
-	 */
 	
 	
 }
 public String resetButtonElement()
 {
-	/*
-	 * PageUtility.stylePropertyValidation(resetButtonElement, "background-color");
-	 * PageUtility. stylePropertyValidation(resetButtonElement, "color");
-	 */
+	
 	WaitUtility.waitForElement(driver, resetButtonElement);
 	return PageUtility. stylePropertyValidation(resetButtonElement, "border-color");
 }
@@ -78,7 +66,7 @@ public void searchResultListUser(String expectedSearchValue) throws IOException
 		  String actualSearchValue= tablerow.getText();
 		  rowvalue.add( actualSearchValue);
 		  System.out.println(rowvalue);
-		  if( actualSearchValue.equals(actualSearchValue))
+		  if( actualSearchValue.equals(expectedSearchValue))
 		  {
 			  System.out.println("The search result is correct");
 		      break;  
@@ -92,6 +80,3 @@ public void searchResultListUser(String expectedSearchValue) throws IOException
 
 
 }
-
-
-

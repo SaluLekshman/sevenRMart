@@ -8,7 +8,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import Utilities.ExcelUtility;
+import Utilities.FakerUtility;
 import Utilities.PageUtility;
+import Utilities.WaitUtility;
 
 public class PushNotificationPage {
 	public WebDriver driver;
@@ -25,42 +27,42 @@ public class PushNotificationPage {
 	 @FindBy(xpath="//div[@class='alert alert-success alert-dismissible']") WebElement alertMessageElement;
 	 public void ClickOnpushNotificationelement()
 	 {
-		 PageUtility.clickOnElement(clickOnpushNotificationElement);
-		 
-		 
+		 WaitUtility.waitForElementClickable(driver,clickOnpushNotificationElement);
+		 PageUtility.clickOnElement(clickOnpushNotificationElement); 
 	 }
-	 public void enterTitleElement() throws IOException
+	 public PushNotificationPage enterTitleElement(String titleInput) 
 	 {
-		 
-		 String titleInput=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"pushNotificationInformation");
-		 PageUtility.enterText(enterTitleElement,titleInput ).click();
-		
+		 WaitUtility.waitForElement(driver,enterTitleElement);
+		 PageUtility.enterText(enterTitleElement,titleInput );
+		return this;
 	
+		 
 	 }
-	 public void descriptionElement() throws IOException
+
+	 public PushNotificationPage descriptionElement(String descriptionInput) 
 	 {
-		 String descriptionInput=ExcelUtility.getString(0,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"pushNotificationInformation");
+		 WaitUtility.waitForElement(driver, descriptionElement);
 		 PageUtility.enterText(descriptionElement,descriptionInput);
+		return this;
 		 
 	 }
 	 
-	public void sendElement()
+	public PushNotificationPage clickOnsendElement()
 	{
+		WaitUtility.waitForElementClickable(driver,sendElement);
 		PageUtility.clickOnElement(sendElement);
+		return this;
 	}
 	public String getTextalertMessageElement()
 	{
 		
 		return PageUtility.getElementText(alertMessageElement);
 		
-		
 	}
 	public boolean alertMessageElementIsDisplayed()
 	{
-		return PageUtility.isElementDisplayed(alertMessageElement);
 		
-		
-		
+		return PageUtility.isElementDisplayed(alertMessageElement);	
 	}
 
 }

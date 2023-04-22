@@ -12,10 +12,11 @@
 <parameter name="PasswordInput" value="admin" ></parameter>
     <classes>
       <class name="com.sevenRMartSuperMarketTest.SiteNameTest"/>
-      <class name="com.sevenRMartSuperMarketTest.ManageProductsTest"/>
+      <class name="com.sevenRMartSuperMarketTest.PushNotificationsTest"/>
+      <!-- <class name="com.sevenRMartSuperMarketTest.ManageProductsTest"/>
       <class name="com.sevenRMartSuperMarketTest.Verify_LoginTest"/>
       <class name="com.sevenRMartSuperMarketTest.ManageUsersTest"/>
-      <class name="com.sevenRMartSuperMarketTest.VerifyUsersTest"/>
+      <class name="com.sevenRMartSuperMarketTest.VerifyUsersTest"/>-->
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
