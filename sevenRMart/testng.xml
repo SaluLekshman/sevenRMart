@@ -4,7 +4,7 @@
 
 <parameter name="browser" value="chrome"></parameter>
 <listeners>
-<listener class-name="com.sevenRMartSuperMarketTest.Listeners"/>
+<listener class-name="com.sevenRMartSuperMarketTestScripts.Listeners"/>
 </listeners>
 <test thread-count="5" name="Test">
 <parameter name="usernameInput" value="admin"/>
@@ -15,17 +15,39 @@
 <parameter name="PasswordInput" value="admin"/>
 <parameter name="usernameInput" value="Admin"/>
 <parameter name="PasswordInput" value="adminnew"/>-->
- <classes>
-  <class name="com.sevenRMartSuperMarketTest.ManageUsersTest"/>
-      <!-- <class name="com.sevenRMartSuperMarketTest.VerifyUsersTest"/>
-      <class name="com.sevenRMartSuperMarketTest.ManageProductsTest"/>
-      <class name="com.sevenRMartSuperMarketTest.ManagePaymentMethodsTest"/>
-	  <class name="com.sevenRMartSuperMarketTest.ManageUsersTest"/>
-      <class name="com.sevenRMartSuperMarketTest.SiteNameTest"/>
-      <class name="com.sevenRMartSuperMarketTest.LoginTest"/>
-      <class name="com.sevenRMartSuperMarketTest.PushNotificationsTest"/>
-      <class name="com.sevenRMartSuperMarketTest.ManageOfferCodeTest"/> -->
-     
-  </classes>
+ 
+ <!-- <methods>
+ <exclude name="verifyUsersCanViewOrderDetailsInManageOrdersPageByClickingViewInListOrdersTable()"></exclude>
+<exclude name="verifydeliveryBoyIsAssignedForEverOrderCanBeUpdtedInListOrderTable()"></exclude>
+<exclude name="verifyChangeStausUpdatedIsUpdatedInListOrderTable()"></exclude>
+<include name="verifyUsersCanAbleToDeleteOrderDetailsFromListOrderTable"></include>
+</methods>
+</class> 
+   
+<methods>
+<include name="deleteSliderFromListSliderTable()"></include>
+<exclude name="addNewSlideraddedIsDispalyedInListSliderTable()"></exclude>
+<exclude name=" addNewSliderInListSliderTable()"></exclude>
+</methods>-->
+<classes>
+    <class name="com.sevenRMartSuperMarketTestScripts.ManageOrdersTest"/>
+ </classes>
+<!-- 
+     <class name="com.sevenRMartSuperMarketTestScripts.HomePageTest"/>
+     <class name="com.sevenRMartSuperMarketTestScripts.AdminUsersTest"/>
+      <class name="com.sevenRMartSuperMarketTestScripts.ManageOrdersTest"/>
+      <class name="com.sevenRMartSuperMarketTestScripts.ManageSliderTest"/>
+      <class name="com.sevenRMartSuperMarketTestScripts.VerifyUsersTest"/>
+      <class name="com.sevenRMartSuperMarketTestScripts.ManageProductsTest"/>
+      <class name="com.sevenRMartSuperMarketTestScripts.ManagePaymentMethodsTest"/>
+	  <class name="com.sevenRMartSuperMarketTestScripts.ManageUsersTest"/>
+      <class name="com.sevenRMartSuperMarketTestScripts.SiteNameTest"/>
+      <class name="com.sevenRMartSuperMarketTestScripts.LoginTest"/>
+      <class name="com.sevenRMartSuperMarketTestScripts.PushNotificationsTest"/>
+      <class name="com.sevenRMartSuperMarketTestScripts.ManageOfferCodeTest"/> 
+      <class name="com.sevenRMartSuperMarketTestScripts.ManagePagesTest"/>
+      <class name="com.sevenRMartSuperMarketTestScripts.HomePageTest"/>-->
+      
+ 
   </test>
 </suite> 

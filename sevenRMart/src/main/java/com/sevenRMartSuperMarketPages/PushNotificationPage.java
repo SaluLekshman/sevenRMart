@@ -8,7 +8,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import Utilities.ExcelUtility;
-import Utilities.FakerUtility;
+import Utilities.RandomdataUtility;
 import Utilities.PageUtility;
 import Utilities.WaitUtility;
 
@@ -20,49 +20,49 @@ public class PushNotificationPage {
 		 PageFactory.initElements(driver, this);
 		 
 	}
-	 @FindBy(xpath="//p[text()='Push Notifications']") static WebElement clickOnpushNotificationElement;
-	 @FindBy(xpath="//input[@id='title']") WebElement enterTitleElement;
-	 @FindBy(xpath="//input[@id='description']") WebElement descriptionElement;
-	 @FindBy(xpath="//button[@name='create']") WebElement sendElement;
-	 @FindBy(xpath="//div[@class='alert alert-success alert-dismissible']") WebElement alertMessageElement;
+	 @FindBy(xpath="//p[text()='Push Notifications']") static WebElement clickOnpushNotification;
+	 @FindBy(xpath="//input[@id='title']") WebElement enterTitle;
+	 @FindBy(xpath="//input[@id='description']") WebElement enterDescription;
+	 @FindBy(xpath="//button[@name='create']") WebElement clickSendbutton;
+	 @FindBy(xpath="//div[@class='alert alert-success alert-dismissible']") WebElement alertMessage;
 	 public void ClickOnpushNotificationelement()
 	 {
-		 WaitUtility.waitForElementClickable(driver,clickOnpushNotificationElement);
-		 PageUtility.clickOnElement(clickOnpushNotificationElement); 
+		 WaitUtility.waitForElementClickable(driver,clickOnpushNotification);
+		 PageUtility.clickOnElement(clickOnpushNotification); 
 	 }
-	 public PushNotificationPage enterTitleElement(String titleInput) 
+	 public PushNotificationPage enterTitle(String titleInput) 
 	 {
-		 WaitUtility.waitForElement(driver,enterTitleElement);
-		 PageUtility.enterText(enterTitleElement,titleInput );
+		 WaitUtility.waitForElement(driver,enterTitle);
+		 PageUtility.enterText(enterTitle,titleInput );
 		return this;
 	
 		 
 	 }
 
-	 public PushNotificationPage descriptionElement(String descriptionInput) 
+	 public PushNotificationPage enterDescription(String descriptionInput) 
 	 {
-		 WaitUtility.waitForElement(driver, descriptionElement);
-		 PageUtility.enterText(descriptionElement,descriptionInput);
+		 WaitUtility.waitForElement(driver, enterDescription);
+		 PageUtility.enterText(enterDescription,descriptionInput);
 		return this;
 		 
 	 }
 	 
-	public PushNotificationPage clickOnsendElement()
+	public PushNotificationPage clickSendbutton()
 	{
-		WaitUtility.waitForElementClickable(driver,sendElement);
-		PageUtility.clickOnElement(sendElement);
+		WaitUtility.waitForElementClickable(driver,clickSendbutton);
+		PageUtility.clickOnElement(clickSendbutton);
 		return this;
 	}
-	public String getTextalertMessageElement()
+	public String getTextalertMessage()
 	{
 		
-		return PageUtility.getElementText(alertMessageElement);
+		return PageUtility.getElementText(alertMessage);
 		
 	}
-	public boolean alertMessageElementIsDisplayed()
+	public boolean alertMessageIsDisplayed()
 	{
 		
-		return PageUtility.isElementDisplayed(alertMessageElement);	
+		return PageUtility.isElementDisplayed(alertMessage);	
 	}
 
 }

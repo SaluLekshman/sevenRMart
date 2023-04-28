@@ -16,46 +16,47 @@ public class LoginPage {
 		 PageFactory.initElements(driver, this);
 		 
 	}
-	 @FindBy (xpath="//input[@type='text']") WebElement usernameElement;
-	 @FindBy(xpath="//input[@type='password']") WebElement passwordElement;
-	 @FindBy(xpath="//button[text()='Sign In']") WebElement signInElement;
-	 @FindBy(xpath="//label[@for='remember']") WebElement rememberMeElement;
-	 @FindBy (xpath="//div[@class='alert alert-danger alert-dismissible']") WebElement alertElement;
+	 @FindBy (xpath="//input[@type='text']") WebElement enterUsername;
+	 @FindBy(xpath="//input[@type='password']") WebElement enterPassword;
+	 @FindBy(xpath="//button[text()='Sign In']") WebElement clickSignIn;
+	 @FindBy(xpath="//label[@for='remember']") WebElement clickRememberMe;
+	 @FindBy (xpath="//div[@class='alert alert-danger alert-dismissible']") WebElement alertMessage;
 	 
-	 public  LoginPage userNameElement(String usernameInput)
+	 public  LoginPage enterUsername(String usernameInput)
 	 {
-		 WaitUtility.waitForElement(driver,usernameElement);
-		 PageUtility.enterText(usernameElement, usernameInput);
+		 WaitUtility.waitForElement(driver,enterUsername);
+		 PageUtility.enterText(enterUsername, usernameInput);
 		 return this;
 	 }
-	 public  LoginPage passwordElement(String PasswordInput)
+	 public  LoginPage enterPassword(String PasswordInput)
 	 {
-		 WaitUtility.waitForElement(driver, passwordElement); 
-		 PageUtility.enterText(passwordElement,PasswordInput) ;
+		 WaitUtility.waitForElement(driver, enterPassword); 
+		 PageUtility.enterText(enterPassword,PasswordInput) ;
 		 return this;
 		 
 	 }
 	 public boolean signInButtonIsEnabled()
 	 {
-		 WaitUtility.fluentwaitForElementSelected(driver, signInElement);;
-		 return PageUtility.elementIsEnabled(signInElement);
+		 WaitUtility.fluentwaitForElementSelected(driver, clickSignIn);
+		 return PageUtility.elementIsEnabled(clickSignIn);
 	 }
-	 public  LoginPage signInElement()
+	 public   LoginPage clicksignIn()
 	 {
-		 WaitUtility.waitForElementClickable(driver, signInElement);
-		 PageUtility.clickOnElement(signInElement);
+		 WaitUtility.waitForElementClickable(driver, clickSignIn);
+		 PageUtility.clickOnElement(clickSignIn);
+		return this;
+		 
+	 }
+	 public LoginPage clickRememberMe()
+	 {
+		 WaitUtility.waitForElement(driver,clickRememberMe);
+		 PageUtility.clickOnElement(clickRememberMe);
 		 return this;
 	 }
-	 public LoginPage rememberMeElement()
+	 public boolean alertMessage()
 	 {
-		 WaitUtility.waitForElement(driver,rememberMeElement );
-		 PageUtility.clickOnElement(rememberMeElement);
-		 return this;
-	 }
-	 public boolean alertElement()
-	 {
-		 WaitUtility.waitForElement(driver, alertElement);
-		 return PageUtility.isElementDisplayed(alertElement);
+		 WaitUtility.waitForElement(driver, alertMessage);
+		 return PageUtility.isElementDisplayed(alertMessage);
 	 }
 	
 }

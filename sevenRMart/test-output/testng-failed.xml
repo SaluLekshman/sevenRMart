@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="3" parallel="methods" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <parameter name="browser" value="chrome"/>
   <listeners>
-    <listener class-name="com.sevenRMartSuperMarketTest.Listeners"/>
+    <listener class-name="com.sevenRMartSuperMarketTestScripts.Listeners"/>
   </listeners>
-  <test thread-count="3" parallel="methods" name="Test(failed)">
+  <test thread-count="5" name="Test(failed)">
     <parameter name="usernameInput" value="admin"/>
     <parameter name="PasswordInput" value="admin"/>
     <classes>
-      <class name="com.sevenRMartSuperMarketTest.ManageUsersTest">
+      <class name="com.sevenRMartSuperMarketTestScripts.ManageOrdersTest">
         <methods>
-          <include name="manageUsersSearchButtonBackGround"/>
-          <include name="manageUsersResetButtonBorderColor"/>
-          <include name="initialiseBrowser"/>
           <include name="browserQuit"/>
+          <include name="verifyUsersCanAbleToDeleteOrderDetailsFromListOrderTable" invocation-numbers="0"/>
+          <include name="initialiseBrowser"/>
         </methods>
-      </class> <!-- com.sevenRMartSuperMarketTest.ManageUsersTest -->
+      </class> <!-- com.sevenRMartSuperMarketTestScripts.ManageOrdersTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

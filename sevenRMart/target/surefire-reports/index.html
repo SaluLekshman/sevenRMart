@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-skipped">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,21 +93,36 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">15 methods,  1 skipped,  14 passed</span>
+                    <span class="method-stats">30 methods, 4 failed,   26 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
                     </span>
-                    <div class="method-list-content skipped suite-Suite">
+                    <div class="method-list-content failed suite-Suite">
                       <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sevenRMartSuperMarketTest.ManageUsersTest" hash-for-method="searchUsersInManageUsers">searchUsersInManageUsers</a> <!-- method navigator-link -->
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sevenRMartSuperMarketTestScripts.HomePageTest" hash-for-method="getStylePropertyAlignmentOfMoreInfoInHomePage(admin, admin)">getStylePropertyAlignmentOfMoreInfoInHomePage(admin, admin)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content skipped suite-Suite -->
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sevenRMartSuperMarketTestScripts.ManagePagesTest" hash-for-method="serachPageIsPresentInListPagesTable(admin, admin)">serachPageIsPresentInListPagesTable(admin, admin)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sevenRMartSuperMarketTestScripts.ManageOfferCodeTest" hash-for-method="verifyNewOfferCodeCanBeAddedByEnteringOfferInformation(admin, admin)">verifyNewOfferCodeCanBeAddedByEnteringOfferInformation(admin, admin)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sevenRMartSuperMarketTestScripts.ManageOrdersTest" hash-for-method="verifyUsersCanAbleToDeleteOrderDetailsFromListOrderTable(admin, admin)">verifyUsersCanAbleToDeleteOrderDetailsFromListOrderTable(admin, admin)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -118,72 +133,132 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sevenRMartSuperMarketTest.LoginTest" hash-for-method="loginWithInValidCredentials(admin, admin123)">loginWithInValidCredentials(admin, admin123)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sevenRMartSuperMarketTestScripts.AdminUsersTest" hash-for-method="VerifyNewAdminUserCanBeAddedInAdminUsersPage(admin, admin)">VerifyNewAdminUserCanBeAddedInAdminUsersPage(admin, admin)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sevenRMartSuperMarketTest.LoginTest" hash-for-method="loginWithInValidCredentials(admin1, admin)">loginWithInValidCredentials(admin1, admin)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sevenRMartSuperMarketTestScripts.ManageSliderTest" hash-for-method="addNewSliderInListSliderTable(admin, admin)">addNewSliderInListSliderTable(admin, admin)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sevenRMartSuperMarketTest.LoginTest" hash-for-method="loginWithInValidCredentials(Admin, adminnew)">loginWithInValidCredentials(Admin, adminnew)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sevenRMartSuperMarketTestScripts.ManageSliderTest" hash-for-method="addNewSlideraddedIsDispalyedInListSliderTable(admin, admin)">addNewSlideraddedIsDispalyedInListSliderTable(admin, admin)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sevenRMartSuperMarketTest.LoginTest" hash-for-method="loginWithValidCredentials(admin, admin)">loginWithValidCredentials(admin, admin)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sevenRMartSuperMarketTestScripts.ManageSliderTest" hash-for-method="deleteSliderFromListSliderTable(admin, admin)">deleteSliderFromListSliderTable(admin, admin)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sevenRMartSuperMarketTest.ManagePaymentMethodsTest" hash-for-method="managePaymentMethodsAction(admin, admin)">managePaymentMethodsAction(admin, admin)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sevenRMartSuperMarketTestScripts.SiteNameTest" hash-for-method="getFontsizeOfsiteName(admin, admin)">getFontsizeOfsiteName(admin, admin)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sevenRMartSuperMarketTest.ManagePaymentMethodsTest" hash-for-method="managePaymentMethodsType(admin, admin)">managePaymentMethodsType(admin, admin)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sevenRMartSuperMarketTestScripts.HomePageTest" hash-for-method="getStylePropertyColorOfMoreInfoInHomePage(admin, admin)">getStylePropertyColorOfMoreInfoInHomePage(admin, admin)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sevenRMartSuperMarketTest.ManageProductsTest" hash-for-method="manageProductsAddProductTypeRadioButton(admin, admin)">manageProductsAddProductTypeRadioButton(admin, admin)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sevenRMartSuperMarketTestScripts.LoginTest" hash-for-method="loginWithInValidCredentials(Admin, adminnew)">loginWithInValidCredentials(Admin, adminnew)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sevenRMartSuperMarketTest.ManageProductsTest" hash-for-method="manageProductsfaker(admin, admin)">manageProductsfaker(admin, admin)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sevenRMartSuperMarketTestScripts.LoginTest" hash-for-method="loginWithInValidCredentials(admin, admin123)">loginWithInValidCredentials(admin, admin123)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sevenRMartSuperMarketTest.ManageUsersTest" hash-for-method="manageUsersResetButtonBorderColor">manageUsersResetButtonBorderColor</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sevenRMartSuperMarketTestScripts.LoginTest" hash-for-method="loginWithInValidCredentials(admin1, admin)">loginWithInValidCredentials(admin1, admin)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sevenRMartSuperMarketTest.ManageUsersTest" hash-for-method="manageUsersSearchButtonBackGround">manageUsersSearchButtonBackGround</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sevenRMartSuperMarketTestScripts.LoginTest" hash-for-method="loginWithValidCredentials(admin, admin)">loginWithValidCredentials(admin, admin)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sevenRMartSuperMarketTest.ManageOfferCodeTest" hash-for-method="manageoffercode(admin, admin)">manageoffercode(admin, admin)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sevenRMartSuperMarketTestScripts.ManagePaymentMethodsTest" hash-for-method="managePaymentMethodsAction(admin, admin)">managePaymentMethodsAction(admin, admin)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sevenRMartSuperMarketTest.PushNotificationsTest" hash-for-method="pushNotifications(admin, admin)">pushNotifications(admin, admin)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sevenRMartSuperMarketTestScripts.ManagePaymentMethodsTest" hash-for-method="managePaymentMethodsType(admin, admin)">managePaymentMethodsType(admin, admin)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sevenRMartSuperMarketTest.SiteNameTest" hash-for-method="siteName(admin, admin)">siteName(admin, admin)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sevenRMartSuperMarketTestScripts.ManageProductsTest" hash-for-method="manageProductsAddProductTypeRadioButton(admin, admin)">manageProductsAddProductTypeRadioButton(admin, admin)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sevenRMartSuperMarketTest.VerifyUsersTest" hash-for-method="verifyUsers(admin, admin)">verifyUsers(admin, admin)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sevenRMartSuperMarketTestScripts.ManageProductsTest" hash-for-method="manageProductsfaker(admin, admin)">manageProductsfaker(admin, admin)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sevenRMartSuperMarketTestScripts.ManageUsersTest" hash-for-method="manageUsersResetButtonBorderColor">manageUsersResetButtonBorderColor</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sevenRMartSuperMarketTestScripts.ManageUsersTest" hash-for-method="manageUsersSearchButtonBackGround">manageUsersSearchButtonBackGround</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sevenRMartSuperMarketTestScripts.ManagePaymentMethodsTest" hash-for-method="navigateBackToManagePayment(admin, admin)">navigateBackToManagePayment(admin, admin)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sevenRMartSuperMarketTestScripts.AdminUsersTest" hash-for-method="searchAdminUsersInAdminUsersPage(admin, admin)">searchAdminUsersInAdminUsersPage(admin, admin)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sevenRMartSuperMarketTestScripts.ManageUsersTest" hash-for-method="searchUsersInManageUsers">searchUsersInManageUsers</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sevenRMartSuperMarketTestScripts.SiteNameTest" hash-for-method="siteName(admin, admin)">siteName(admin, admin)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sevenRMartSuperMarketTestScripts.PushNotificationsTest" hash-for-method="verifyAnAlertMessageIsSendByEnteringTitleAndDescriptionAndClickSend(admin, admin)">verifyAnAlertMessageIsSendByEnteringTitleAndDescriptionAndClickSend(admin, admin)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sevenRMartSuperMarketTestScripts.ManageOrdersTest" hash-for-method="verifyChangeStausUpdatedIsUpdatedInListOrderTable(admin, admin)">verifyChangeStausUpdatedIsUpdatedInListOrderTable(admin, admin)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sevenRMartSuperMarketTestScripts.ManageOfferCodeTest" hash-for-method="verifyNewOfferCodeAddedIsDisplayedInListOfferCodeTable(admin, admin)">verifyNewOfferCodeAddedIsDisplayedInListOfferCodeTable(admin, admin)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sevenRMartSuperMarketTestScripts.VerifyUsersTest" hash-for-method="verifyUsers(admin, admin)">verifyUsers(admin, admin)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sevenRMartSuperMarketTestScripts.ManageOrdersTest" hash-for-method="verifyUsersCanViewOrderDetailsInManageOrdersPageByClickingViewInListOrdersTable(admin, admin)">verifyUsersCanViewOrderDetailsInManageOrdersPageByClickingViewInListOrdersTable(admin, admin)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sevenRMartSuperMarketTestScripts.ManageOrdersTest" hash-for-method="verifydeliveryBoyIsAssignedForEverOrderCanBeUpdtedInListOrderTable(admin, admin)">verifydeliveryBoyIsAssignedForEverOrderCanBeUpdtedInListOrderTable(admin, admin)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -198,26 +273,27 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-skipped">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">com.sevenRMartSuperMarketTest.ManageUsersTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.sevenRMartSuperMarketTestScripts.ManageOrdersTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="searchUsersInManageUsers">
-                  </a> <!-- searchUsersInManageUsers -->
-                  <span class="method-name">searchUsersInManageUsers</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: disconnected: Unable to receive message from renderer
-  (failed to check if window was closed: disconnected: not connected to DevTools)
+                  <a name="verifyUsersCanAbleToDeleteOrderDetailsFromListOrderTable(admin, admin)">
+                  </a> <!-- verifyUsersCanAbleToDeleteOrderDetailsFromListOrderTable(admin, admin) -->
+                  <span class="method-name">verifyUsersCanAbleToDeleteOrderDetailsFromListOrderTable</span>
+                  <span class="parameters">(admin, admin)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@href=&apos;https://groceryapp.uniqassosiates.com/admin/Order/delete?del=696&amp;page_ad=1&apos;]&quot;}
   (Session info: chrome=112.0.5615.138)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e330c2e07a8308f4a1a5b5646f2bfce4, get {url=https://groceryapp.uniqassosiates.com/admin}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\SHALU\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61446}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61446/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e330c2e07a8308f4a1a5b5646f2bfce4
+Command: [6bab8ec03594a938a32bd151515545f1, findElement {using=xpath, value=//a[@href=&apos;https://groceryapp.uniqassosiates.com/admin/Order/delete?del=696&amp;page_ad=1&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\SHALU\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62642}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62642/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6bab8ec03594a938a32bd151515545f1
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -225,19 +301,184 @@ Session ID: e330c2e07a8308f4a1a5b5646f2bfce4
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:297)
-	at com.sevenRMartSuperMarketTest.Base.initialiseBrowser(Base.java:93)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy14.click(Unknown Source)
+	at com.sevenRMartSuperMarketPages.ManageOrdersPage.ClickOndeleteButtonOrderDetailsInListOrderTable(ManageOrdersPage.java:106)
+	at com.sevenRMartSuperMarketTestScripts.ManageOrdersTest.verifyUsersCanAbleToDeleteOrderDetailsFromListOrderTable(ManageOrdersTest.java:68)
 	at java.util.ArrayList.forEach(ArrayList.java:1257)
-... Removed 39 stack frames
+... Removed 35 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-skipped -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.sevenRMartSuperMarketTestScripts.HomePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getStylePropertyAlignmentOfMoreInfoInHomePage(admin, admin)">
+                  </a> <!-- getStylePropertyAlignmentOfMoreInfoInHomePage(admin, admin) -->
+                  <span class="method-name">getStylePropertyAlignmentOfMoreInfoInHomePage</span>
+                  <span class="parameters">(admin, admin)</span>
+                  <div class="stack-trace">java.lang.IllegalStateException: Cannot get a NUMERIC value from a STRING cell
+	at org.apache.poi.xssf.usermodel.XSSFCell.typeMismatch(XSSFCell.java:1035)
+	at org.apache.poi.xssf.usermodel.XSSFCell.getNumericCellValue(XSSFCell.java:319)
+	at Utilities.ExcelUtility.getNumeric(ExcelUtility.java:75)
+	at com.sevenRMartSuperMarketTestScripts.HomePageTest.getStylePropertyAlignmentOfMoreInfoInHomePage(HomePageTest.java:37)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.sevenRMartSuperMarketTestScripts.ManageOfferCodeTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNewOfferCodeCanBeAddedByEnteringOfferInformation(admin, admin)">
+                  </a> <!-- verifyNewOfferCodeCanBeAddedByEnteringOfferInformation(admin, admin) -->
+                  <span class="method-name">verifyNewOfferCodeCanBeAddedByEnteringOfferInformation</span>
+                  <span class="parameters">(admin, admin)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(@class,&apos;alert-success &apos;)]&quot;}
+  (Session info: chrome=112.0.5615.138)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [09ebb06386b669fac2f333e067202224, findElement {using=xpath, value=//div[contains(@class,&apos;alert-success &apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\SHALU\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63895}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63895/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 09ebb06386b669fac2f333e067202224
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy14.isDisplayed(Unknown Source)
+	at Utilities.PageUtility.isElementDisplayed(PageUtility.java:85)
+	at com.sevenRMartSuperMarketPages.ManageOfferCodePage.addNewOfferCode(ManageOfferCodePage.java:92)
+	at com.sevenRMartSuperMarketTestScripts.ManageOfferCodeTest.verifyNewOfferCodeCanBeAddedByEnteringOfferInformation(ManageOfferCodeTest.java:43)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.sevenRMartSuperMarketTestScripts.ManagePagesTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="serachPageIsPresentInListPagesTable(admin, admin)">
+                  </a> <!-- serachPageIsPresentInListPagesTable(admin, admin) -->
+                  <span class="method-name">serachPageIsPresentInListPagesTable</span>
+                  <span class="parameters">(admin, admin)</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=112.0.5615.138)
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [12181ceebeb17b9ee551c50a0c71df26, clickElement {id=01e8e323-3bae-4d49-9bff-8640ea0202b0}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\SHALU\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63968}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63968/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (12181ceebeb17b9ee551c50a0c71df26)] -&gt; xpath: //a[@href=&apos;https://groceryapp.uniqassosiates.com/admin/list-page&apos;]]
+Session ID: 12181ceebeb17b9ee551c50a0c71df26
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy14.click(Unknown Source)
+	at com.sevenRMartSuperMarketPages.ManagePagesPage.clickOnMoreInfo(ManagePagesPage.java:30)
+	at com.sevenRMartSuperMarketTestScripts.ManagePagesTest.serachPageIsPresentInListPagesTable(ManagePagesTest.java:28)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 38 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.sevenRMartSuperMarketTest.ManagePaymentMethodsTest</span>
+              <span class="class-name">com.sevenRMartSuperMarketTestScripts.ManageSliderTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addNewSliderInListSliderTable(admin, admin)">
+                  </a> <!-- addNewSliderInListSliderTable(admin, admin) -->
+                  <span class="method-name">addNewSliderInListSliderTable</span>
+                  <span class="parameters">(admin, admin)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addNewSlideraddedIsDispalyedInListSliderTable(admin, admin)">
+                  </a> <!-- addNewSlideraddedIsDispalyedInListSliderTable(admin, admin) -->
+                  <span class="method-name">addNewSlideraddedIsDispalyedInListSliderTable</span>
+                  <span class="parameters">(admin, admin)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteSliderFromListSliderTable(admin, admin)">
+                  </a> <!-- deleteSliderFromListSliderTable(admin, admin) -->
+                  <span class="method-name">deleteSliderFromListSliderTable</span>
+                  <span class="parameters">(admin, admin)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.sevenRMartSuperMarketTestScripts.VerifyUsersTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUsers(admin, admin)">
+                  </a> <!-- verifyUsers(admin, admin) -->
+                  <span class="method-name">verifyUsers</span>
+                  <span class="parameters">(admin, admin)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.sevenRMartSuperMarketTestScripts.ManagePaymentMethodsTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -256,19 +497,11 @@ Session ID: e330c2e07a8308f4a1a5b5646f2bfce4
                   <span class="parameters">(admin, admin)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.sevenRMartSuperMarketTest.ManageOfferCodeTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="manageoffercode(admin, admin)">
-                  </a> <!-- manageoffercode(admin, admin) -->
-                  <span class="method-name">manageoffercode</span>
+                  <a name="navigateBackToManagePayment(admin, admin)">
+                  </a> <!-- navigateBackToManagePayment(admin, admin) -->
+                  <span class="method-name">navigateBackToManagePayment</span>
                   <span class="parameters">(admin, admin)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -277,7 +510,172 @@ Session ID: e330c2e07a8308f4a1a5b5646f2bfce4
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.sevenRMartSuperMarketTest.ManageProductsTest</span>
+              <span class="class-name">com.sevenRMartSuperMarketTestScripts.PushNotificationsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAnAlertMessageIsSendByEnteringTitleAndDescriptionAndClickSend(admin, admin)">
+                  </a> <!-- verifyAnAlertMessageIsSendByEnteringTitleAndDescriptionAndClickSend(admin, admin) -->
+                  <span class="method-name">verifyAnAlertMessageIsSendByEnteringTitleAndDescriptionAndClickSend</span>
+                  <span class="parameters">(admin, admin)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.sevenRMartSuperMarketTestScripts.ManageOrdersTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyChangeStausUpdatedIsUpdatedInListOrderTable(admin, admin)">
+                  </a> <!-- verifyChangeStausUpdatedIsUpdatedInListOrderTable(admin, admin) -->
+                  <span class="method-name">verifyChangeStausUpdatedIsUpdatedInListOrderTable</span>
+                  <span class="parameters">(admin, admin)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUsersCanViewOrderDetailsInManageOrdersPageByClickingViewInListOrdersTable(admin, admin)">
+                  </a> <!-- verifyUsersCanViewOrderDetailsInManageOrdersPageByClickingViewInListOrdersTable(admin, admin) -->
+                  <span class="method-name">verifyUsersCanViewOrderDetailsInManageOrdersPageByClickingViewInListOrdersTable</span>
+                  <span class="parameters">(admin, admin)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifydeliveryBoyIsAssignedForEverOrderCanBeUpdtedInListOrderTable(admin, admin)">
+                  </a> <!-- verifydeliveryBoyIsAssignedForEverOrderCanBeUpdtedInListOrderTable(admin, admin) -->
+                  <span class="method-name">verifydeliveryBoyIsAssignedForEverOrderCanBeUpdtedInListOrderTable</span>
+                  <span class="parameters">(admin, admin)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.sevenRMartSuperMarketTestScripts.SiteNameTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getFontsizeOfsiteName(admin, admin)">
+                  </a> <!-- getFontsizeOfsiteName(admin, admin) -->
+                  <span class="method-name">getFontsizeOfsiteName</span>
+                  <span class="parameters">(admin, admin)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="siteName(admin, admin)">
+                  </a> <!-- siteName(admin, admin) -->
+                  <span class="method-name">siteName</span>
+                  <span class="parameters">(admin, admin)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.sevenRMartSuperMarketTestScripts.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithInValidCredentials(Admin, adminnew)">
+                  </a> <!-- loginWithInValidCredentials(Admin, adminnew) -->
+                  <span class="method-name">loginWithInValidCredentials</span>
+                  <span class="parameters">(Admin, adminnew)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithInValidCredentials(admin, admin123)">
+                  </a> <!-- loginWithInValidCredentials(admin, admin123) -->
+                  <span class="method-name">loginWithInValidCredentials</span>
+                  <span class="parameters">(admin, admin123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithInValidCredentials(admin1, admin)">
+                  </a> <!-- loginWithInValidCredentials(admin1, admin) -->
+                  <span class="method-name">loginWithInValidCredentials</span>
+                  <span class="parameters">(admin1, admin)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithValidCredentials(admin, admin)">
+                  </a> <!-- loginWithValidCredentials(admin, admin) -->
+                  <span class="method-name">loginWithValidCredentials</span>
+                  <span class="parameters">(admin, admin)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.sevenRMartSuperMarketTestScripts.AdminUsersTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyNewAdminUserCanBeAddedInAdminUsersPage(admin, admin)">
+                  </a> <!-- VerifyNewAdminUserCanBeAddedInAdminUsersPage(admin, admin) -->
+                  <span class="method-name">VerifyNewAdminUserCanBeAddedInAdminUsersPage</span>
+                  <span class="parameters">(admin, admin)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchAdminUsersInAdminUsersPage(admin, admin)">
+                  </a> <!-- searchAdminUsersInAdminUsersPage(admin, admin) -->
+                  <span class="method-name">searchAdminUsersInAdminUsersPage</span>
+                  <span class="parameters">(admin, admin)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.sevenRMartSuperMarketTestScripts.ManageUsersTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="manageUsersResetButtonBorderColor">
+                  </a> <!-- manageUsersResetButtonBorderColor -->
+                  <span class="method-name">manageUsersResetButtonBorderColor</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="manageUsersSearchButtonBackGround">
+                  </a> <!-- manageUsersSearchButtonBackGround -->
+                  <span class="method-name">manageUsersSearchButtonBackGround</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchUsersInManageUsers">
+                  </a> <!-- searchUsersInManageUsers -->
+                  <span class="method-name">searchUsersInManageUsers</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.sevenRMartSuperMarketTestScripts.ManageProductsTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -301,14 +699,14 @@ Session ID: e330c2e07a8308f4a1a5b5646f2bfce4
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.sevenRMartSuperMarketTest.SiteNameTest</span>
+              <span class="class-name">com.sevenRMartSuperMarketTestScripts.HomePageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="siteName(admin, admin)">
-                  </a> <!-- siteName(admin, admin) -->
-                  <span class="method-name">siteName</span>
+                  <a name="getStylePropertyColorOfMoreInfoInHomePage(admin, admin)">
+                  </a> <!-- getStylePropertyColorOfMoreInfoInHomePage(admin, admin) -->
+                  <span class="method-name">getStylePropertyColorOfMoreInfoInHomePage</span>
                   <span class="parameters">(admin, admin)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -317,92 +715,14 @@ Session ID: e330c2e07a8308f4a1a5b5646f2bfce4
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.sevenRMartSuperMarketTest.PushNotificationsTest</span>
+              <span class="class-name">com.sevenRMartSuperMarketTestScripts.ManageOfferCodeTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="pushNotifications(admin, admin)">
-                  </a> <!-- pushNotifications(admin, admin) -->
-                  <span class="method-name">pushNotifications</span>
-                  <span class="parameters">(admin, admin)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.sevenRMartSuperMarketTest.LoginTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginWithInValidCredentials(admin, admin123)">
-                  </a> <!-- loginWithInValidCredentials(admin, admin123) -->
-                  <span class="method-name">loginWithInValidCredentials</span>
-                  <span class="parameters">(admin, admin123)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginWithInValidCredentials(admin1, admin)">
-                  </a> <!-- loginWithInValidCredentials(admin1, admin) -->
-                  <span class="method-name">loginWithInValidCredentials</span>
-                  <span class="parameters">(admin1, admin)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginWithInValidCredentials(Admin, adminnew)">
-                  </a> <!-- loginWithInValidCredentials(Admin, adminnew) -->
-                  <span class="method-name">loginWithInValidCredentials</span>
-                  <span class="parameters">(Admin, adminnew)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginWithValidCredentials(admin, admin)">
-                  </a> <!-- loginWithValidCredentials(admin, admin) -->
-                  <span class="method-name">loginWithValidCredentials</span>
-                  <span class="parameters">(admin, admin)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.sevenRMartSuperMarketTest.ManageUsersTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="manageUsersResetButtonBorderColor">
-                  </a> <!-- manageUsersResetButtonBorderColor -->
-                  <span class="method-name">manageUsersResetButtonBorderColor</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="manageUsersSearchButtonBackGround">
-                  </a> <!-- manageUsersSearchButtonBackGround -->
-                  <span class="method-name">manageUsersSearchButtonBackGround</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.sevenRMartSuperMarketTest.VerifyUsersTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyUsers(admin, admin)">
-                  </a> <!-- verifyUsers(admin, admin) -->
-                  <span class="method-name">verifyUsers</span>
+                  <a name="verifyNewOfferCodeAddedIsDisplayedInListOfferCodeTable(admin, admin)">
+                  </a> <!-- verifyNewOfferCodeAddedIsDisplayedInListOfferCodeTable(admin, admin) -->
+                  <span class="method-name">verifyNewOfferCodeAddedIsDisplayedInListOfferCodeTable</span>
                   <span class="parameters">(admin, admin)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -420,21 +740,26 @@ Session ID: e330c2e07a8308f4a1a5b5646f2bfce4
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Suite&quot;&gt;
   &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
   &lt;listeners&gt;
-    &lt;listener class-name=&quot;com.sevenRMartSuperMarketTest.Listeners&quot;/&gt;
+    &lt;listener class-name=&quot;com.sevenRMartSuperMarketTestScripts.Listeners&quot;/&gt;
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Test&quot;&gt;
     &lt;parameter name=&quot;usernameInput&quot; value=&quot;admin&quot;/&gt;
     &lt;parameter name=&quot;PasswordInput&quot; value=&quot;admin&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.sevenRMartSuperMarketTest.VerifyUsersTest&quot;/&gt;
-      &lt;class name=&quot;com.sevenRMartSuperMarketTest.ManageProductsTest&quot;/&gt;
-      &lt;class name=&quot;com.sevenRMartSuperMarketTest.ManageUsersTest&quot;/&gt;
-      &lt;class name=&quot;com.sevenRMartSuperMarketTest.ManagePaymentMethodsTest&quot;/&gt;
-      &lt;class name=&quot;com.sevenRMartSuperMarketTest.ManageUsersTest&quot;/&gt;
-      &lt;class name=&quot;com.sevenRMartSuperMarketTest.SiteNameTest&quot;/&gt;
-      &lt;class name=&quot;com.sevenRMartSuperMarketTest.LoginTest&quot;/&gt;
-      &lt;class name=&quot;com.sevenRMartSuperMarketTest.PushNotificationsTest&quot;/&gt;
-      &lt;class name=&quot;com.sevenRMartSuperMarketTest.ManageOfferCodeTest&quot;/&gt;
+      &lt;class name=&quot;com.sevenRMartSuperMarketTestScripts.HomePageTest&quot;/&gt;
+      &lt;class name=&quot;com.sevenRMartSuperMarketTestScripts.AdminUsersTest&quot;/&gt;
+      &lt;class name=&quot;com.sevenRMartSuperMarketTestScripts.ManageOrdersTest&quot;/&gt;
+      &lt;class name=&quot;com.sevenRMartSuperMarketTestScripts.ManageSliderTest&quot;/&gt;
+      &lt;class name=&quot;com.sevenRMartSuperMarketTestScripts.VerifyUsersTest&quot;/&gt;
+      &lt;class name=&quot;com.sevenRMartSuperMarketTestScripts.ManageProductsTest&quot;/&gt;
+      &lt;class name=&quot;com.sevenRMartSuperMarketTestScripts.ManagePaymentMethodsTest&quot;/&gt;
+      &lt;class name=&quot;com.sevenRMartSuperMarketTestScripts.ManageUsersTest&quot;/&gt;
+      &lt;class name=&quot;com.sevenRMartSuperMarketTestScripts.SiteNameTest&quot;/&gt;
+      &lt;class name=&quot;com.sevenRMartSuperMarketTestScripts.LoginTest&quot;/&gt;
+      &lt;class name=&quot;com.sevenRMartSuperMarketTestScripts.PushNotificationsTest&quot;/&gt;
+      &lt;class name=&quot;com.sevenRMartSuperMarketTestScripts.ManageOfferCodeTest&quot;/&gt;
+      &lt;class name=&quot;com.sevenRMartSuperMarketTestScripts.ManagePagesTest&quot;/&gt;
+      &lt;class name=&quot;com.sevenRMartSuperMarketTestScripts.HomePageTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -448,7 +773,7 @@ Session ID: e330c2e07a8308f4a1a5b5646f2bfce4
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (9 classes)</span>
+                <span class="test-name">Test (14 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -478,7 +803,19 @@ Session ID: e330c2e07a8308f4a1a5b5646f2bfce4
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
-                <span class="method-in-group-name">manageoffercode</span>
+                <span class="method-in-group-name">navigateBackToManagePayment</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">serachPageIsPresentInListPagesTable</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyNewOfferCodeAddedIsDisplayedInListOfferCodeTable</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyNewOfferCodeCanBeAddedByEnteringOfferInformation</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -498,72 +835,132 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(15);
+data.addRows(30);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'managePaymentMethodsType')
-data.setCell(0, 2, 'com.sevenRMartSuperMarketTest.ManagePaymentMethodsTest')
-data.setCell(0, 3, 7124);
+data.setCell(0, 1, 'verifyNewOfferCodeCanBeAddedByEnteringOfferInformation')
+data.setCell(0, 2, 'com.sevenRMartSuperMarketTestScripts.ManageOfferCodeTest')
+data.setCell(0, 3, 4894);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyUsers')
-data.setCell(1, 2, 'com.sevenRMartSuperMarketTest.VerifyUsersTest')
-data.setCell(1, 3, 5462);
+data.setCell(1, 1, 'verifyAnAlertMessageIsSendByEnteringTitleAndDescriptionAndClickSend')
+data.setCell(1, 2, 'com.sevenRMartSuperMarketTestScripts.PushNotificationsTest')
+data.setCell(1, 3, 4749);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'managePaymentMethodsAction')
-data.setCell(2, 2, 'com.sevenRMartSuperMarketTest.ManagePaymentMethodsTest')
-data.setCell(2, 3, 4519);
+data.setCell(2, 1, 'manageProductsAddProductTypeRadioButton')
+data.setCell(2, 2, 'com.sevenRMartSuperMarketTestScripts.ManageProductsTest')
+data.setCell(2, 3, 4486);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'manageProductsAddProductTypeRadioButton')
-data.setCell(3, 2, 'com.sevenRMartSuperMarketTest.ManageProductsTest')
-data.setCell(3, 3, 4131);
+data.setCell(3, 1, 'navigateBackToManagePayment')
+data.setCell(3, 2, 'com.sevenRMartSuperMarketTestScripts.ManagePaymentMethodsTest')
+data.setCell(3, 3, 3991);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'manageProductsfaker')
-data.setCell(4, 2, 'com.sevenRMartSuperMarketTest.ManageProductsTest')
-data.setCell(4, 3, 3511);
+data.setCell(4, 1, 'verifydeliveryBoyIsAssignedForEverOrderCanBeUpdtedInListOrderTable')
+data.setCell(4, 2, 'com.sevenRMartSuperMarketTestScripts.ManageOrdersTest')
+data.setCell(4, 3, 3964);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'pushNotifications')
-data.setCell(5, 2, 'com.sevenRMartSuperMarketTest.PushNotificationsTest')
-data.setCell(5, 3, 3377);
+data.setCell(5, 1, 'searchUsersInManageUsers')
+data.setCell(5, 2, 'com.sevenRMartSuperMarketTestScripts.ManageUsersTest')
+data.setCell(5, 3, 3769);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'manageUsersSearchButtonBackGround')
-data.setCell(6, 2, 'com.sevenRMartSuperMarketTest.ManageUsersTest')
-data.setCell(6, 3, 2451);
+data.setCell(6, 1, 'managePaymentMethodsAction')
+data.setCell(6, 2, 'com.sevenRMartSuperMarketTestScripts.ManagePaymentMethodsTest')
+data.setCell(6, 3, 3630);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'manageoffercode')
-data.setCell(7, 2, 'com.sevenRMartSuperMarketTest.ManageOfferCodeTest')
-data.setCell(7, 3, 1896);
+data.setCell(7, 1, 'manageProductsfaker')
+data.setCell(7, 2, 'com.sevenRMartSuperMarketTestScripts.ManageProductsTest')
+data.setCell(7, 3, 3349);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'manageUsersResetButtonBorderColor')
-data.setCell(8, 2, 'com.sevenRMartSuperMarketTest.ManageUsersTest')
-data.setCell(8, 3, 1525);
+data.setCell(8, 1, 'VerifyNewAdminUserCanBeAddedInAdminUsersPage')
+data.setCell(8, 2, 'com.sevenRMartSuperMarketTestScripts.AdminUsersTest')
+data.setCell(8, 3, 3090);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'loginWithValidCredentials')
-data.setCell(9, 2, 'com.sevenRMartSuperMarketTest.LoginTest')
-data.setCell(9, 3, 1459);
+data.setCell(9, 1, 'addNewSliderInListSliderTable')
+data.setCell(9, 2, 'com.sevenRMartSuperMarketTestScripts.ManageSliderTest')
+data.setCell(9, 3, 3017);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'siteName')
-data.setCell(10, 2, 'com.sevenRMartSuperMarketTest.SiteNameTest')
-data.setCell(10, 3, 1274);
+data.setCell(10, 1, 'verifyChangeStausUpdatedIsUpdatedInListOrderTable')
+data.setCell(10, 2, 'com.sevenRMartSuperMarketTestScripts.ManageOrdersTest')
+data.setCell(10, 3, 2943);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'loginWithInValidCredentials')
-data.setCell(11, 2, 'com.sevenRMartSuperMarketTest.LoginTest')
-data.setCell(11, 3, 941);
+data.setCell(11, 1, 'verifyNewOfferCodeAddedIsDisplayedInListOfferCodeTable')
+data.setCell(11, 2, 'com.sevenRMartSuperMarketTestScripts.ManageOfferCodeTest')
+data.setCell(11, 3, 2811);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'loginWithInValidCredentials')
-data.setCell(12, 2, 'com.sevenRMartSuperMarketTest.LoginTest')
-data.setCell(12, 3, 851);
+data.setCell(12, 1, 'manageUsersSearchButtonBackGround')
+data.setCell(12, 2, 'com.sevenRMartSuperMarketTestScripts.ManageUsersTest')
+data.setCell(12, 3, 2796);
 data.setCell(13, 0, 13)
 data.setCell(13, 1, 'loginWithInValidCredentials')
-data.setCell(13, 2, 'com.sevenRMartSuperMarketTest.LoginTest')
-data.setCell(13, 3, 629);
+data.setCell(13, 2, 'com.sevenRMartSuperMarketTestScripts.LoginTest')
+data.setCell(13, 3, 2714);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'searchUsersInManageUsers')
-data.setCell(14, 2, 'com.sevenRMartSuperMarketTest.ManageUsersTest')
-data.setCell(14, 3, 0);
+data.setCell(14, 1, 'verifyUsersCanViewOrderDetailsInManageOrdersPageByClickingViewInListOrdersTable')
+data.setCell(14, 2, 'com.sevenRMartSuperMarketTestScripts.ManageOrdersTest')
+data.setCell(14, 3, 2650);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'manageUsersResetButtonBorderColor')
+data.setCell(15, 2, 'com.sevenRMartSuperMarketTestScripts.ManageUsersTest')
+data.setCell(15, 3, 2608);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'deleteSliderFromListSliderTable')
+data.setCell(16, 2, 'com.sevenRMartSuperMarketTestScripts.ManageSliderTest')
+data.setCell(16, 3, 2577);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'verifyUsers')
+data.setCell(17, 2, 'com.sevenRMartSuperMarketTestScripts.VerifyUsersTest')
+data.setCell(17, 3, 2561);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'managePaymentMethodsType')
+data.setCell(18, 2, 'com.sevenRMartSuperMarketTestScripts.ManagePaymentMethodsTest')
+data.setCell(18, 3, 2159);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'verifyUsersCanAbleToDeleteOrderDetailsFromListOrderTable')
+data.setCell(19, 2, 'com.sevenRMartSuperMarketTestScripts.ManageOrdersTest')
+data.setCell(19, 3, 2049);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'searchAdminUsersInAdminUsersPage')
+data.setCell(20, 2, 'com.sevenRMartSuperMarketTestScripts.AdminUsersTest')
+data.setCell(20, 3, 1956);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'addNewSlideraddedIsDispalyedInListSliderTable')
+data.setCell(21, 2, 'com.sevenRMartSuperMarketTestScripts.ManageSliderTest')
+data.setCell(21, 3, 1883);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'getFontsizeOfsiteName')
+data.setCell(22, 2, 'com.sevenRMartSuperMarketTestScripts.SiteNameTest')
+data.setCell(22, 3, 1658);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'getStylePropertyAlignmentOfMoreInfoInHomePage')
+data.setCell(23, 2, 'com.sevenRMartSuperMarketTestScripts.HomePageTest')
+data.setCell(23, 3, 1454);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'loginWithInValidCredentials')
+data.setCell(24, 2, 'com.sevenRMartSuperMarketTestScripts.LoginTest')
+data.setCell(24, 3, 1441);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'siteName')
+data.setCell(25, 2, 'com.sevenRMartSuperMarketTestScripts.SiteNameTest')
+data.setCell(25, 3, 1348);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'loginWithValidCredentials')
+data.setCell(26, 2, 'com.sevenRMartSuperMarketTestScripts.LoginTest')
+data.setCell(26, 3, 1340);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'serachPageIsPresentInListPagesTable')
+data.setCell(27, 2, 'com.sevenRMartSuperMarketTestScripts.ManagePagesTest')
+data.setCell(27, 3, 1280);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'getStylePropertyColorOfMoreInfoInHomePage')
+data.setCell(28, 2, 'com.sevenRMartSuperMarketTestScripts.HomePageTest')
+data.setCell(28, 3, 1243);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'loginWithInValidCredentials')
+data.setCell(29, 2, 'com.sevenRMartSuperMarketTestScripts.LoginTest')
+data.setCell(29, 3, 801);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 39 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -589,209 +986,410 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.sevenRMartSuperMarketTest.VerifyUsersTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.sevenRMartSuperMarketTestScripts.HomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">initialiseBrowser(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">getStylePropertyAlignmentOfMoreInfoInHomePage(admin, admin)</span>
+                <span class="method-start">18300 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=getStylePropertyAlignmentOfMoreInfoInHomePage status=FAILURE method=HomePageTest.ge...)</span>
+                <span class="method-start">19792 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialiseBrowser(chrome)</span>
+                <span class="method-start">21211 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">getStylePropertyColorOfMoreInfoInHomePage(admin, admin)</span>
+                <span class="method-start">39613 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=getStylePropertyColorOfMoreInfoInHomePage status=SUCCESS method=HomePageTest.getSty...)</span>
+                <span class="method-start">40856 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.sevenRMartSuperMarketTestScripts.AdminUsersTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">initialiseBrowser(chrome)</span>
+                <span class="method-start">41624 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">VerifyNewAdminUserCanBeAddedInAdminUsersPage(admin, admin)</span>
+                <span class="method-start">60228 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=VerifyNewAdminUserCanBeAddedInAdminUsersPage status=SUCCESS method=AdminUsersTest.V...)</span>
+                <span class="method-start">63319 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialiseBrowser(chrome)</span>
+                <span class="method-start">64078 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">searchAdminUsersInAdminUsersPage(admin, admin)</span>
+                <span class="method-start">81496 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=searchAdminUsersInAdminUsersPage status=SUCCESS method=AdminUsersTest.searchAdminUs...)</span>
+                <span class="method-start">83453 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.sevenRMartSuperMarketTestScripts.ManageOrdersTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">initialiseBrowser(chrome)</span>
+                <span class="method-start">84265 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyChangeStausUpdatedIsUpdatedInListOrderTable(admin, admin)</span>
+                <span class="method-start">101354 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyChangeStausUpdatedIsUpdatedInListOrderTable status=SUCCESS method=ManageOrder...)</span>
+                <span class="method-start">104297 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialiseBrowser(chrome)</span>
+                <span class="method-start">105300 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyUsersCanAbleToDeleteOrderDetailsFromListOrderTable(admin, admin)</span>
+                <span class="method-start">123319 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyUsersCanAbleToDeleteOrderDetailsFromListOrderTable status=FAILURE method=Mana...)</span>
+                <span class="method-start">125373 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialiseBrowser(chrome)</span>
+                <span class="method-start">126410 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUsersCanViewOrderDetailsInManageOrdersPageByClickingViewInListOrdersTable(admin, admin)</span>
+                <span class="method-start">144902 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyUsersCanViewOrderDetailsInManageOrdersPageByClickingViewInListOrdersTable sta...)</span>
+                <span class="method-start">147552 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialiseBrowser(chrome)</span>
+                <span class="method-start">148290 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifydeliveryBoyIsAssignedForEverOrderCanBeUpdtedInListOrderTable(admin, admin)</span>
+                <span class="method-start">166496 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifydeliveryBoyIsAssignedForEverOrderCanBeUpdtedInListOrderTable status=SUCCESS m...)</span>
+                <span class="method-start">170461 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.sevenRMartSuperMarketTestScripts.ManageSliderTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">initialiseBrowser(chrome)</span>
+                <span class="method-start">171557 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addNewSliderInListSliderTable(admin, admin)</span>
+                <span class="method-start">188962 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=addNewSliderInListSliderTable status=SUCCESS method=ManageSliderTest.addNewSliderIn...)</span>
+                <span class="method-start">191980 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialiseBrowser(chrome)</span>
+                <span class="method-start">192767 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addNewSlideraddedIsDispalyedInListSliderTable(admin, admin)</span>
+                <span class="method-start">211105 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=addNewSlideraddedIsDispalyedInListSliderTable status=SUCCESS method=ManageSliderTes...)</span>
+                <span class="method-start">212989 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialiseBrowser(chrome)</span>
+                <span class="method-start">213881 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">deleteSliderFromListSliderTable(admin, admin)</span>
+                <span class="method-start">232829 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=deleteSliderFromListSliderTable status=SUCCESS method=ManageSliderTest.deleteSlider...)</span>
+                <span class="method-start">235406 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.sevenRMartSuperMarketTestScripts.VerifyUsersTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">initialiseBrowser(chrome)</span>
+                <span class="method-start">236303 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
                 <span class="method-name">verifyUsers(admin, admin)</span>
-                <span class="method-start">20300 ms</span>
+                <span class="method-start">254806 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">browserQuit([TestResult name=verifyUsers status=SUCCESS method=VerifyUsersTest.verifyUsers(java.lang.String,java...)</span>
-                <span class="method-start">26337 ms</span>
+                <span class="method-start">257367 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.sevenRMartSuperMarketTest.ManageProductsTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.sevenRMartSuperMarketTestScripts.ManageProductsTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">initialiseBrowser(chrome)</span>
-                <span class="method-start">27231 ms</span>
+                <span class="method-start">258173 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">manageProductsAddProductTypeRadioButton(admin, admin)</span>
-                <span class="method-start">45883 ms</span>
+                <span class="method-start">276770 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">browserQuit([TestResult name=manageProductsAddProductTypeRadioButton status=SUCCESS method=ManageProductsTest.ma...)</span>
-                <span class="method-start">50015 ms</span>
+                <span class="method-start">281258 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initialiseBrowser(chrome)</span>
-                <span class="method-start">50862 ms</span>
+                <span class="method-start">282409 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">manageProductsfaker(admin, admin)</span>
-                <span class="method-start">68513 ms</span>
+                <span class="method-start">301782 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">browserQuit([TestResult name=manageProductsfaker status=SUCCESS method=ManageProductsTest.manageProductsfaker(ja...)</span>
-                <span class="method-start">72025 ms</span>
+                <span class="method-start">305619 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.sevenRMartSuperMarketTest.ManageUsersTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.sevenRMartSuperMarketTestScripts.ManagePaymentMethodsTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">initialiseBrowser(chrome)</span>
-                <span class="method-start">72908 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">manageUsersResetButtonBorderColor</span>
-                <span class="method-start">90657 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">browserQuit([TestResult name=manageUsersResetButtonBorderColor status=SUCCESS method=ManageUsersTest.manageUsers...)</span>
-                <span class="method-start">92183 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">initialiseBrowser(chrome)</span>
-                <span class="method-start">93017 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">manageUsersSearchButtonBackGround</span>
-                <span class="method-start">112002 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">browserQuit([TestResult name=manageUsersSearchButtonBackGround status=SUCCESS method=ManageUsersTest.manageUsers...)</span>
-                <span class="method-start">114453 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">initialiseBrowser(chrome)</span>
-                <span class="method-start">115593 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">searchUsersInManageUsers</span>
-                <span class="method-start">128699 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">browserQuit([TestResult name={null} status=CREATED method=ManageUsersTest.searchUsersInManageUsers()[pri:0, inst...)</span>
-                <span class="method-start">128700 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.sevenRMartSuperMarketTest.ManagePaymentMethodsTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">initialiseBrowser(chrome)</span>
-                <span class="method-start">131634 ms</span>
+                <span class="method-start">306485 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">managePaymentMethodsAction(admin, admin)</span>
-                <span class="method-start">151213 ms</span>
+                <span class="method-start">324346 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">browserQuit([TestResult name=managePaymentMethodsAction status=SUCCESS method=ManagePaymentMethodsTest.managePay...)</span>
-                <span class="method-start">155733 ms</span>
+                <span class="method-start">327977 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initialiseBrowser(chrome)</span>
-                <span class="method-start">156794 ms</span>
+                <span class="method-start">328863 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">managePaymentMethodsType(admin, admin)</span>
-                <span class="method-start">174886 ms</span>
+                <span class="method-start">347626 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">browserQuit([TestResult name=managePaymentMethodsType status=SUCCESS method=ManagePaymentMethodsTest.managePayme...)</span>
-                <span class="method-start">182011 ms</span>
+                <span class="method-start">349785 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialiseBrowser(chrome)</span>
+                <span class="method-start">350664 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">navigateBackToManagePayment(admin, admin)</span>
+                <span class="method-start">369545 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=navigateBackToManagePayment status=SUCCESS method=ManagePaymentMethodsTest.navigate...)</span>
+                <span class="method-start">373537 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.sevenRMartSuperMarketTest.SiteNameTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.sevenRMartSuperMarketTestScripts.ManageUsersTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">initialiseBrowser(chrome)</span>
-                <span class="method-start">183355 ms</span>
+                <span class="method-start">374447 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">manageUsersResetButtonBorderColor</span>
+                <span class="method-start">391975 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=manageUsersResetButtonBorderColor status=SUCCESS method=ManageUsersTest.manageUsers...)</span>
+                <span class="method-start">394583 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialiseBrowser(chrome)</span>
+                <span class="method-start">395487 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">manageUsersSearchButtonBackGround</span>
+                <span class="method-start">414249 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=manageUsersSearchButtonBackGround status=SUCCESS method=ManageUsersTest.manageUsers...)</span>
+                <span class="method-start">417046 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialiseBrowser(chrome)</span>
+                <span class="method-start">418328 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">searchUsersInManageUsers</span>
+                <span class="method-start">437865 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=searchUsersInManageUsers status=SUCCESS method=ManageUsersTest.searchUsersInManageU...)</span>
+                <span class="method-start">441634 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.sevenRMartSuperMarketTestScripts.SiteNameTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">initialiseBrowser(chrome)</span>
+                <span class="method-start">442825 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">getFontsizeOfsiteName(admin, admin)</span>
+                <span class="method-start">461470 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=getFontsizeOfsiteName status=SUCCESS method=SiteNameTest.getFontsizeOfsiteName(java...)</span>
+                <span class="method-start">463129 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialiseBrowser(chrome)</span>
+                <span class="method-start">465014 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">siteName(admin, admin)</span>
-                <span class="method-start">202547 ms</span>
+                <span class="method-start">483850 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">browserQuit([TestResult name=siteName status=SUCCESS method=SiteNameTest.siteName(java.lang.String,java.lang.Str...)</span>
-                <span class="method-start">203821 ms</span>
+                <span class="method-start">485198 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.sevenRMartSuperMarketTest.LoginTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.sevenRMartSuperMarketTestScripts.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">initialiseBrowser(chrome)</span>
-                <span class="method-start">205984 ms</span>
+                <span class="method-start">486093 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginWithValidCredentials(admin, admin)</span>
-                <span class="method-start">224388 ms</span>
+                <span class="method-start">505535 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">browserQuit([TestResult name=loginWithValidCredentials status=SUCCESS method=LoginTest.loginWithValidCredentials...)</span>
-                <span class="method-start">225847 ms</span>
+                <span class="method-start">506875 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initialiseBrowser(chrome)</span>
-                <span class="method-start">226842 ms</span>
+                <span class="method-start">507923 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginWithInValidCredentials(admin, admin123)</span>
-                <span class="method-start">245560 ms</span>
+                <span class="method-start">528230 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">browserQuit([TestResult name=loginWithInValidCredentials status=SUCCESS method=LoginTest.loginWithInValidCredent...)</span>
-                <span class="method-start">246189 ms</span>
+                <span class="method-start">529032 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initialiseBrowser(chrome)</span>
-                <span class="method-start">247141 ms</span>
+                <span class="method-start">530003 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginWithInValidCredentials(admin1, admin)</span>
-                <span class="method-start">265715 ms</span>
+                <span class="method-start">550786 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">browserQuit([TestResult name=loginWithInValidCredentials status=SUCCESS method=LoginTest.loginWithInValidCredent...)</span>
-                <span class="method-start">266656 ms</span>
+                <span class="method-start">552227 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initialiseBrowser(chrome)</span>
-                <span class="method-start">268181 ms</span>
+                <span class="method-start">555929 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginWithInValidCredentials(Admin, adminnew)</span>
-                <span class="method-start">286680 ms</span>
+                <span class="method-start">575133 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">browserQuit([TestResult name=loginWithInValidCredentials status=SUCCESS method=LoginTest.loginWithInValidCredent...)</span>
-                <span class="method-start">287531 ms</span>
+                <span class="method-start">577847 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.sevenRMartSuperMarketTest.PushNotificationsTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.sevenRMartSuperMarketTestScripts.PushNotificationsTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">initialiseBrowser(chrome)</span>
-                <span class="method-start">288510 ms</span>
+                <span class="method-start">580988 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">pushNotifications(admin, admin)</span>
-                <span class="method-start">306087 ms</span>
+                <span class="method-name">verifyAnAlertMessageIsSendByEnteringTitleAndDescriptionAndClickSend(admin, admin)</span>
+                <span class="method-start">599662 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">browserQuit([TestResult name=pushNotifications status=SUCCESS method=PushNotificationsTest.pushNotifications(jav...)</span>
-                <span class="method-start">309465 ms</span>
+                <span class="method-name">browserQuit([TestResult name=verifyAnAlertMessageIsSendByEnteringTitleAndDescriptionAndClickSend status=SUCCESS ...)</span>
+                <span class="method-start">604412 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.sevenRMartSuperMarketTest.ManageOfferCodeTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.sevenRMartSuperMarketTestScripts.ManageOfferCodeTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">initialiseBrowser(chrome)</span>
-                <span class="method-start">310324 ms</span>
+                <span class="method-start">605760 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">manageoffercode(admin, admin)</span>
-                <span class="method-start">329139 ms</span>
+                <span class="method-name">verifyNewOfferCodeAddedIsDisplayedInListOfferCodeTable(admin, admin)</span>
+                <span class="method-start">626132 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">browserQuit([TestResult name=manageoffercode status=SUCCESS method=ManageOfferCodeTest.manageoffercode(java.lang...)</span>
-                <span class="method-start">331035 ms</span>
+                <span class="method-name">browserQuit([TestResult name=verifyNewOfferCodeAddedIsDisplayedInListOfferCodeTable status=SUCCESS method=Manage...)</span>
+                <span class="method-start">628943 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialiseBrowser(chrome)</span>
+                <span class="method-start">629939 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyNewOfferCodeCanBeAddedByEnteringOfferInformation(admin, admin)</span>
+                <span class="method-start">648833 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyNewOfferCodeCanBeAddedByEnteringOfferInformation status=FAILURE method=Manage...)</span>
+                <span class="method-start">653742 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.sevenRMartSuperMarketTestScripts.ManagePagesTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">initialiseBrowser(chrome)</span>
+                <span class="method-start">654825 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">serachPageIsPresentInListPagesTable(admin, admin)</span>
+                <span class="method-start">675248 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=serachPageIsPresentInListPagesTable status=FAILURE method=ManagePagesTest.serachPag...)</span>
+                <span class="method-start">676530 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -39,7 +39,7 @@ public class ManagePayMentMethodsPage {
 	public void clickOnmanagePaymentmethodsElement() {
 		WaitUtility.waitForElementClickable(driver, managePaymentmethodsElement);
 		PageUtility.clickOnElement(managePaymentmethodsElement);
-		;
+		
 	}
 
 	public void clickOnmanagePaymentmethodsPageHomeButton() {

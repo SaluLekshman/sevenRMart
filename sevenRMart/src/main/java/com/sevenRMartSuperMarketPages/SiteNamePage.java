@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import Utilities.PageUtility;
+import Utilities.WaitUtility;
 
 public class SiteNamePage {
 	public WebDriver driver ;
@@ -19,12 +20,17 @@ public class SiteNamePage {
 	@FindBy(xpath="//span[text()='7rmart supermarket']") WebElement siteNameElement;
 	 public boolean siteNameIsDisplayed()
 	 {
-		// WaitUtility.waitForPresenceOfElementsLocatedBy(driver, siteNameElement );
+		 WaitUtility.waitForElement(driver, siteNameElement);
 		 return PageUtility.isElementDisplayed(siteNameElement);
 	 }
 	 public String siteNameGetText()
 	 {
-		 //WaitUtility.waitForPresenceOfElementsLocatedBy(driver, siteNameElement );
+		 WaitUtility.waitForElement(driver, siteNameElement);
 		 return PageUtility.getElementText(siteNameElement);
+	 }
+	 public String getColorOfSiteName()
+	 {
+		return PageUtility.stylePropertyValidation(siteNameElement, "color");
+		 
 	 }
 }

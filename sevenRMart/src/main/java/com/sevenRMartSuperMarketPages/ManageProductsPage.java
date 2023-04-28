@@ -8,7 +8,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import Utilities.ExcelUtility;
-import Utilities.FakerUtility;
+import Utilities.RandomdataUtility;
 import Utilities.PageUtility;
 import Utilities.WaitUtility;
 
@@ -68,14 +68,14 @@ public class ManageProductsPage {
 	 public void categoryElementFaker( ) 
 	 {  
 		 WaitUtility.waitForElement(driver, categoryElement); 
-		 FakerUtility.fakerFoodName(categoryElement);
+		 RandomdataUtility.fakerFoodName(categoryElement);
 		
 	 }
 	 
 	 public void subCategoryElementFaker( ) 
 	 {  
 		 WaitUtility.waitForElement(driver, subCategoryElement); 
-		 FakerUtility.fakerFoodName(subCategoryElement);
+		 RandomdataUtility.fakerFoodName(subCategoryElement);
 		
 	 }
 	 

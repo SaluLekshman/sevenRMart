@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.sevenRMartSuperMarketTest.VerifyUsersTest">
+      <class name="com.sevenRMartSuperMarketTestScripts.HomePageTest">
         <methods>
-          <include name="initialiseBrowser"/>
+          <include name="getStylePropertyAlignmentOfMoreInfoInHomePage"/>
+          <include name="getStylePropertyColorOfMoreInfoInHomePage"/>
           <include name="browserQuit"/>
-          <include name="verifyUsers"/>
+          <include name="initialiseBrowser"/>
         </methods>
-      </class> <!-- com.sevenRMartSuperMarketTest.VerifyUsersTest -->
+      </class> <!-- com.sevenRMartSuperMarketTestScripts.HomePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

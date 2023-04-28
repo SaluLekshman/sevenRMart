@@ -59,9 +59,9 @@ public String resetButtonElement()
 	return PageUtility. stylePropertyValidation(resetButtonElement, "border-color");
 }
 
-public String searchResultListUser(String expectedSearchValue) throws IOException
+public String searchResultListUser(String expectedSearchValue) 
 {
-	 //String expectedSearchValue1=ExcelUtility.getString(0,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"manageUsersData");
+	 
 	 List<WebElement> row=driver.findElements(By.xpath("//tr//th//following::td"));
 	  for(WebElement tablerow:row)
 	  {

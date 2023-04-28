@@ -3,19 +3,40 @@
 <suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
   <parameter name="browser" value="chrome"/>
   <listeners>
-    <listener class-name="com.sevenRMartSuperMarketTest.Listeners"/>
+    <listener class-name="com.sevenRMartSuperMarketTestScripts.Listeners"/>
   </listeners>
   <test thread-count="5" verbose="0" name="Test(failed)">
     <parameter name="usernameInput" value="admin"/>
     <parameter name="PasswordInput" value="admin"/>
     <classes>
-      <class name="com.sevenRMartSuperMarketTest.ManageUsersTest">
+      <class name="com.sevenRMartSuperMarketTestScripts.ManageOrdersTest">
         <methods>
-          <include name="searchUsersInManageUsers"/>
-          <include name="initialiseBrowser"/>
           <include name="browserQuit"/>
+          <include name="verifyUsersCanAbleToDeleteOrderDetailsFromListOrderTable" invocation-numbers="0"/>
+          <include name="initialiseBrowser"/>
         </methods>
-      </class> <!-- com.sevenRMartSuperMarketTest.ManageUsersTest -->
+      </class> <!-- com.sevenRMartSuperMarketTestScripts.ManageOrdersTest -->
+      <class name="com.sevenRMartSuperMarketTestScripts.HomePageTest">
+        <methods>
+          <include name="getStylePropertyAlignmentOfMoreInfoInHomePage" invocation-numbers="0"/>
+          <include name="browserQuit"/>
+          <include name="initialiseBrowser"/>
+        </methods>
+      </class> <!-- com.sevenRMartSuperMarketTestScripts.HomePageTest -->
+      <class name="com.sevenRMartSuperMarketTestScripts.ManageOfferCodeTest">
+        <methods>
+          <include name="verifyNewOfferCodeCanBeAddedByEnteringOfferInformation" invocation-numbers="0"/>
+          <include name="browserQuit"/>
+          <include name="initialiseBrowser"/>
+        </methods>
+      </class> <!-- com.sevenRMartSuperMarketTestScripts.ManageOfferCodeTest -->
+      <class name="com.sevenRMartSuperMarketTestScripts.ManagePagesTest">
+        <methods>
+          <include name="serachPageIsPresentInListPagesTable" invocation-numbers="0"/>
+          <include name="browserQuit"/>
+          <include name="initialiseBrowser"/>
+        </methods>
+      </class> <!-- com.sevenRMartSuperMarketTestScripts.ManagePagesTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
