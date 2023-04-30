@@ -24,8 +24,9 @@ public class ManageOrdersTest extends Base {
 
 	@Test
 	@Parameters({ "usernameInput", "PasswordInput" })
-	public void verifyChangeStausUpdatedIsUpdatedInListOrderTable(String usernameInput,String PasswordInput) throws IOException {
-		String statusInput=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"manageOrdersPageData");
+	public void verifyChangeStausUpdatedIsUpdatedInListOrderTable(String usernameInput,String PasswordInput)
+	{
+		String statusInput=ExcelUtility.getString(0,0,constants.Constants.TESTDATAFILEPATH,"manageOrdersPageData");
 		loginpage = new LoginPage(driver);
 		loginpage.enterUsername(usernameInput).enterPassword(PasswordInput).clicksignIn();
 		manageorderspage = new ManageOrdersPage(driver);
@@ -36,9 +37,9 @@ public class ManageOrdersTest extends Base {
 	}
 	@Test
 	@Parameters({ "usernameInput", "PasswordInput" })
-	public void verifydeliveryBoyIsAssignedForEverOrderCanBeUpdtedInListOrderTable(String usernameInput,String PasswordInput) throws IOException
+	public void verifydeliveryBoyIsAssignedForEverOrderCanBeUpdtedInListOrderTable(String usernameInput,String PasswordInput) 
 	{
-		String assignDeliverBoyInput=ExcelUtility.getString(0,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"manageOrdersPageData");
+		String assignDeliverBoyInput=ExcelUtility.getString(0,1,constants.Constants.TESTDATAFILEPATH,"manageOrdersPageData");
 		loginpage = new LoginPage(driver);
 		loginpage.enterUsername(usernameInput).enterPassword(PasswordInput).clicksignIn();
 		manageorderspage = new ManageOrdersPage(driver);
@@ -48,7 +49,7 @@ public class ManageOrdersTest extends Base {
 	}
 	@Test
 	@Parameters({ "usernameInput", "PasswordInput" })
-	public void verifyUsersCanViewOrderDetailsInManageOrdersPageByClickingViewInListOrdersTable(String usernameInput,String PasswordInput) throws IOException
+	public void verifyUsersCanViewOrderDetailsInManageOrdersPageByClickingViewInListOrdersTable(String usernameInput,String PasswordInput)
 	{
 		loginpage = new LoginPage(driver);
 		loginpage.enterUsername(usernameInput).enterPassword(PasswordInput).clicksignIn();
@@ -60,13 +61,15 @@ public class ManageOrdersTest extends Base {
 	}
 	@Test
 	@Parameters({ "usernameInput", "PasswordInput" })
-	public void verifyUsersCanAbleToDeleteOrderDetailsFromListOrderTable(String usernameInput,String PasswordInput) throws IOException
+	public void verifyUsersCanAbleToDeleteOrderDetailsFromListOrderTable(String usernameInput,String PasswordInput) 
 	{
+		String getTextOfAlertMessage=ExcelUtility.getString(1,0,constants.Constants.TESTDATAFILEPATH,"manageOrdersPageData");
 		loginpage = new LoginPage(driver);
 		loginpage.enterUsername(usernameInput).enterPassword(PasswordInput).clicksignIn();
 		manageorderspage = new ManageOrdersPage(driver);
-		manageorderspage.clickOnMoreInfo().ClickOndeleteButtonOrderDetailsInListOrderTable();
-		boolean isIsAbleToDeleteOrderDetailsFromListOrderTable=manageorderspage.isAbleToDeleteOrderDetailsFromListOrderTable();
-		assertTrue(isIsAbleToDeleteOrderDetailsFromListOrderTable,"unable to delete Order details from list orders Table");
-	}
+		manageorderspage.clickOnMoreInfo();
+		String getText=manageorderspage.ClickOndeleteButtonOrderDetailsInListOrderTable();
+		assertEquals(getText,getTextOfAlertMessage,"unable to delete Order details from list orders Table");
+		
 }
+	}

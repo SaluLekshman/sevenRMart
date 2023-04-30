@@ -21,12 +21,12 @@ public class SiteNameTest extends Base
 	SiteNamePage sitenamepage;
 	@Test
 	@Parameters({"usernameInput","PasswordInput"})
-	public void siteName(String usernameInput,String PasswordInput) throws IOException
+	public void verifySiteNameIsDisplayedCorrectly(String usernameInput,String PasswordInput)
 	{
+		String expectedSiteName=ExcelUtility.getString(0,0,constants.Constants.TESTDATAFILEPATH,"siteNameData");
 		loginpage=new LoginPage(driver);
-		sitenamepage=new SiteNamePage(driver);
-		String expectedSiteName=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"siteNameData");
 		loginpage.enterUsername(usernameInput).enterPassword(PasswordInput).clicksignIn();
+		sitenamepage=new SiteNamePage(driver);
 		boolean siteNameIsdisplyed=sitenamepage.siteNameIsDisplayed();
 		String actualSiteName=sitenamepage.siteNameGetText();
 		assertTrue(siteNameIsdisplyed,"The site name is not displayed");
@@ -36,7 +36,7 @@ public class SiteNameTest extends Base
 	@Parameters({"usernameInput","PasswordInput"})
 	public void getFontsizeOfsiteName(String usernameInput,String PasswordInput) throws IOException
 	{
-		String expectedSiteNameColor=ExcelUtility.getString(1,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"siteNameData");
+		String expectedSiteNameColor=ExcelUtility.getString(1,0,constants.Constants.TESTDATAFILEPATH,"siteNameData");
 		loginpage=new LoginPage(driver);
 		sitenamepage=new SiteNamePage(driver);
 		loginpage.enterUsername(usernameInput).enterPassword(PasswordInput).clicksignIn();

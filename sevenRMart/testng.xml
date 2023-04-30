@@ -9,13 +9,6 @@
 <test thread-count="5" name="Test">
 <parameter name="usernameInput" value="admin"/>
 <parameter name="PasswordInput" value="admin"/>
-<!-- <parameter name="usernameInput" value="admin"/>
-<parameter name="PasswordInput" value="admin123"/>
-<parameter name="usernameInput" value="admin1"/>
-<parameter name="PasswordInput" value="admin"/>
-<parameter name="usernameInput" value="Admin"/>
-<parameter name="PasswordInput" value="adminnew"/>-->
- 
  <!-- <methods>
  <exclude name="verifyUsersCanViewOrderDetailsInManageOrdersPageByClickingViewInListOrdersTable()"></exclude>
 <exclude name="verifydeliveryBoyIsAssignedForEverOrderCanBeUpdtedInListOrderTable()"></exclude>
@@ -30,10 +23,8 @@
 <exclude name=" addNewSliderInListSliderTable()"></exclude>
 </methods>-->
 <classes>
-    <class name="com.sevenRMartSuperMarketTestScripts.ManageOrdersTest"/>
- </classes>
+     <class name="com.sevenRMartSuperMarketTestScripts.MobileSliderTest"/>
 <!-- 
-     <class name="com.sevenRMartSuperMarketTestScripts.HomePageTest"/>
      <class name="com.sevenRMartSuperMarketTestScripts.AdminUsersTest"/>
       <class name="com.sevenRMartSuperMarketTestScripts.ManageOrdersTest"/>
       <class name="com.sevenRMartSuperMarketTestScripts.ManageSliderTest"/>
@@ -46,8 +37,8 @@
       <class name="com.sevenRMartSuperMarketTestScripts.PushNotificationsTest"/>
       <class name="com.sevenRMartSuperMarketTestScripts.ManageOfferCodeTest"/> 
       <class name="com.sevenRMartSuperMarketTestScripts.ManagePagesTest"/>
-      <class name="com.sevenRMartSuperMarketTestScripts.HomePageTest"/>-->
-      
+      <class name="com.sevenRMartSuperMarketTestScripts.HomePageTest"/> -->
+      </classes>
  
   </test>
 </suite> 

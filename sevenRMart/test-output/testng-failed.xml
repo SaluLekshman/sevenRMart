@@ -9,13 +9,13 @@
     <parameter name="usernameInput" value="admin"/>
     <parameter name="PasswordInput" value="admin"/>
     <classes>
-      <class name="com.sevenRMartSuperMarketTestScripts.ManageOrdersTest">
+      <class name="com.sevenRMartSuperMarketTestScripts.ManagePagesTest">
         <methods>
+          <include name="serachPageIsPresentInListPagesTable" invocation-numbers="0"/>
           <include name="browserQuit"/>
-          <include name="verifyUsersCanAbleToDeleteOrderDetailsFromListOrderTable" invocation-numbers="0"/>
           <include name="initialiseBrowser"/>
         </methods>
-      </class> <!-- com.sevenRMartSuperMarketTestScripts.ManageOrdersTest -->
+      </class> <!-- com.sevenRMartSuperMarketTestScripts.ManagePagesTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

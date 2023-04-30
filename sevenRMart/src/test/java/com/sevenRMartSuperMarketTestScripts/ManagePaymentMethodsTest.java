@@ -23,12 +23,12 @@ public class ManagePaymentMethodsTest extends Base {
 	Retry retry;
 	@Test(groups = {"regression" })
 	@Parameters({"usernameInput","PasswordInput"})
-	public void managePaymentMethodsType(String usernameInput,String PasswordInput) throws IOException 
+	public void managePaymentMethodsType(String usernameInput,String PasswordInput) 
 	{
 		
-	    String inputMainMenu=ExcelUtility.getString(0,4,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"hamBurgerMenuData");
-		String expectedPaymentMethodType=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"managePayementMethodData");
-		String expectedPayLimit=ExcelUtility.getNumeric(0,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"managePayementMethodData");
+	    String inputMainMenu=ExcelUtility.getString(0,4,constants.Constants.TESTDATAFILEPATH,"hamBurgerMenuData");
+		String expectedPaymentMethodType=ExcelUtility.getString(0,0,constants.Constants.TESTDATAFILEPATH,"managePayementMethodData");
+		String expectedPayLimit=ExcelUtility.getNumeric(0,1,constants.Constants.TESTDATAFILEPATH,"managePayementMethodData");
 	    loginpage=new LoginPage(driver);
 	    loginpage.enterUsername(usernameInput).enterPassword(PasswordInput).clicksignIn();
 	    managepaymentmethodpage=new ManagePayMentMethodsPage(driver);
@@ -42,13 +42,13 @@ public class ManagePaymentMethodsTest extends Base {
 		
 		
 	}
-	@Test(groups = {"regression" },retryAnalyzer = Retry.class)
+	@Test(groups = {"regression" })
 	@Parameters({"usernameInput","PasswordInput"})
-	public void managePaymentMethodsAction(String usernameInput,String PasswordInput) throws IOException 
+	public void managePaymentMethodsAction(String usernameInput,String PasswordInput) 
 	{
-	    String inputMainMenu=ExcelUtility.getString(0,4,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"hamBurgerMenuData");
-	    String titlteInput=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"managePayementMethodData");
-	    String PayLimitInput=ExcelUtility.getNumeric(0,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"managePayementMethodData");
+	    String inputMainMenu=ExcelUtility.getString(0,4,constants.Constants.TESTDATAFILEPATH,"hamBurgerMenuData");
+	    String titlteInput=ExcelUtility.getString(0,0,constants.Constants.TESTDATAFILEPATH,"managePayementMethodData");
+	    String PayLimitInput=ExcelUtility.getNumeric(0,1,constants.Constants.TESTDATAFILEPATH,"managePayementMethodData");
 	    loginpage=new LoginPage(driver);
 		loginpage.enterUsername(usernameInput).enterPassword(PasswordInput).clicksignIn();
 		managepaymentmethodpage=new ManagePayMentMethodsPage(driver);
@@ -65,13 +65,13 @@ public class ManagePaymentMethodsTest extends Base {
 		
 	}
 	
-	@Test(groups = {"regression" },retryAnalyzer = Retry.class)
+	@Test(groups = {"regression" })
 	@Parameters({"usernameInput","PasswordInput"})
-	public void navigateBackToManagePayment(String usernameInput,String PasswordInput) throws IOException 
+	public void navigateBackToManagePayment(String usernameInput,String PasswordInput) 
 	{
-	    String inputMainMenu=ExcelUtility.getString(0,4,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"hamBurgerMenuData");
-	    String titlteInput=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"managePayementMethodData");
-	    String PayLimitInput=ExcelUtility.getNumeric(0,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"managePayementMethodData");
+	    String inputMainMenu=ExcelUtility.getString(0,4,constants.Constants.TESTDATAFILEPATH,"hamBurgerMenuData");
+	    String titlteInput=ExcelUtility.getString(0,0,constants.Constants.TESTDATAFILEPATH,"managePayementMethodData");
+	    String PayLimitInput=ExcelUtility.getNumeric(0,1,constants.Constants.TESTDATAFILEPATH,"managePayementMethodData");
 	    loginpage=new LoginPage(driver);
 		loginpage.enterUsername(usernameInput).enterPassword(PasswordInput).clicksignIn();
 		managepaymentmethodpage=new ManagePayMentMethodsPage(driver);

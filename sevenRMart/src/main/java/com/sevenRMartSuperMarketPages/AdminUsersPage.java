@@ -100,8 +100,7 @@ public class AdminUsersPage {
 	 }
 	 public AdminUsersPage selectUserTypeinSearchAdminUsersInAdminUsersPage()
 	 {
-		PageUtility.selectDropdownbyIndex(selectUserTypeinSearchAdminUsersInAdminUsersPage, 2);
-		//selectUserTypeinSearchAdminUsersInAdminUsersPage.submit();
+		PageUtility.selectDropdownbyIndex(selectUserTypeinSearchAdminUsersInAdminUsersPage,2);
 		return this;
 	 }
 	 

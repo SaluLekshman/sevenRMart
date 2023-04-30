@@ -27,12 +27,12 @@ public class VerifyUsersTest extends Base {
 	Retry retry;
 	@Test
 	@Parameters({"usernameInput","PasswordInput"})
-	public void verifyUsers(String usernameInput,String PasswordInput) throws IOException
+	public void verifyUsers(String usernameInput,String PasswordInput)
 	{
-		String inputMainMenu=ExcelUtility.getString(0,2,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"hamBurgerMenuData");
-	    String enterNameValue=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"listUsersData");
-	    String expectedSearchResultNotFound=ExcelUtility.getString(1,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"listUsersData");
-	    String expectedSearchResult=ExcelUtility.getString(1,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"listUsersData");
+		String inputMainMenu=ExcelUtility.getString(0,2,constants.Constants.TESTDATAFILEPATH,"hamBurgerMenuData");
+	    String enterNameValue=ExcelUtility.getString(0,0,constants.Constants.TESTDATAFILEPATH,"listUsersData");
+	    String expectedSearchResultNotFound=ExcelUtility.getString(1,0,constants.Constants.TESTDATAFILEPATH,"listUsersData");
+	    String expectedSearchResult=ExcelUtility.getString(1,1,constants.Constants.TESTDATAFILEPATH,"listUsersData");
 		loginpage=new LoginPage(driver);
 		loginpage.enterUsername(usernameInput).enterPassword(PasswordInput).clicksignIn();
 		verifyuserpage=new VerifyUsersPage(driver);

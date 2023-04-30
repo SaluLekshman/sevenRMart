@@ -24,11 +24,11 @@ public class PushNotificationsTest extends Base {
 	
 	@Test
 	@Parameters({"usernameInput","PasswordInput"})
-	public void verifyAnAlertMessageIsSendByEnteringTitleAndDescriptionAndClickSend(String usernameInput,String PasswordInput) throws IOException 
+	public void verifyAnAlertMessageIsSendByEnteringTitleAndDescriptionAndClickSend(String usernameInput,String PasswordInput) 
 	{
-		String inputMainMenu=ExcelUtility.getString(0,3,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"hamBurgerMenuData");
-	    String titleInput=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"pushNotificationInformation");
-	    String descriptionInput=ExcelUtility.getString(0,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"pushNotificationInformation");
+		String inputMainMenu=ExcelUtility.getString(0,3,constants.Constants.TESTDATAFILEPATH,"hamBurgerMenuData");
+	    String titleInput=ExcelUtility.getString(0,0,constants.Constants.TESTDATAFILEPATH,"pushNotificationInformation");
+	    String descriptionInput=ExcelUtility.getString(0,1,constants.Constants.TESTDATAFILEPATH,"pushNotificationInformation");
 		loginpage=new LoginPage(driver);
 	    loginpage.enterUsername(usernameInput).enterPassword(PasswordInput).clicksignIn();
 		pushnotificationpage=new PushNotificationPage(driver);

@@ -21,10 +21,10 @@ public class AdminUsersTest extends Base {
 
 		@Test
 		@Parameters({ "usernameInput", "PasswordInput" })
-		public void VerifyNewAdminUserCanBeAddedInAdminUsersPage(String usernameInput,String PasswordInput) throws IOException 
+		public void VerifyNewAdminUserCanBeAddedInAdminUsersPage(String usernameInput,String PasswordInput) 
 		{
 			
-			String expectedsearchvalue=ExcelUtility.getString(1,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"loginPageData");
+			String expectedsearchvalue=ExcelUtility.getString(1,0,constants.Constants.TESTDATAFILEPATH,"loginPageData");
 			loginpage = new LoginPage(driver);
 			loginpage.enterUsername(usernameInput).enterPassword(PasswordInput).clicksignIn();
 			adminuserspage= new AdminUsersPage(driver);
@@ -34,10 +34,10 @@ public class AdminUsersTest extends Base {
 		}
 		@Test
 		@Parameters({ "usernameInput", "PasswordInput" })
-		public void searchAdminUsersInAdminUsersPage(String usernameInput,String PasswordInput) throws IOException 
+		public void searchAdminUsersInAdminUsersPage(String usernameInput,String PasswordInput)  
 		{
 			
-			String expectedsearchvalue=ExcelUtility.getString(1,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"loginPageData");
+			String expectedsearchvalue=ExcelUtility.getString(1,0,constants.Constants.TESTDATAFILEPATH,"loginPageData");
 			loginpage = new LoginPage(driver);
 			loginpage.enterUsername(usernameInput).enterPassword(PasswordInput).clicksignIn();
 			adminuserspage= new AdminUsersPage(driver);

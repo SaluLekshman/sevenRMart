@@ -19,9 +19,9 @@ public class ManagePagesTest extends Base {
 	Retry retry;
 	@Test(groups = {"regression" })
 	@Parameters({"usernameInput","PasswordInput"})
-	public void serachPageIsPresentInListPagesTable(String usernameInput,String PasswordInput) throws IOException
+	public void serachPageIsPresentInListPagesTable(String usernameInput,String PasswordInput)
 	{
-	String enterTitleInput=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"managePagesData");
+	String enterTitleInput=ExcelUtility.getString(0,0,constants.Constants.TESTDATAFILEPATH,"managePagesData");
 	loginpage=new LoginPage(driver);
     loginpage.enterUsername(usernameInput).enterPassword(PasswordInput).clicksignIn();
     managepages=new ManagePagesPage(driver);

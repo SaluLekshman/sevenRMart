@@ -1,6 +1,7 @@
 package com.sevenRMartSuperMarketTestScripts;
 
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
@@ -27,44 +28,32 @@ public class Base {
 	WaitUtility waitutility=new WaitUtility();
 	@BeforeMethod(alwaysRun = true)
 	@Parameters("browser")
-	public void initialiseBrowser(String browser) throws Exception
-	{
-	prop=new Properties();
-	try
-	{
-	fs = new FileInputStream(System.getProperty("user.dir") +constants.Constants.CONFIGfILE);
-
-	}
-	catch (Exception e)
+	public void initialiseBrowser(String browser) throws Exception 
 	{
 	
-	}
 	try
 	{
-	prop.load(fs);
+		prop=new Properties();
+		fs = new FileInputStream(constants.Constants.CONFIGfILEPATH);
+		prop.load(fs);
 	}
-	catch (Exception e)
+	catch (FileNotFoundException e)
 	{
-	
+		e.printStackTrace();
 	}
-	prop1=new Properties();
 
 	try
 	{
-	fs = new FileInputStream(System.getProperty("user.dir") +constants.Constants.TESTDATAFILE);
-
-
-	} catch (Exception e) {
+		prop1=new Properties();
+		fs = new FileInputStream(constants.Constants.TESTDATAFILEPATH);
+		prop1.load(fs);
 	
-	}
-	try {
-
-	prop1.load(fs);
 	} 
-	catch (Exception e) 
+	catch (IOException e) 
 	{
-	
+		e.printStackTrace();
 	}
+	
 	if(browser.equalsIgnoreCase("firefox")){
 
 		driver = WebDriverManager.firefoxdriver().create();
@@ -83,7 +72,6 @@ public class Base {
 		EdgeOptions edgeOptions = new EdgeOptions();
 		WebDriverManager.edgedriver().create();
 		driver = new EdgeDriver(edgeOptions);
-
 	}
 	else
 	{
@@ -95,8 +83,10 @@ public class Base {
 	waitutility.pageLoadTimeout(driver);
 	}
 	@AfterMethod(alwaysRun = true)
-	public void browserQuit(ITestResult iTestResult) throws IOException {
-	if (iTestResult.getStatus() == ITestResult.FAILURE) {
+	public void browserQuit(ITestResult iTestResult) throws IOException 
+	{
+	if (iTestResult.getStatus() == ITestResult.FAILURE) 
+	{
 	scrshot = new ScreenShotUtility();
 	scrshot.getScreenShot(driver, iTestResult.getName());
 	}

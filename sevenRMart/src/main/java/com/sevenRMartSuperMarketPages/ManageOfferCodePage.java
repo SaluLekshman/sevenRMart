@@ -1,5 +1,6 @@
 package com.sevenRMartSuperMarketPages;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -10,6 +11,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import Utilities.PageUtility;
+import Utilities.RandomdataUtility;
 import Utilities.WaitUtility;
 
 public class ManageOfferCodePage {
@@ -45,7 +47,8 @@ public class ManageOfferCodePage {
 	 }
 	 public ManageOfferCodePage enterTheOfferCode(String offerCodeInput)
 	 {
-		enterTheOfferCode.sendKeys(offerCodeInput);
+		 PageUtility.enterText(enterTheOfferCode, RandomdataUtility.fakerNumber(enterTheOfferCode));
+     
 		return this;
 	 }
 	 public ManageOfferCodePage clickOnFirstOrderUserYesButton() 
@@ -69,7 +72,7 @@ public class ManageOfferCodePage {
 		return this;
 	 }
 
-	 public ManageOfferCodePage imageChoseFile() 
+	 public ManageOfferCodePage imageChoseFile() throws IOException
 	 {
 		 imageChoseFile.sendKeys("C:\\Users\\SHALU\\OneDrive\\Desktop\\grocery.jpeg");
 		 

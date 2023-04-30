@@ -21,71 +21,71 @@ public class ManageProductsPage {
 		 PageFactory.initElements(driver, this);
 		 
 	}
-	 @FindBy(xpath="//h1[text()='List Products']") WebElement listProductElement;
-	 @FindBy(xpath="//a[@class='active nav-link']") WebElement manageaproductElement;
-	 @FindBy(xpath="//a[@class='btn btn-rounded btn-danger']") WebElement newElement;
-	 @FindBy(xpath="//input[@id='title']") WebElement EnterTitleElement;
-	 @FindBy(xpath="//input[@value='Veg']") WebElement vegProductTypeRadioButtonElement;
-	 @FindBy(xpath="//input[@value='Nonveg']") WebElement nonVegProductTypeRadioButtonElement;
-	 @FindBy(xpath="//input[@value='Others']") WebElement otherProductTypeRadioButtonElement;
-	 @FindBy(xpath="//select[@id='cat_id']") WebElement categoryElement;
-	 @FindBy(xpath="//select[@id='sub_id']") WebElement subCategoryElement;
-	 @FindBy(xpath="//input[@value='weight']") WebElement pricetypeWeightRadioButtonElement;
-	 @FindBy(xpath="//input[@value='piece']") WebElement pricetypePieceRadioButtonElement;
-	 @FindBy(xpath="//input[@value='litre']") WebElement pricetypeLitreRadioButtonElement;
-	 @FindBy(xpath="//input[@value='serves']") WebElement pricetypeServesRadioButtonElement;
+	 @FindBy(xpath="//h1[text()='List Products']") WebElement listProduct;
+	 @FindBy(xpath="//a[@class='active nav-link']") WebElement ClickOnManageaproductPage;
+	 @FindBy(xpath="//a[@class='btn btn-rounded btn-danger']") WebElement ClickOnNewButton;
+	 @FindBy(xpath="//input[@id='title']") WebElement EnterTitle;
+	 @FindBy(xpath="//input[@value='Veg']") WebElement vegProductTypeRadioButton;
+	 @FindBy(xpath="//input[@value='Nonveg']") WebElement nonVegProductTypeRadioButton;
+	 @FindBy(xpath="//input[@value='Others']") WebElement otherProductTypeRadioButton;
+	 @FindBy(xpath="//select[@id='cat_id']") WebElement enterValueOnCategory;
+	 @FindBy(xpath="//select[@id='sub_id']") WebElement enterVaueOnSubCategory;
+	 @FindBy(xpath="//input[@value='weight']") WebElement pricetypeWeightRadioButton;
+	 @FindBy(xpath="//input[@value='piece']") WebElement pricetypePieceRadioButton;
+	 @FindBy(xpath="//input[@value='litre']") WebElement pricetypeLitreRadioButton;
+	 @FindBy(xpath="//input[@value='serves']") WebElement pricetypeServesRadioButton;
  
-	 public void clickOnmanageaproductElement()
+	 public void clickOnmanageaproduct()
 	 {
-		 WaitUtility.waitForElementClickable(driver,manageaproductElement );
-		 PageUtility.clickOnElement(manageaproductElement);
+		 WaitUtility.waitForElementClickable(driver,ClickOnManageaproductPage );
+		 PageUtility.clickOnElement(ClickOnManageaproductPage);
 	 }
-	 public boolean isdisplayedlistProductElement()
+	 public boolean isdisplayedlistProduct()
 	 {
-		 WaitUtility.waitForElement(driver, listProductElement);
-		 return PageUtility.isElementDisplayed(listProductElement);
+		 WaitUtility.waitForElement(driver,listProduct);
+		 return PageUtility.isElementDisplayed(listProduct);
 	 }
-	 public void clickOnnewElement()
+	 public void clickOnnew()
 	 {
-		 WaitUtility.waitForElementClickable(driver, newElement);
-		 PageUtility.clickOnElement(newElement);
+		 WaitUtility.waitForElementClickable(driver, ClickOnNewButton);
+		 PageUtility.clickOnElement(ClickOnNewButton);
 	 }
-	 public void EnterTitleElement( String inputTitleText) throws IOException 
+	 public void EnterTitle( String inputTitleText) 
 	 {  
-		 WaitUtility.waitForElement(driver, EnterTitleElement);
-		 PageUtility.enterText(EnterTitleElement,inputTitleText);
+		 WaitUtility.waitForElement(driver, EnterTitle);
+		 PageUtility.enterText(EnterTitle,inputTitleText);
 	 }
-	 public boolean nonVegProductTypeElementIsEnabled() 
+	 public boolean nonVegProductTypeIsEnabled() 
 	 {
-		 WaitUtility.waitForElement(driver, nonVegProductTypeRadioButtonElement);
-		 return PageUtility.elementIsEnabled(nonVegProductTypeRadioButtonElement);
+		 WaitUtility.waitForElement(driver, nonVegProductTypeRadioButton);
+		 return PageUtility.elementIsEnabled(nonVegProductTypeRadioButton);
 	 }
-	 public boolean clickNonVegProductTypeElement() 
+	 public boolean clickNonVegProductType() 
 	 {
-		 WaitUtility.waitForElementClickable(driver,nonVegProductTypeRadioButtonElement );
-		 return PageUtility.clickOnElement(nonVegProductTypeRadioButtonElement);
+		 WaitUtility.waitForElementClickable(driver,nonVegProductTypeRadioButton );
+		 return PageUtility.clickOnElement(nonVegProductTypeRadioButton);
 	 }
 	 public void categoryElementFaker( ) 
 	 {  
-		 WaitUtility.waitForElement(driver, categoryElement); 
-		 RandomdataUtility.fakerFoodName(categoryElement);
+		 WaitUtility.waitForElement(driver, enterValueOnCategory); 
+		 RandomdataUtility.fakerFoodName(enterValueOnCategory);
 		
 	 }
 	 
-	 public void subCategoryElementFaker( ) 
+	 public boolean subCategoryFaker( ) 
 	 {  
-		 WaitUtility.waitForElement(driver, subCategoryElement); 
-		 RandomdataUtility.fakerFoodName(subCategoryElement);
+		 WaitUtility.waitForElement(driver, enterVaueOnSubCategory); 
+		 return  RandomdataUtility.fakerFoodName(enterVaueOnSubCategory);
 		
 	 }
 	 
-	 public void clickOnpricetypeLitreRadioButtonElement()
+	 public void clickOnpricetypeLitreRadioButton()
 	 {
-		 pricetypeLitreRadioButtonElement.click();
+		 pricetypeLitreRadioButton.click();
 	 }
-	 public boolean isEnabledpricetypeLitreRadioButtonElement()
+	 public boolean isEnabledpricetypeLitreRadioButton()
 	 {
-		 return PageUtility.elementIsEnabled(pricetypeLitreRadioButtonElement);
+		 return PageUtility.elementIsEnabled(pricetypeLitreRadioButton);
 	 }
 	 
 }

@@ -19,11 +19,12 @@ public class RandomdataUtility
        String lastName= faker.name().lastName().toString();
        System.out.println("The first name is "+lastName);
 	}
-	public static void fakerFoodName(WebElement element)
+	public static boolean fakerFoodName(WebElement element)
 	{
 	   Faker faker=new Faker();
        String foodName= faker.food().dish();
        System.out.println("The name of food  is "+foodName);
+	   return true;
 	}
 	public static void fakerCityName(WebElement element)
 	{
@@ -62,6 +63,12 @@ public class RandomdataUtility
 		 System.out.println("The city name is "+ emailAdrress);
 	}
 	
-	
+	public static String fakerNumber(WebElement element)
+	{
+		 Faker faker=new Faker();
+		 String number=faker.number().digits(4);
+		 System.out.println("The city name is "+ number);
+		return number;
+	}
 	
 }

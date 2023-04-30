@@ -9,6 +9,13 @@
     <parameter name="usernameInput" value="admin"/>
     <parameter name="PasswordInput" value="admin"/>
     <classes>
+      <class name="com.sevenRMartSuperMarketTestScripts.MobileSliderTest">
+        <methods>
+          <include name="verifyMobileSliderCanBeDeletedFromListMobileSlidersTableByClickingDeleteButtonInListMobileSliderTable" invocation-numbers="0"/>
+          <include name="browserQuit"/>
+          <include name="initialiseBrowser"/>
+        </methods>
+      </class> <!-- com.sevenRMartSuperMarketTestScripts.MobileSliderTest -->
       <class name="com.sevenRMartSuperMarketTestScripts.ManageOrdersTest">
         <methods>
           <include name="browserQuit"/>
@@ -16,20 +23,6 @@
           <include name="initialiseBrowser"/>
         </methods>
       </class> <!-- com.sevenRMartSuperMarketTestScripts.ManageOrdersTest -->
-      <class name="com.sevenRMartSuperMarketTestScripts.HomePageTest">
-        <methods>
-          <include name="getStylePropertyAlignmentOfMoreInfoInHomePage" invocation-numbers="0"/>
-          <include name="browserQuit"/>
-          <include name="initialiseBrowser"/>
-        </methods>
-      </class> <!-- com.sevenRMartSuperMarketTestScripts.HomePageTest -->
-      <class name="com.sevenRMartSuperMarketTestScripts.ManageOfferCodeTest">
-        <methods>
-          <include name="verifyNewOfferCodeCanBeAddedByEnteringOfferInformation" invocation-numbers="0"/>
-          <include name="browserQuit"/>
-          <include name="initialiseBrowser"/>
-        </methods>
-      </class> <!-- com.sevenRMartSuperMarketTestScripts.ManageOfferCodeTest -->
       <class name="com.sevenRMartSuperMarketTestScripts.ManagePagesTest">
         <methods>
           <include name="serachPageIsPresentInListPagesTable" invocation-numbers="0"/>

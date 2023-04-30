@@ -21,7 +21,7 @@ public class ManageSliderTest extends Base {
 	@Parameters({"usernameInput","PasswordInput"})
 	public void addNewSliderInListSliderTable(String usernameInput,String PasswordInput ) throws IOException
 	{
-		String linkInput=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"manageSliderPageData");
+		String linkInput=ExcelUtility.getString(0,0,constants.Constants.TESTDATAFILEPATH,"manageSliderPageData");
 		loginpage=new LoginPage(driver);
 		loginpage.enterUsername(usernameInput).enterPassword(PasswordInput).clickRememberMe().clicksignIn();
 		manageSliderPage=new ManageSliderPage (driver);
@@ -40,7 +40,7 @@ public class ManageSliderTest extends Base {
 	@Parameters({"usernameInput","PasswordInput"})
 	public void addNewSlideraddedIsDispalyedInListSliderTable(String usernameInput,String PasswordInput ) throws IOException
 	{
-		String expectedSearchValue=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"manageSliderPageData");
+		String expectedSearchValue=ExcelUtility.getString(0,0,constants.Constants.TESTDATAFILEPATH,"manageSliderPageData");
 		loginpage=new LoginPage(driver);
 		loginpage.enterUsername(usernameInput).enterPassword(PasswordInput).clickRememberMe().clicksignIn();
 		manageSliderPage=new ManageSliderPage (driver);

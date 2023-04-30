@@ -33,7 +33,7 @@ public class ManageOrdersPage {
      @FindBy(xpath="//tr//th//following::td//option[@value='9']")  List<WebElement> listOrderTableCellValue;
      @FindBy(xpath="//a[text()='View']")  WebElement clickOnViewButtonInManageOrdersPageListOrdersTable;
      @FindBy(xpath="//div//h1[text()='Order Details']") WebElement orderDetailsPage;
-     @FindBy(xpath="//a[@onclick='return confirm('Do you want to delete this Order?')']") WebElement ClickOndeleteButtonOrderDetailsInListOrderTable;
+     @FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/Order/delete?del=693&page_ad=1'][1]") WebElement ClickOndeleteButtonOrderDetailsInListOrderTable;
      @FindBy(xpath="//div[contains(@class,'alert-success ')]") WebElement alertOrderDeletedSuccessfully;
      
 	
@@ -101,12 +101,10 @@ public class ManageOrdersPage {
 		 return PageUtility.isElementDisplayed(orderDetailsPage);
 		 
 	 }
-	 public ManageOrdersPage ClickOndeleteButtonOrderDetailsInListOrderTable()
+	 public String  ClickOndeleteButtonOrderDetailsInListOrderTable()
 	 {
 		 ClickOndeleteButtonOrderDetailsInListOrderTable.click();
-		 driver.switchTo().alert().accept();
-		 return this;
-
+		 return driver.switchTo().alert().getText().toString();
 	 }
 	 public boolean isAbleToDeleteOrderDetailsFromListOrderTable()
 	 {

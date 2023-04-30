@@ -21,6 +21,13 @@ public class LoginPage {
 	 @FindBy(xpath="//button[text()='Sign In']") WebElement clickSignIn;
 	 @FindBy(xpath="//label[@for='remember']") WebElement clickRememberMe;
 	 @FindBy (xpath="//div[@class='alert alert-danger alert-dismissible']") WebElement alertMessage;
+	 @FindBy(xpath="//span[text()='7rmart supermarket']") WebElement siteNameElement;
+	 public boolean siteNameIsDisplayed()
+	 {
+		 WaitUtility.waitForElement(driver, siteNameElement);
+		 return PageUtility.isElementDisplayed(siteNameElement);
+	 }
+
 	 
 	 public  LoginPage enterUsername(String usernameInput)
 	 {

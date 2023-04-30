@@ -13,7 +13,8 @@ import com.sevenRMartSuperMarketPages.LoginPage;
 import Utilities.ExcelUtility;
 import retry.Retry;
 
-public class ManageProductsTest extends Base{
+public class ManageProductsTest extends Base
+{
 	
 		HamburgerMenuPage hamburgermenupage;
 		ManageProductsPage manageproductpage;
@@ -21,46 +22,45 @@ public class ManageProductsTest extends Base{
 		Retry retry;
 		@Test(groups = {"regression" })
 		@Parameters({"usernameInput","PasswordInput"})
-		public void manageProductsAddProductTypeRadioButton(String usernameInput,String PasswordInput) throws IOException 
+		public void VerifyManageProducts_AddProductTypeRadioButtons(String usernameInput,String PasswordInput) 
 		{
 			
-		    String inputMainMenu=ExcelUtility.getString(0,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"hamBurgerMenuData");
-		    String inputTitleText=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"manageProductData");
-		    String inputCategory=ExcelUtility.getString(0,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"manageProductData");
+		    String inputMainMenu=ExcelUtility.getString(0,1,constants.Constants.TESTDATAFILEPATH,"hamBurgerMenuData");
+		    String inputTitleText=ExcelUtility.getString(0,0,constants.Constants.TESTDATAFILEPATH,"manageProductData");
 			manageproductpage=new ManageProductsPage(driver);
 			loginpage=new LoginPage(driver);
 			loginpage.enterUsername(usernameInput).enterPassword(PasswordInput).clicksignIn();
-			manageproductpage.clickOnmanageaproductElement();
+			manageproductpage.clickOnmanageaproduct();
 			hamburgermenupage=new HamburgerMenuPage(driver);
 			hamburgermenupage.selectMenu(inputMainMenu);
-			manageproductpage.clickOnnewElement();
-			manageproductpage.EnterTitleElement(inputTitleText);
-			boolean nonVegProductTypeElemenIsEnabled=manageproductpage.nonVegProductTypeElementIsEnabled();
-			manageproductpage.clickNonVegProductTypeElement();
-			boolean isEnabledpricetypeLitreRadioButton=manageproductpage.isEnabledpricetypeLitreRadioButtonElement();
-			manageproductpage.clickOnpricetypeLitreRadioButtonElement();
+			manageproductpage.clickOnnew();
+			manageproductpage.EnterTitle(inputTitleText);
+			boolean nonVegProductTypeElemenIsEnabled=manageproductpage.nonVegProductTypeIsEnabled();
+			manageproductpage.clickNonVegProductType();
+			boolean isEnabledpricetypeLitreRadioButton=manageproductpage.isEnabledpricetypeLitreRadioButton();
+			manageproductpage.clickOnpricetypeLitreRadioButton();
 			assertTrue(nonVegProductTypeElemenIsEnabled,"The Non veg radio button  is  not enabled");
 			assertTrue(isEnabledpricetypeLitreRadioButton,"The price type liter is not enabled");
 			
 		}
-		@Test(groups = {"regression" },retryAnalyzer = Retry.class)
+		@Test(groups = {"regression" })
 		@Parameters({"usernameInput","PasswordInput"})
-		public void manageProductsfaker(String usernameInput,String PasswordInput) throws IOException 
+		public void manageProductsfaker(String usernameInput,String PasswordInput)
 		{
 			
-		    String inputMainMenu=ExcelUtility.getString(0,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"hamBurgerMenuData");
-		    String inputTitleText=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"manageProductData");
-		    String inputCategory=ExcelUtility.getString(0,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"manageProductData");
+		    String inputMainMenu=ExcelUtility.getString(0,1,constants.Constants.TESTDATAFILEPATH,"hamBurgerMenuData");
+		    String inputTitleText=ExcelUtility.getString(0,0,constants.Constants.TESTDATAFILEPATH,"manageProductData");
 			manageproductpage=new ManageProductsPage(driver);
 			loginpage=new LoginPage(driver);
 			loginpage.enterUsername(usernameInput).enterPassword(PasswordInput).clicksignIn();
-			manageproductpage.clickOnmanageaproductElement();
+			manageproductpage.clickOnmanageaproduct();
 			hamburgermenupage=new HamburgerMenuPage(driver);
 			hamburgermenupage.selectMenu(inputMainMenu);
-			manageproductpage.clickOnnewElement();
-			manageproductpage.EnterTitleElement(inputTitleText);
+			manageproductpage.clickOnnew();
+			manageproductpage.EnterTitle(inputTitleText);
 			manageproductpage.categoryElementFaker();
-			manageproductpage.subCategoryElementFaker();
+			boolean IsdisplayedFakerValueOfSubCategory=manageproductpage.subCategoryFaker();
+			assertTrue(IsdisplayedFakerValueOfSubCategory,"The faker value of sub Category is not displayed");
 		
 		}
 }

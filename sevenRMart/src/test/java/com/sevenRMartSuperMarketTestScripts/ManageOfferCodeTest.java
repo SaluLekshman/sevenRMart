@@ -25,10 +25,10 @@ public class ManageOfferCodeTest extends Base {
 	public void verifyNewOfferCodeCanBeAddedByEnteringOfferInformation(String usernameInput,String PasswordInput) throws IOException 
 	{
 	 
-	    String enterOfferCodeInput=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"manageOfferCodePageData");
-	    String enterPercentageInput=ExcelUtility.getNumeric(0,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"manageOfferCodePageData");
-	    String enterAmountInput=ExcelUtility.getNumeric(0,2,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"manageOfferCodePageData");
-	    String enterDescriptionInput=ExcelUtility.getString(0,3,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"manageOfferCodePageData");
+	    String enterOfferCodeInput=null;
+	    String enterPercentageInput=ExcelUtility.getNumeric(0,1,constants.Constants.TESTDATAFILEPATH,"manageOfferCodePageData");
+	    String enterAmountInput=ExcelUtility.getNumeric(0,2,constants.Constants.TESTDATAFILEPATH,"manageOfferCodePageData");
+	    String enterDescriptionInput=ExcelUtility.getString(0,3,constants.Constants.TESTDATAFILEPATH,"manageOfferCodePageData");
 	    loginpage=new LoginPage(driver);
 		loginpage.enterUsername(usernameInput).enterPassword(PasswordInput).clickRememberMe().clicksignIn();
 		manageoffercodepage=new ManageOfferCodePage(driver);
@@ -46,13 +46,13 @@ public class ManageOfferCodeTest extends Base {
 	}
 	@Test(groups = {"regression" })
 	@Parameters({"usernameInput","PasswordInput"})
-	public void verifyNewOfferCodeAddedIsDisplayedInListOfferCodeTable(String usernameInput,String PasswordInput) throws IOException 
+	public void verifyNewOfferCodeAddedIsDisplayedInListOfferCodeTable(String usernameInput,String PasswordInput) 
 	{
 	 
-	    String enterOfferCodeInput=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"manageOfferCodePageData");
-	    String enterPercentageInput=ExcelUtility.getNumeric(0,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"manageOfferCodePageData");
-	    String enterAmountInput=ExcelUtility.getNumeric(0,2,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"manageOfferCodePageData");
-	    String enterDescriptionInput=ExcelUtility.getString(0,3,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"manageOfferCodePageData");
+	    String enterOfferCodeInput=ExcelUtility.getString(0,0,constants.Constants.TESTDATAFILEPATH,"manageOfferCodePageData");
+	    String enterPercentageInput=ExcelUtility.getNumeric(0,1,constants.Constants.TESTDATAFILEPATH,"manageOfferCodePageData");
+	    String enterAmountInput=ExcelUtility.getNumeric(0,2,constants.Constants.TESTDATAFILEPATH,"manageOfferCodePageData");
+	    String enterDescriptionInput=ExcelUtility.getString(0,3,constants.Constants.TESTDATAFILEPATH,"manageOfferCodePageData");
 	    loginpage=new LoginPage(driver);
 		loginpage.enterUsername(usernameInput).enterPassword(PasswordInput).clickRememberMe().clicksignIn();
 		manageoffercodepage=new ManageOfferCodePage(driver);

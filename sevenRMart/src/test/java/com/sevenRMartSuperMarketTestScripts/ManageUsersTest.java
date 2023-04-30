@@ -22,12 +22,12 @@ public class ManageUsersTest extends Base
     ManageUsersPage manageuserspage;
 	LoginPage loginpage;
 	@Test
-	public void manageUsersSearchButtonBackGround() throws IOException
+	public void VerifyManageUsersSearchButtonBackGroundColor()
 	{
-		  String usernameInput=ExcelUtility.getString(1,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"loginPageData");
-		  String PasswordInput=ExcelUtility.getString(1,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"loginPageData");
-		  String inputMainMenu=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"hamBurgerMenuData");
-		  String expectedBackGroundColor=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"manageUsersData");
+		  String usernameInput=ExcelUtility.getString(1,0,constants.Constants.TESTDATAFILEPATH,"loginPageData");
+		  String PasswordInput=ExcelUtility.getString(1,1,constants.Constants.TESTDATAFILEPATH,"loginPageData");
+		  String inputMainMenu=ExcelUtility.getString(0,0,constants.Constants.TESTDATAFILEPATH,"hamBurgerMenuData");
+		  String expectedBackGroundColor=ExcelUtility.getString(0,0,constants.Constants.TESTDATAFILEPATH,"manageUsersData");
 		  loginpage=new LoginPage(driver);
 		  loginpage.enterUsername(usernameInput).enterPassword(PasswordInput).clicksignIn();
 		  hamburgermenupage=new HamburgerMenuPage(driver);
@@ -39,12 +39,12 @@ public class ManageUsersTest extends Base
 		
 	}
 	@Test
-	public void manageUsersResetButtonBorderColor() throws IOException
+	public void verifyManageUsersResetButtonBorderColor() 
 	{
-		  String usernameInput=ExcelUtility.getString(1,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"loginPageData");
-		  String PasswordInput=ExcelUtility.getString(1,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"loginPageData");
-		  String inputMainMenu=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"hamBurgerMenuData");
-		  String expectedBorderColor =ExcelUtility.getString(1,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"manageUsersData");
+		  String usernameInput=ExcelUtility.getString(1,0,constants.Constants.TESTDATAFILEPATH,"loginPageData");
+		  String PasswordInput=ExcelUtility.getString(1,1,constants.Constants.TESTDATAFILEPATH,"loginPageData");
+		  String inputMainMenu=ExcelUtility.getString(0,0,constants.Constants.TESTDATAFILEPATH,"hamBurgerMenuData");
+		  String expectedBorderColor =ExcelUtility.getString(1,0,constants.Constants.TESTDATAFILEPATH,"manageUsersData");
 		  loginpage=new LoginPage(driver);
 		  loginpage.enterUsername(usernameInput).enterPassword(PasswordInput).clicksignIn();
 		  hamburgermenupage=new HamburgerMenuPage(driver);
@@ -56,21 +56,21 @@ public class ManageUsersTest extends Base
 	}
 	
 	@Test
-	public void searchUsersInManageUsers() throws IOException
+	public void VerifyUserIsAvailable_InListUsersTable_InManageUsersPage_ByClickingOnSearchButton() 
 	{
-		  String usernameInput=ExcelUtility.getString(1,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"loginPageData");
-		  String PasswordInput=ExcelUtility.getString(1,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"loginPageData");
-		  String inputMainMenu=ExcelUtility.getString(0,0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"hamBurgerMenuData");
-		  String expectedSearchValue=ExcelUtility.getString(0,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"manageUsersData");
-		  String enterTextOnNameValue=ExcelUtility.getString(0,1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"manageUsersData");
+		  String usernameInput=ExcelUtility.getString(1,0,constants.Constants.TESTDATAFILEPATH,"loginPageData");
+		  String PasswordInput=ExcelUtility.getString(1,1,constants.Constants.TESTDATAFILEPATH,"loginPageData");
+		  String inputMainMenu=ExcelUtility.getString(0,0,constants.Constants.TESTDATAFILEPATH,"hamBurgerMenuData");
+		  String expectedSearchUserValue=ExcelUtility.getString(0,1,constants.Constants.TESTDATAFILEPATH,"manageUsersData");
+		  String enterTextOnNameValue=ExcelUtility.getString(0,1,constants.Constants.TESTDATAFILEPATH,"manageUsersData");
 		  loginpage=new LoginPage(driver);
 		  loginpage.enterUsername(usernameInput).enterPassword(PasswordInput).clicksignIn();
 		  hamburgermenupage=new HamburgerMenuPage(driver);
 		  hamburgermenupage.selectMenu(inputMainMenu);
 		  manageuserspage=new ManageUsersPage(driver);
 		  manageuserspage.clickOnlistUsersSearchButtonElement().enterTextOnNameElement(enterTextOnNameValue).ClickOnsearchUsersButtonElement();
-		  String actualResult=manageuserspage.searchResultListUser(expectedSearchValue);
-		  assertEquals(actualResult,expectedSearchValue,"The search result is not coorect");
+		  String actualSearchUserResult=manageuserspage.searchResultListUser(expectedSearchUserValue);
+		  assertEquals(actualSearchUserResult,expectedSearchUserValue,"The search result is not coorect");
 		  
 	
 		   

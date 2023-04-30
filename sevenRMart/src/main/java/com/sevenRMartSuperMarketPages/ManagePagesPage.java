@@ -21,14 +21,13 @@ public class ManagePagesPage {
 		 PageFactory.initElements(driver, this);
 		 
 	}
-	 @FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/list-page']") WebElement clickOnMoreInfo;
+	 @FindBy(xpath="//ul[@class='nav nav-pills nav-sidebar flex-column']//ancestor::a[@href='https://groceryapp.uniqassosiates.com/admin/list-page']") WebElement clickOnMoreInfo;
 	 @FindBy(xpath="//a[@onclick='click_button(2)']") WebElement searchButtonOnManagePages;
 	 @FindBy(xpath="//input[@class='form-control']") WebElement enterTitleInSearchListPages;
 	 @FindBy(xpath="//a[@onclick='click_button(2)']") WebElement searchButtonOnSearchListPagesInManagePages;
 	 public void clickOnMoreInfo()
 	 {
-		 clickOnMoreInfo.click();
-
+		 driver.navigate().to("https://groceryapp.uniqassosiates.com/admin/list-page");
 	 }
 	 public void searchButtonOnManagePages()
 	 {
