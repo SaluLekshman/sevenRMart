@@ -10,6 +10,7 @@ import Utilities.WaitUtility;
 
 public class LoginPage {
 	public WebDriver driver ;
+	PageUtility pageutility=new PageUtility() ;
 	 public LoginPage(WebDriver driver)
 	 {
 		 this.driver=driver;
@@ -21,49 +22,49 @@ public class LoginPage {
 	 @FindBy(xpath="//button[text()='Sign In']") WebElement clickSignIn;
 	 @FindBy(xpath="//label[@for='remember']") WebElement clickRememberMe;
 	 @FindBy (xpath="//div[@class='alert alert-danger alert-dismissible']") WebElement alertMessage;
-	 @FindBy(xpath="//span[text()='7rmart supermarket']") WebElement siteNameElement;
-	 public boolean siteNameIsDisplayed()
+	 @FindBy(xpath="//span[text()='7rmart supermarket']") WebElement siteName;
+	 
+	 public boolean verifySiteNameIsDisplayed()
 	 {
-		 WaitUtility.waitForElement(driver, siteNameElement);
-		 return PageUtility.isElementDisplayed(siteNameElement);
+		 WaitUtility.waitForElement(driver, siteName);
+		 return pageutility.isElementDisplayed(siteName);
 	 }
 
-	 
 	 public  LoginPage enterUsername(String usernameInput)
 	 {
 		 WaitUtility.waitForElement(driver,enterUsername);
-		 PageUtility.enterText(enterUsername, usernameInput);
+		 pageutility.enterText(enterUsername, usernameInput);
 		 return this;
 	 }
 	 public  LoginPage enterPassword(String PasswordInput)
 	 {
 		 WaitUtility.waitForElement(driver, enterPassword); 
-		 PageUtility.enterText(enterPassword,PasswordInput) ;
+		 pageutility.enterText(enterPassword,PasswordInput) ;
 		 return this;
 		 
 	 }
-	 public boolean signInButtonIsEnabled()
+	 public boolean verifySignInButtonIsEnabled()
 	 {
 		 WaitUtility.fluentwaitForElementSelected(driver, clickSignIn);
-		 return PageUtility.elementIsEnabled(clickSignIn);
+		 return pageutility.elementIsEnabled(clickSignIn);
 	 }
-	 public   LoginPage clicksignIn()
+	 public   LoginPage clickOnsignInButton()
 	 {
 		 WaitUtility.waitForElementClickable(driver, clickSignIn);
-		 PageUtility.clickOnElement(clickSignIn);
+		 pageutility.clickOnElement(clickSignIn);
 		return this;
 		 
 	 }
-	 public LoginPage clickRememberMe()
+	 public LoginPage clickOnRememberMeButton()
 	 {
 		 WaitUtility.waitForElement(driver,clickRememberMe);
-		 PageUtility.clickOnElement(clickRememberMe);
+		 pageutility.clickOnElement(clickRememberMe);
 		 return this;
 	 }
-	 public boolean alertMessage()
+	 public boolean verifyAlertMessageIsDisplayed()
 	 {
 		 WaitUtility.waitForElement(driver, alertMessage);
-		 return PageUtility.isElementDisplayed(alertMessage);
+		 return pageutility.isElementDisplayed(alertMessage);
 	 }
 	
 }

@@ -8,8 +8,10 @@ import org.openqa.selenium.support.PageFactory;
 import Utilities.PageUtility;
 import Utilities.WaitUtility;
 
-public class SiteNamePage {
+public class SiteNamePage
+{
 	public WebDriver driver ;
+	PageUtility pageUtility=new PageUtility();
 	 public  SiteNamePage (WebDriver driver)
 	 {
 		 this.driver=driver;
@@ -17,20 +19,20 @@ public class SiteNamePage {
 		 
 	}
 	
-	@FindBy(xpath="//span[text()='7rmart supermarket']") WebElement siteNameElement;
-	 public boolean siteNameIsDisplayed()
+	@FindBy(xpath="//span[text()='7rmart supermarket']") WebElement textOfsiteName;
+	 public boolean verifySiteNameIsDisplayed()
 	 {
-		 WaitUtility.waitForElement(driver, siteNameElement);
-		 return PageUtility.isElementDisplayed(siteNameElement);
+		 WaitUtility.waitForElement(driver,textOfsiteName);
+		 return pageUtility.isElementDisplayed(textOfsiteName);
 	 }
-	 public String siteNameGetText()
+	 public String getTextOfsiteName()
 	 {
-		 WaitUtility.waitForElement(driver, siteNameElement);
-		 return PageUtility.getElementText(siteNameElement);
+		 WaitUtility.waitForElement(driver,textOfsiteName);
+		 return pageUtility.getElementText(textOfsiteName);
 	 }
 	 public String getColorOfSiteName()
 	 {
-		return PageUtility.stylePropertyValidation(siteNameElement, "color");
+		return pageUtility.stylePropertyValidation(textOfsiteName,"color");
 		 
 	 }
 }

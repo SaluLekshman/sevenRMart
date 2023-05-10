@@ -15,6 +15,7 @@ import Utilities.WaitUtility;
 
 public class ManageOrdersPage {
 	public WebDriver driver;
+	PageUtility pageutility=new PageUtility();
 	
 	 public ManageOrdersPage(WebDriver driver)
 	 {
@@ -22,7 +23,7 @@ public class ManageOrdersPage {
 		 PageFactory.initElements(driver, this);
 		 
 	}
-	 @FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/list-order']") WebElement clickOnMoreInfo;
+	 @FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/list-order']") WebElement clickOnManageOrdersMoreInfo;
 	 @FindBy(xpath="//a[text()='Change Status']") WebElement clickOnChangeStatus;
      @FindBy(xpath="//select[@id='status']")  WebElement clickOnUpdateStatus;
      @FindBy(xpath="//button[@name='Update_st']")  WebElement clickOnChangeDeliveryStausUpdateButton;
@@ -31,7 +32,7 @@ public class ManageOrdersPage {
      @FindBy(xpath="//button[@type='submit']")  WebElement clickOnAssignDeliverBoyUpdateButton;
      @FindBy(xpath="//button[@class='close']")  WebElement closeAlertMessageButton;
      @FindBy(xpath="//tr//th//following::td//option[@value='9']")  List<WebElement> listOrderTableCellValue;
-     @FindBy(xpath="//a[text()='View']")  WebElement clickOnViewButtonInManageOrdersPageListOrdersTable;
+     @FindBy(xpath="//a[text()='View'][1]")  WebElement clickOnViewButtonInManageOrdersPageListOrdersTable;
      @FindBy(xpath="//div//h1[text()='Order Details']") WebElement orderDetailsPage;
      @FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/Order/delete?del=693&page_ad=1'][1]") WebElement ClickOndeleteButtonOrderDetailsInListOrderTable;
      @FindBy(xpath="//div[contains(@class,'alert-success ')]") WebElement alertOrderDeletedSuccessfully;
@@ -39,7 +40,7 @@ public class ManageOrdersPage {
 	
 	 public ManageOrdersPage clickOnMoreInfo()
 	 {
-		 clickOnMoreInfo.click();
+		 clickOnManageOrdersMoreInfo.click();
 		 return this;
 
 	 }
@@ -52,7 +53,7 @@ public class ManageOrdersPage {
 	 public ManageOrdersPage clickOnUpdateStatus()
 	 {
 		 clickOnUpdateStatus.click();
-		 PageUtility.selectDropdownbyIndex(clickOnUpdateStatus,1);
+		 pageutility.selectDropdownbyIndex(clickOnUpdateStatus,1);
 		 return this;
 
 	 }
@@ -67,7 +68,7 @@ public class ManageOrdersPage {
 	 {
 		 
 		 WaitUtility.waitForElement(driver,clickOnChangeDeliveryStausUpdateButton);
-		 PageUtility.clickOnElement(clickOnChangeDeliveryStausUpdateButton);
+		 pageutility.clickOnElement(clickOnChangeDeliveryStausUpdateButton);
 		return this;
 		 
 
@@ -76,7 +77,7 @@ public class ManageOrdersPage {
 	 {
 		 clickOnSelectDeliverBoyFromDropDown.click();
 		 WaitUtility.waitForElement(driver,clickOnSelectDeliverBoyFromDropDown);
-		 PageUtility.selectDropdownbyIndex(clickOnSelectDeliverBoyFromDropDown,3);
+		 pageutility.selectDropdownbyIndex(clickOnSelectDeliverBoyFromDropDown,3);
 		 clickOnSelectDeliverBoyFromDropDown.submit();
 		 return this;
 
@@ -85,7 +86,6 @@ public class ManageOrdersPage {
 	 {
 		 closeAlertMessageButton.click();
 		 return this;
-
 	 }
 	 
 	 public ManageOrdersPage clickOnViewButtonInManageOrdersPageListOrdersTable()
@@ -95,10 +95,9 @@ public class ManageOrdersPage {
 
 	 }
 	 public boolean isAbleToViewOrderDetailsInManageOrdersPage()
-	 
 	 {
 		 WaitUtility.waitForElement(driver,orderDetailsPage);
-		 return PageUtility.isElementDisplayed(orderDetailsPage);
+		 return pageutility.isElementDisplayed(orderDetailsPage);
 		 
 	 }
 	 public String  ClickOndeleteButtonOrderDetailsInListOrderTable()
@@ -109,7 +108,7 @@ public class ManageOrdersPage {
 	 public boolean isAbleToDeleteOrderDetailsFromListOrderTable()
 	 {
 		 WaitUtility.waitForElement(driver,alertOrderDeletedSuccessfully);
-		 return PageUtility.isElementDisplayed(alertOrderDeletedSuccessfully);
+		 return pageutility.isElementDisplayed(alertOrderDeletedSuccessfully);
 
 	 }
 	 

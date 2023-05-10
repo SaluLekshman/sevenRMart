@@ -9,6 +9,7 @@ import Utilities.PageUtility;
 
 public class HomePagePage {
 	public WebDriver driver;
+	PageUtility pageutility=new PageUtility() ;
 	
 	 public HomePagePage(WebDriver driver)
 	 {
@@ -20,10 +21,10 @@ public class HomePagePage {
 	 @FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/list-order']") WebElement clickOnMoreInfo;
 	 public String getStyleProperties()
 	 {
-		 return PageUtility.stylePropertyValidation(clickOnMoreInfo,"color");
+		 return pageutility.stylePropertyValidation(clickOnMoreInfo,"color");
 	 }
 	 public String getAlignment()
 	 {
-		  return PageUtility.stylePropertyValidation(clickOnMoreInfo,"line-height");
+		  return pageutility.stylePropertyValidation(clickOnMoreInfo,"line-height");
 	 }
 }

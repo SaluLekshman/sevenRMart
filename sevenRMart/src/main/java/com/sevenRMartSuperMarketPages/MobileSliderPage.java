@@ -14,6 +14,7 @@ import Utilities.WaitUtility;
 
 public class MobileSliderPage {
 	public WebDriver driver;
+	PageUtility pageUtility=new PageUtility();
 	
 	 public  MobileSliderPage(WebDriver driver)
 	 {
@@ -41,24 +42,30 @@ public class MobileSliderPage {
 	public MobileSliderPage selectCategoryFromDropDownInAddNewSliderPage()
 	 {
 		WaitUtility.waitForElement(driver, selectCategoryFromDropDownInAddNewSliderPage);
-		PageUtility.selectDropdownbyIndex(selectCategoryFromDropDownInAddNewSliderPage, 4);
+		pageUtility.selectDropdownbyIndex(selectCategoryFromDropDownInAddNewSliderPage, 4);
 		return this;
 	 }
-	public MobileSliderPage  clickOnImageChooseFileInAddNewMobileSliderPage() 
+	public void  clickOnImageChooseFileInAddNewMobileSliderPage() throws IOException 
 	 {
+		try
+		{
 			clickOnImageChooseFileInAddNewMobileSliderPage.sendKeys("C:\\Users\\SHALU\\OneDrive\\Desktop\\grocery.jpeg");
-			return this;
-		
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+			
 	 }
 	public MobileSliderPage   clickOnSaveButtonInInAddNewMobileSliderPage()
 	 {
 		 clickOnSaveButtonInInAddNewMobileSliderPage.click();
 		 return this;
 	 }
-	public Boolean VerifyNewMobileSliderIsaddedOnMobileSliderTable()
+	public Boolean VerifyAlertMessageIsDisplayed()
 	 {
 		WaitUtility.waitForElement(driver,alertMobileSliderCreatedSuccessfully);
-	    return PageUtility.isElementDisplayed( alertMobileSliderCreatedSuccessfully);
+	    return pageUtility.isElementDisplayed( alertMobileSliderCreatedSuccessfully);
 	 }
 	public String clickOnDeleteButtonInListMobileSliderTable()
 	 {

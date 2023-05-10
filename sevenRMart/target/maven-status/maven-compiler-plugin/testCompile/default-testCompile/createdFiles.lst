@@ -1,6 +1,8 @@
 com\sevenRMartSuperMarketTestScripts\ManagePagesTest.class
 com\sevenRMartSuperMarketTestScripts\ManageSliderTest.class
 com\sevenRMartSuperMarketTestScripts\ManageProductsTest.class
+com\sevenRMartSuperMarketTestScripts\MobileSliderTest.class
+com\sevenRMartSuperMarketTestScripts\AdminUsersTest.class
 com\sevenRMartSuperMarketTestScripts\ManageUsersTest.class
 com\sevenRMartSuperMarketTestScripts\ManagePaymentMethodsTest.class
 com\sevenRMartSuperMarketTestScripts\ManageOrdersTest.class
@@ -10,5 +12,6 @@ com\sevenRMartSuperMarketTestScripts\VerifyUsersTest.class
 com\sevenRMartSuperMarketTestScripts\LoginTest.class
 com\sevenRMartSuperMarketTestScripts\PushNotificationsTest.class
 com\sevenRMartSuperMarketTestScripts\SiteNameTest.class
+com\sevenRMartSuperMarketTestScripts\HomePageTest.class
 com\sevenRMartSuperMarketTestScripts\Listeners.class
 retry\Retry.class

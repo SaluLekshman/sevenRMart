@@ -10,13 +10,12 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import io.github.bonigarcia.wdm.WebDriverManager;
-
+import Utilities.GeneralUtilities;
 import Utilities.ScreenShotUtility;
 import Utilities.WaitUtility;
 
@@ -34,7 +33,7 @@ public class Base {
 	try
 	{
 		prop=new Properties();
-		fs = new FileInputStream(constants.Constants.CONFIGfILEPATH);
+		fs = new FileInputStream(GeneralUtilities.CONFIGfILEPATH);
 		prop.load(fs);
 	}
 	catch (FileNotFoundException e)
@@ -45,7 +44,7 @@ public class Base {
 	try
 	{
 		prop1=new Properties();
-		fs = new FileInputStream(constants.Constants.TESTDATAFILEPATH);
+		fs = new FileInputStream(GeneralUtilities.FILEPATH);
 		prop1.load(fs);
 	
 	} 

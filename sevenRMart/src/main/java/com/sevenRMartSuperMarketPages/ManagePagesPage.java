@@ -14,6 +14,8 @@ import Utilities.WaitUtility;
 
 public class ManagePagesPage {
 	public WebDriver driver;
+	PageUtility pageutility=new PageUtility();
+	
 	
 	 public   ManagePagesPage (WebDriver driver)
 	 {
@@ -25,6 +27,7 @@ public class ManagePagesPage {
 	 @FindBy(xpath="//a[@onclick='click_button(2)']") WebElement searchButtonOnManagePages;
 	 @FindBy(xpath="//input[@class='form-control']") WebElement enterTitleInSearchListPages;
 	 @FindBy(xpath="//a[@onclick='click_button(2)']") WebElement searchButtonOnSearchListPagesInManagePages;
+	 @FindBy(xpath="//tr//th//following::td") List<WebElement> listPagesTable;
 	 public void clickOnMoreInfo()
 	 {
 		 driver.navigate().to("https://groceryapp.uniqassosiates.com/admin/list-page");
@@ -36,8 +39,9 @@ public class ManagePagesPage {
 	 
 	 public void enterTitleInSearchListPages(String enterTitleInput)
 	 {
+		 
 		 WaitUtility.waitForElement(driver, enterTitleInSearchListPages);
-		 PageUtility.enterText(enterTitleInSearchListPages, enterTitleInput);
+		 pageutility.enterText(enterTitleInSearchListPages, enterTitleInput);
 	 }
 	 public void searchButtonOnSearchListPagesInManagePages()
 	 {
@@ -46,7 +50,7 @@ public class ManagePagesPage {
 	 public String searchPagesInListPagesInManagePages(String expectedSearchValue) 
 	 {
 	 	 
-	 	 List<WebElement> row=driver.findElements(By.xpath("//tr//th//following::td"));
+	 	 List<WebElement> row=listPagesTable;
 	 	  for(WebElement tablerow:row)
 	 	  {
 	 		  ArrayList<String> rowvalue=new ArrayList<String>();

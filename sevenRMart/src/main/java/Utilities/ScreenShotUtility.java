@@ -20,13 +20,11 @@ public class ScreenShotUtility {
 		File f1 = new File(System.getProperty("user.dir") + "//OutputScreenShot");
 		if (!f1.exists()) 
 		{
-		f1.mkdirs();
+			f1.mkdirs();
 		}
 
 		String destination = System.getProperty("user.dir") + "//outputScreenShot//" +failedTestCase + timeStamp+ ".png";
-
 		File finalDestination = new File(destination);
-
 		FileHandler.copy(screenShot, finalDestination);
-		}
+	}
 }

@@ -9,9 +9,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import Utilities.PageUtility;
+import Utilities.WaitUtility;
 
 public class AdminUsersPage {
 	public WebDriver driver;
+	PageUtility pageutility=new  PageUtility();
 	
 	 public  AdminUsersPage(WebDriver driver)
 	 {
@@ -32,27 +34,27 @@ public class AdminUsersPage {
 	 @FindBy(xpath="//select[@id='ut']") WebElement selectUserTypeinSearchAdminUsersInAdminUsersPage;
 	 public AdminUsersPage  clickOnAdminUsersMoreInfo()
 	 {
-		 clickOnMoreInfo.click();
+		clickOnMoreInfo.click();
 		return this;
 	 }
 	 public AdminUsersPage  clickOnNewButtonInAdminUsersPage()
 	 {
 		 clickOnNewButtonInAdminUsersPage.click();
-		return this;
+		 return this;
 	 }
 	 public AdminUsersPage enterUserNameInNewAdminUsersPage(String userName)
 	 {
-		PageUtility.enterText(enterUserNameInNewAdminUsersPage,userName);
-		return this;
+		 pageutility.enterText(enterUserNameInNewAdminUsersPage,userName);
+		 return this;
 	 }
 	 public AdminUsersPage enterpasswordInNewAdminUsersPage(String password)
 	 {
-		PageUtility.enterText(enterpasswordInNewAdminUsersPage,password);
-		return this;
+		 pageutility.enterText(enterpasswordInNewAdminUsersPage,password);
+		 return this;
 	 }
 	 public AdminUsersPage selectUserTypeInNewAdminUsersPage()
 	 {
-		PageUtility.selectDropdownbyIndex(selectUserTypeInNewAdminUsersPage, 2);
+		pageutility.selectDropdownbyIndex(selectUserTypeInNewAdminUsersPage, 2);
 		selectUserTypeInNewAdminUsersPage.submit();
 		return this;
 	 }
@@ -63,8 +65,8 @@ public class AdminUsersPage {
 	 }
 	 public AdminUsersPage enterUserNameInSearchAdminUsersPage(String userName)
 	 {
-		PageUtility.enterText(enterUserNameInSearchAdminUsersPage,userName);
-		return this;
+		 pageutility.enterText(enterUserNameInSearchAdminUsersPage,userName);
+		 return this;
 	 }
 	 
 	 public String searchNewUseraddedIsUpdatedInAdminUsersTable(String expectedSearchValue) 
@@ -88,21 +90,24 @@ public class AdminUsersPage {
 	 }
 	 public AdminUsersPage selectUserTypeinSearchNewAdminUsersPage()
 	 {
-		 PageUtility.selectDropdownbyIndex(selectUserTypeInNewAdminUsersPage, 2);
-			selectUserTypeInNewAdminUsersPage.submit();
-			return this;
+		 WaitUtility.waitForElementIsPresent(driver, selectUserTypeInNewAdminUsersPage);
+		 pageutility.selectDropdownbyIndex(selectUserTypeInNewAdminUsersPage, 2);
+		 selectUserTypeInNewAdminUsersPage.submit();
+		 return this;
 	 }
 	 
-	 public AdminUsersPage  clickOnSearchButtonInSearchAdminUsersInAdminUsersPage()
+	 public AdminUsersPage clickOnSearchButtonInSearchAdminUsersInAdminUsersPage()
 	 {
+		 WaitUtility.waitForElement(driver,clickOnSearchButtonInSearchAdminUsersInAdminUsersPage);
 		 clickOnSearchButtonInSearchAdminUsersInAdminUsersPage.click();
 		 return this;
 	 }
 	 public AdminUsersPage selectUserTypeinSearchAdminUsersInAdminUsersPage()
 	 {
-		PageUtility.selectDropdownbyIndex(selectUserTypeinSearchAdminUsersInAdminUsersPage,2);
+		 pageutility.selectDropdownbyIndex(selectUserTypeinSearchAdminUsersInAdminUsersPage,2);
 		return this;
 	 }
 	 
 }
+
 

@@ -14,6 +14,7 @@ import Utilities.WaitUtility;
 
 public class PushNotificationPage {
 	public WebDriver driver;
+	PageUtility pageUtility=new PageUtility();
 	 public PushNotificationPage(WebDriver driver)
 	 {
 		 this.driver=driver;
@@ -21,48 +22,47 @@ public class PushNotificationPage {
 		 
 	}
 	 @FindBy(xpath="//p[text()='Push Notifications']") static WebElement clickOnpushNotification;
-	 @FindBy(xpath="//input[@id='title']") WebElement enterTitle;
-	 @FindBy(xpath="//input[@id='description']") WebElement enterDescription;
+	 @FindBy(xpath="//input[@id='title']") WebElement enterValueOnTitleField;
+	 @FindBy(xpath="//input[@id='description']") WebElement enterValueOnDescriptionField;
 	 @FindBy(xpath="//button[@name='create']") WebElement clickSendbutton;
 	 @FindBy(xpath="//div[@class='alert alert-success alert-dismissible']") WebElement alertMessage;
+	 
 	 public void ClickOnpushNotificationelement()
 	 {
 		 WaitUtility.waitForElementClickable(driver,clickOnpushNotification);
-		 PageUtility.clickOnElement(clickOnpushNotification); 
+		 pageUtility.clickOnElement(clickOnpushNotification); 
 	 }
-	 public PushNotificationPage enterTitle(String titleInput) 
+	 public PushNotificationPage enterValueOnTitleField(String titleInput) 
 	 {
-		 WaitUtility.waitForElement(driver,enterTitle);
-		 PageUtility.enterText(enterTitle,titleInput );
-		return this;
-	
-		 
+		 WaitUtility.waitForElement(driver,enterValueOnTitleField);
+		 pageUtility.enterText(enterValueOnTitleField,titleInput );
+		 return this; 
 	 }
 
-	 public PushNotificationPage enterDescription(String descriptionInput) 
+	 public PushNotificationPage enterValueOnDescriptionField(String descriptionInput) 
 	 {
-		 WaitUtility.waitForElement(driver, enterDescription);
-		 PageUtility.enterText(enterDescription,descriptionInput);
-		return this;
+		 WaitUtility.waitForElement(driver,enterValueOnDescriptionField);
+		 pageUtility.enterText(enterValueOnDescriptionField,descriptionInput);
+		 return this;
 		 
 	 }
 	 
 	public PushNotificationPage clickSendbutton()
 	{
 		WaitUtility.waitForElementClickable(driver,clickSendbutton);
-		PageUtility.clickOnElement(clickSendbutton);
+		pageUtility.clickOnElement(clickSendbutton);
 		return this;
 	}
-	public String getTextalertMessage()
+	public String getTextOfalertMessage()
 	{
 		
-		return PageUtility.getElementText(alertMessage);
+		return pageUtility.getElementText(alertMessage);
 		
 	}
-	public boolean alertMessageIsDisplayed()
+	public boolean verifyAlertMessageIsDisplayed()
 	{
 		
-		return PageUtility.isElementDisplayed(alertMessage);	
+		return pageUtility.isElementDisplayed(alertMessage);	
 	}
 
 }

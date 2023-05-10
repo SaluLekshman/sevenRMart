@@ -1,16 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results skipped="0" failed="0" ignored="0" total="30" passed="30">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-30T12:16:55 IST" name="Suite" finished-at="2023-04-30T12:17:19 IST" duration-ms="23975">
+  <suite name="Suite" duration-ms="414534" started-at="2023-05-05T20:04:42 IST" finished-at="2023-05-05T20:11:37 IST">
     <groups>
       <group name="regression">
-        <method signature="ManagePagesTest.serachPageIsPresentInListPagesTable(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManagePagesTest@68f1b17f]" name="serachPageIsPresentInListPagesTable" class="com.sevenRMartSuperMarketTestScripts.ManagePagesTest"/>
+        <method signature="ManageOfferCodeTest.verifyNewOfferCodeAddedIsDisplayedInListOfferCodeTableByClickingSearchButton(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManageOfferCodeTest@318ba8c8]" name="verifyNewOfferCodeAddedIsDisplayedInListOfferCodeTableByClickingSearchButton" class="com.sevenRMartSuperMarketTestScripts.ManageOfferCodeTest"/>
+        <method signature="ManageOfferCodeTest.verifyNewOfferCodeCanBeAddedByClickingNewButtonAndEnteringValidOfferDetails(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManageOfferCodeTest@318ba8c8]" name="verifyNewOfferCodeCanBeAddedByClickingNewButtonAndEnteringValidOfferDetails" class="com.sevenRMartSuperMarketTestScripts.ManageOfferCodeTest"/>
+        <method signature="ManagePagesTest.verifyPageIsPresentInListPagesTableByEnteringPageNameAndClickingSearchButton(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManagePagesTest@56de5251]" name="verifyPageIsPresentInListPagesTableByEnteringPageNameAndClickingSearchButton" class="com.sevenRMartSuperMarketTestScripts.ManagePagesTest"/>
+        <method signature="ManagePaymentMethodsTest.VerifyCerditCardPaymentMethodAndPayLimitIsDispalyedCorrectlyInManagePaymentMethodTable(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManagePaymentMethodsTest@222114ba]" name="VerifyCerditCardPaymentMethodAndPayLimitIsDispalyedCorrectlyInManagePaymentMethodTable" class="com.sevenRMartSuperMarketTestScripts.ManagePaymentMethodsTest"/>
+        <method signature="ManagePaymentMethodsTest.VerifyUserCanNavigateBackToHomePageByClickingHomeButtonInManagePayementMethodPage(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManagePaymentMethodsTest@222114ba]" name="VerifyUserCanNavigateBackToHomePageByClickingHomeButtonInManagePayementMethodPage" class="com.sevenRMartSuperMarketTestScripts.ManagePaymentMethodsTest"/>
+        <method signature="ManagePaymentMethodsTest.verifyUserCanUpdatePaymentDetailsByClickingActionButtonInManagePaymentMethodsTableAndEnterUpdatedTitle_UpdatedPayLimit_AndClickUpdateButton(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManagePaymentMethodsTest@222114ba]" name="verifyUserCanUpdatePaymentDetailsByClickingActionButtonInManagePaymentMethodsTableAndEnterUpdatedTitle_UpdatedPayLimit_AndClickUpdateButton" class="com.sevenRMartSuperMarketTestScripts.ManagePaymentMethodsTest"/>
+        <method signature="ManageProductsTest.verifyRadioButtonsInAddProductTypePageIsEnabled(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManageProductsTest@4e91d63f]" name="verifyRadioButtonsInAddProductTypePageIsEnabled" class="com.sevenRMartSuperMarketTestScripts.ManageProductsTest"/>
+        <method signature="ManageProductsTest.verifyRandomDataIsGeneratedForCategoryAndSubCategorydropDownButtonInAddProductInformationFormByClickingCategoryAndSubCategory(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManageProductsTest@4e91d63f]" name="verifyRandomDataIsGeneratedForCategoryAndSubCategorydropDownButtonInAddProductInformationFormByClickingCategoryAndSubCategory" class="com.sevenRMartSuperMarketTestScripts.ManageProductsTest"/>
       </group> <!-- regression -->
     </groups>
-    <test started-at="2023-04-30T12:16:55 IST" name="Test" finished-at="2023-04-30T12:17:19 IST" duration-ms="23975">
-      <class name="com.sevenRMartSuperMarketTestScripts.ManagePagesTest">
-        <test-method is-config="true" signature="initialiseBrowser(java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManagePagesTest@68f1b17f]" started-at="2023-04-30T12:16:56 IST" name="initialiseBrowser" finished-at="2023-04-30T12:17:15 IST" duration-ms="19272" status="PASS">
+    <test name="Test" duration-ms="414534" started-at="2023-05-05T20:04:42 IST" finished-at="2023-05-05T20:11:37 IST">
+      <class name="com.sevenRMartSuperMarketTestScripts.ManagePaymentMethodsTest">
+        <test-method status="PASS" signature="initialiseBrowser(java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManagePaymentMethodsTest@222114ba]" name="initialiseBrowser" is-config="true" duration-ms="7647" started-at="2023-05-05T20:04:42 IST" finished-at="2023-05-05T20:04:50 IST">
           <params>
             <param index="0">
               <value>
@@ -21,7 +28,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialiseBrowser -->
-        <test-method signature="serachPageIsPresentInListPagesTable(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManagePagesTest@68f1b17f]" started-at="2023-04-30T12:17:15 IST" name="serachPageIsPresentInListPagesTable" finished-at="2023-04-30T12:17:19 IST" duration-ms="3948" status="PASS">
+        <test-method status="PASS" signature="VerifyCerditCardPaymentMethodAndPayLimitIsDispalyedCorrectlyInManagePaymentMethodTable(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManagePaymentMethodsTest@222114ba]" name="VerifyCerditCardPaymentMethodAndPayLimitIsDispalyedCorrectlyInManagePaymentMethodTable" duration-ms="4851" started-at="2023-05-05T20:04:50 IST" finished-at="2023-05-05T20:04:55 IST">
           <params>
             <param index="0">
               <value>
@@ -36,12 +43,128 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- serachPageIsPresentInListPagesTable -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManagePagesTest@68f1b17f]" started-at="2023-04-30T12:17:19 IST" name="browserQuit" finished-at="2023-04-30T12:17:19 IST" duration-ms="718" status="PASS">
+        </test-method> <!-- VerifyCerditCardPaymentMethodAndPayLimitIsDispalyedCorrectlyInManagePaymentMethodTable -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManagePaymentMethodsTest@222114ba]" name="browserQuit" is-config="true" duration-ms="870" started-at="2023-05-05T20:04:55 IST" finished-at="2023-05-05T20:04:56 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=serachPageIsPresentInListPagesTable status=SUCCESS method=ManagePagesTest.serachPageIsPresentInListPagesTable(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManagePagesTest@68f1b17f] output={null}]]]>
+                <![CDATA[[TestResult name=VerifyCerditCardPaymentMethodAndPayLimitIsDispalyedCorrectlyInManagePaymentMethodTable status=SUCCESS method=ManagePaymentMethodsTest.VerifyCerditCardPaymentMethodAndPayLimitIsDispalyedCorrectlyInManagePaymentMethodTable(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManagePaymentMethodsTest@222114ba] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method status="PASS" signature="initialiseBrowser(java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManagePaymentMethodsTest@222114ba]" name="initialiseBrowser" is-config="true" duration-ms="4222" started-at="2023-05-05T20:04:56 IST" finished-at="2023-05-05T20:05:00 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseBrowser -->
+        <test-method status="PASS" signature="VerifyUserCanNavigateBackToHomePageByClickingHomeButtonInManagePayementMethodPage(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManagePaymentMethodsTest@222114ba]" name="VerifyUserCanNavigateBackToHomePageByClickingHomeButtonInManagePayementMethodPage" duration-ms="3129" started-at="2023-05-05T20:05:00 IST" finished-at="2023-05-05T20:05:03 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyUserCanNavigateBackToHomePageByClickingHomeButtonInManagePayementMethodPage -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManagePaymentMethodsTest@222114ba]" name="browserQuit" is-config="true" duration-ms="822" started-at="2023-05-05T20:05:03 IST" finished-at="2023-05-05T20:05:04 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyUserCanNavigateBackToHomePageByClickingHomeButtonInManagePayementMethodPage status=SUCCESS method=ManagePaymentMethodsTest.VerifyUserCanNavigateBackToHomePageByClickingHomeButtonInManagePayementMethodPage(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManagePaymentMethodsTest@222114ba] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method status="PASS" signature="initialiseBrowser(java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManagePaymentMethodsTest@222114ba]" name="initialiseBrowser" is-config="true" duration-ms="5564" started-at="2023-05-05T20:05:04 IST" finished-at="2023-05-05T20:05:10 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseBrowser -->
+        <test-method status="PASS" signature="verifyUserCanUpdatePaymentDetailsByClickingActionButtonInManagePaymentMethodsTableAndEnterUpdatedTitle_UpdatedPayLimit_AndClickUpdateButton(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManagePaymentMethodsTest@222114ba]" name="verifyUserCanUpdatePaymentDetailsByClickingActionButtonInManagePaymentMethodsTableAndEnterUpdatedTitle_UpdatedPayLimit_AndClickUpdateButton" duration-ms="4341" started-at="2023-05-05T20:05:10 IST" finished-at="2023-05-05T20:05:14 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCanUpdatePaymentDetailsByClickingActionButtonInManagePaymentMethodsTableAndEnterUpdatedTitle_UpdatedPayLimit_AndClickUpdateButton -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManagePaymentMethodsTest@222114ba]" name="browserQuit" is-config="true" duration-ms="930" started-at="2023-05-05T20:05:14 IST" finished-at="2023-05-05T20:05:15 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserCanUpdatePaymentDetailsByClickingActionButtonInManagePaymentMethodsTableAndEnterUpdatedTitle_UpdatedPayLimit_AndClickUpdateButton status=SUCCESS method=ManagePaymentMethodsTest.verifyUserCanUpdatePaymentDetailsByClickingActionButtonInManagePaymentMethodsTableAndEnterUpdatedTitle_UpdatedPayLimit_AndClickUpdateButton(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManagePaymentMethodsTest@222114ba] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+      </class> <!-- com.sevenRMartSuperMarketTestScripts.ManagePaymentMethodsTest -->
+      <class name="com.sevenRMartSuperMarketTestScripts.ManagePagesTest">
+        <test-method status="PASS" signature="initialiseBrowser(java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManagePagesTest@56de5251]" name="initialiseBrowser" is-config="true" duration-ms="11110" started-at="2023-05-05T20:11:18 IST" finished-at="2023-05-05T20:11:29 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseBrowser -->
+        <test-method status="PASS" signature="verifyPageIsPresentInListPagesTableByEnteringPageNameAndClickingSearchButton(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManagePagesTest@56de5251]" name="verifyPageIsPresentInListPagesTableByEnteringPageNameAndClickingSearchButton" duration-ms="6100" started-at="2023-05-05T20:11:29 IST" finished-at="2023-05-05T20:11:35 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPageIsPresentInListPagesTableByEnteringPageNameAndClickingSearchButton -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManagePagesTest@56de5251]" name="browserQuit" is-config="true" duration-ms="1256" started-at="2023-05-05T20:11:35 IST" finished-at="2023-05-05T20:11:37 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyPageIsPresentInListPagesTableByEnteringPageNameAndClickingSearchButton status=SUCCESS method=ManagePagesTest.verifyPageIsPresentInListPagesTableByEnteringPageNameAndClickingSearchButton(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManagePagesTest@56de5251] output={null}]]]>
               </value>
             </param>
           </params>
@@ -49,6 +172,982 @@
           </reporter-output>
         </test-method> <!-- browserQuit -->
       </class> <!-- com.sevenRMartSuperMarketTestScripts.ManagePagesTest -->
+      <class name="com.sevenRMartSuperMarketTestScripts.ManageOrdersTest">
+        <test-method status="PASS" signature="initialiseBrowser(java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManageOrdersTest@2f112965]" name="initialiseBrowser" is-config="true" duration-ms="7181" started-at="2023-05-05T20:07:46 IST" finished-at="2023-05-05T20:07:53 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseBrowser -->
+        <test-method status="PASS" signature="verifyStatusOfIOrderIsUpdatedByClickingChangeStatusInListOrderSTableAndSelectStausFromDropdownButtonThenClickUpdate(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManageOrdersTest@2f112965]" name="verifyStatusOfIOrderIsUpdatedByClickingChangeStatusInListOrderSTableAndSelectStausFromDropdownButtonThenClickUpdate" duration-ms="7632" started-at="2023-05-05T20:07:53 IST" finished-at="2023-05-05T20:08:01 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyStatusOfIOrderIsUpdatedByClickingChangeStatusInListOrderSTableAndSelectStausFromDropdownButtonThenClickUpdate -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManageOrdersTest@2f112965]" name="browserQuit" is-config="true" duration-ms="2081" started-at="2023-05-05T20:08:01 IST" finished-at="2023-05-05T20:08:03 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyStatusOfIOrderIsUpdatedByClickingChangeStatusInListOrderSTableAndSelectStausFromDropdownButtonThenClickUpdate status=SUCCESS method=ManageOrdersTest.verifyStatusOfIOrderIsUpdatedByClickingChangeStatusInListOrderSTableAndSelectStausFromDropdownButtonThenClickUpdate(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManageOrdersTest@2f112965] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method status="PASS" signature="initialiseBrowser(java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManageOrdersTest@2f112965]" name="initialiseBrowser" is-config="true" duration-ms="4976" started-at="2023-05-05T20:08:03 IST" finished-at="2023-05-05T20:08:08 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseBrowser -->
+        <test-method status="PASS" signature="verifyUsersCanViewOrderDetailsByClickingViewButtonInListOrdersTable(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManageOrdersTest@2f112965]" name="verifyUsersCanViewOrderDetailsByClickingViewButtonInListOrdersTable" duration-ms="3937" started-at="2023-05-05T20:08:08 IST" finished-at="2023-05-05T20:08:12 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUsersCanViewOrderDetailsByClickingViewButtonInListOrdersTable -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManageOrdersTest@2f112965]" name="browserQuit" is-config="true" duration-ms="2888" started-at="2023-05-05T20:08:12 IST" finished-at="2023-05-05T20:08:15 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUsersCanViewOrderDetailsByClickingViewButtonInListOrdersTable status=SUCCESS method=ManageOrdersTest.verifyUsersCanViewOrderDetailsByClickingViewButtonInListOrdersTable(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManageOrdersTest@2f112965] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method status="PASS" signature="initialiseBrowser(java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManageOrdersTest@2f112965]" name="initialiseBrowser" is-config="true" duration-ms="9382" started-at="2023-05-05T20:08:15 IST" finished-at="2023-05-05T20:08:24 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseBrowser -->
+        <test-method status="PASS" signature="verifyUsersGetAnAlertMessageByClickingDeleteButtonInListOrderTable(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManageOrdersTest@2f112965]" name="verifyUsersGetAnAlertMessageByClickingDeleteButtonInListOrderTable" duration-ms="3107" started-at="2023-05-05T20:08:24 IST" finished-at="2023-05-05T20:08:27 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUsersGetAnAlertMessageByClickingDeleteButtonInListOrderTable -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManageOrdersTest@2f112965]" name="browserQuit" is-config="true" duration-ms="2917" started-at="2023-05-05T20:08:27 IST" finished-at="2023-05-05T20:08:30 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUsersGetAnAlertMessageByClickingDeleteButtonInListOrderTable status=SUCCESS method=ManageOrdersTest.verifyUsersGetAnAlertMessageByClickingDeleteButtonInListOrderTable(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManageOrdersTest@2f112965] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method status="PASS" signature="initialiseBrowser(java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManageOrdersTest@2f112965]" name="initialiseBrowser" is-config="true" duration-ms="5475" started-at="2023-05-05T20:08:30 IST" finished-at="2023-05-05T20:08:36 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseBrowser -->
+        <test-method status="PASS" signature="verifydeliveryBoyForEveryOrderIsUpdatedInListOrderTableByClickingAssignDeliveryBoyAndSelectDeliverBoYfromDropDownButtonThenClickUpdate(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManageOrdersTest@2f112965]" name="verifydeliveryBoyForEveryOrderIsUpdatedInListOrderTableByClickingAssignDeliveryBoyAndSelectDeliverBoYfromDropDownButtonThenClickUpdate" duration-ms="5382" started-at="2023-05-05T20:08:36 IST" finished-at="2023-05-05T20:08:41 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifydeliveryBoyForEveryOrderIsUpdatedInListOrderTableByClickingAssignDeliveryBoyAndSelectDeliverBoYfromDropDownButtonThenClickUpdate -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManageOrdersTest@2f112965]" name="browserQuit" is-config="true" duration-ms="2406" started-at="2023-05-05T20:08:41 IST" finished-at="2023-05-05T20:08:44 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifydeliveryBoyForEveryOrderIsUpdatedInListOrderTableByClickingAssignDeliveryBoyAndSelectDeliverBoYfromDropDownButtonThenClickUpdate status=SUCCESS method=ManageOrdersTest.verifydeliveryBoyForEveryOrderIsUpdatedInListOrderTableByClickingAssignDeliveryBoyAndSelectDeliverBoYfromDropDownButtonThenClickUpdate(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManageOrdersTest@2f112965] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+      </class> <!-- com.sevenRMartSuperMarketTestScripts.ManageOrdersTest -->
+      <class name="com.sevenRMartSuperMarketTestScripts.SiteNameTest">
+        <test-method status="PASS" signature="initialiseBrowser(java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.SiteNameTest@2bbf180e]" name="initialiseBrowser" is-config="true" duration-ms="6602" started-at="2023-05-05T20:10:26 IST" finished-at="2023-05-05T20:10:33 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseBrowser -->
+        <test-method status="PASS" signature="verifySiteNameIsDisplayedCorrectlyInHomePageByFetchingTextOfSiteName(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.SiteNameTest@2bbf180e]" name="verifySiteNameIsDisplayedCorrectlyInHomePageByFetchingTextOfSiteName" duration-ms="1520" started-at="2023-05-05T20:10:33 IST" finished-at="2023-05-05T20:10:35 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySiteNameIsDisplayedCorrectlyInHomePageByFetchingTextOfSiteName -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.SiteNameTest@2bbf180e]" name="browserQuit" is-config="true" duration-ms="4222" started-at="2023-05-05T20:10:35 IST" finished-at="2023-05-05T20:10:39 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySiteNameIsDisplayedCorrectlyInHomePageByFetchingTextOfSiteName status=SUCCESS method=SiteNameTest.verifySiteNameIsDisplayedCorrectlyInHomePageByFetchingTextOfSiteName(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.SiteNameTest@2bbf180e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method status="PASS" signature="initialiseBrowser(java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.SiteNameTest@2bbf180e]" name="initialiseBrowser" is-config="true" duration-ms="8095" started-at="2023-05-05T20:10:39 IST" finished-at="2023-05-05T20:10:47 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseBrowser -->
+        <test-method status="PASS" signature="verifyTheFontColorOfsiteNameIsWhite(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.SiteNameTest@2bbf180e]" name="verifyTheFontColorOfsiteNameIsWhite" duration-ms="2441" started-at="2023-05-05T20:10:47 IST" finished-at="2023-05-05T20:10:49 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheFontColorOfsiteNameIsWhite -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.SiteNameTest@2bbf180e]" name="browserQuit" is-config="true" duration-ms="7399" started-at="2023-05-05T20:10:49 IST" finished-at="2023-05-05T20:10:57 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyTheFontColorOfsiteNameIsWhite status=SUCCESS method=SiteNameTest.verifyTheFontColorOfsiteNameIsWhite(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.SiteNameTest@2bbf180e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+      </class> <!-- com.sevenRMartSuperMarketTestScripts.SiteNameTest -->
+      <class name="com.sevenRMartSuperMarketTestScripts.AdminUsersTest">
+        <test-method status="PASS" signature="initialiseBrowser(java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.AdminUsersTest@43301423]" name="initialiseBrowser" is-config="true" duration-ms="7202" started-at="2023-05-05T20:07:21 IST" finished-at="2023-05-05T20:07:28 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseBrowser -->
+        <test-method status="PASS" signature="VerifyNewAdminUserCanBeAddedInAdminUsersTableByClickingNewButton(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.AdminUsersTest@43301423]" name="VerifyNewAdminUserCanBeAddedInAdminUsersTableByClickingNewButton" duration-ms="3758" started-at="2023-05-05T20:07:28 IST" finished-at="2023-05-05T20:07:32 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyNewAdminUserCanBeAddedInAdminUsersTableByClickingNewButton -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.AdminUsersTest@43301423]" name="browserQuit" is-config="true" duration-ms="4039" started-at="2023-05-05T20:07:32 IST" finished-at="2023-05-05T20:07:36 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyNewAdminUserCanBeAddedInAdminUsersTableByClickingNewButton status=SUCCESS method=AdminUsersTest.VerifyNewAdminUserCanBeAddedInAdminUsersTableByClickingNewButton(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.AdminUsersTest@43301423] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method status="PASS" signature="initialiseBrowser(java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.AdminUsersTest@43301423]" name="initialiseBrowser" is-config="true" duration-ms="5665" started-at="2023-05-05T20:07:36 IST" finished-at="2023-05-05T20:07:42 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseBrowser -->
+        <test-method status="PASS" signature="toCheckNewAdminUserAddedIsAvailableInAdminUsersTableByClickingSearchButton(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.AdminUsersTest@43301423]" name="toCheckNewAdminUserAddedIsAvailableInAdminUsersTableByClickingSearchButton" duration-ms="3626" started-at="2023-05-05T20:07:42 IST" finished-at="2023-05-05T20:07:45 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- toCheckNewAdminUserAddedIsAvailableInAdminUsersTableByClickingSearchButton -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.AdminUsersTest@43301423]" name="browserQuit" is-config="true" duration-ms="956" started-at="2023-05-05T20:07:45 IST" finished-at="2023-05-05T20:07:46 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=toCheckNewAdminUserAddedIsAvailableInAdminUsersTableByClickingSearchButton status=SUCCESS method=AdminUsersTest.toCheckNewAdminUserAddedIsAvailableInAdminUsersTableByClickingSearchButton(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.AdminUsersTest@43301423] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+      </class> <!-- com.sevenRMartSuperMarketTestScripts.AdminUsersTest -->
+      <class name="com.sevenRMartSuperMarketTestScripts.MobileSliderTest">
+        <test-method status="PASS" signature="initialiseBrowser(java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.MobileSliderTest@54c562f7]" name="initialiseBrowser" is-config="true" duration-ms="5425" started-at="2023-05-05T20:05:28 IST" finished-at="2023-05-05T20:05:33 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseBrowser -->
+        <test-method status="PASS" signature="verifyAnAlertMessageIsDisplayedByClickingNewButtonAndSelectCategory_UploadImage_AndClickSaveButton(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.MobileSliderTest@54c562f7]" name="verifyAnAlertMessageIsDisplayedByClickingNewButtonAndSelectCategory_UploadImage_AndClickSaveButton" duration-ms="3051" started-at="2023-05-05T20:05:33 IST" finished-at="2023-05-05T20:05:36 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAnAlertMessageIsDisplayedByClickingNewButtonAndSelectCategory_UploadImage_AndClickSaveButton -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.MobileSliderTest@54c562f7]" name="browserQuit" is-config="true" duration-ms="1805" started-at="2023-05-05T20:05:36 IST" finished-at="2023-05-05T20:05:38 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAnAlertMessageIsDisplayedByClickingNewButtonAndSelectCategory_UploadImage_AndClickSaveButton status=SUCCESS method=MobileSliderTest.verifyAnAlertMessageIsDisplayedByClickingNewButtonAndSelectCategory_UploadImage_AndClickSaveButton(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.MobileSliderTest@54c562f7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+      </class> <!-- com.sevenRMartSuperMarketTestScripts.MobileSliderTest -->
+      <class name="com.sevenRMartSuperMarketTestScripts.HomePageTest">
+        <test-method status="PASS" signature="initialiseBrowser(java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.HomePageTest@63a65a25]" name="initialiseBrowser" is-config="true" duration-ms="8353" started-at="2023-05-05T20:05:15 IST" finished-at="2023-05-05T20:05:23 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseBrowser -->
+        <test-method status="PASS" signature="getStylePropertyColorOfMoreInfoInHomePage(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.HomePageTest@63a65a25]" name="getStylePropertyColorOfMoreInfoInHomePage" duration-ms="2135" started-at="2023-05-05T20:05:23 IST" finished-at="2023-05-05T20:05:25 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getStylePropertyColorOfMoreInfoInHomePage -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.HomePageTest@63a65a25]" name="browserQuit" is-config="true" duration-ms="2342" started-at="2023-05-05T20:05:25 IST" finished-at="2023-05-05T20:05:28 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=getStylePropertyColorOfMoreInfoInHomePage status=SUCCESS method=HomePageTest.getStylePropertyColorOfMoreInfoInHomePage(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.HomePageTest@63a65a25] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+      </class> <!-- com.sevenRMartSuperMarketTestScripts.HomePageTest -->
+      <class name="com.sevenRMartSuperMarketTestScripts.VerifyUsersTest">
+        <test-method status="PASS" signature="initialiseBrowser(java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.VerifyUsersTest@1a04f701]" name="initialiseBrowser" is-config="true" duration-ms="7638" started-at="2023-05-05T20:08:44 IST" finished-at="2023-05-05T20:08:51 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseBrowser -->
+        <test-method status="PASS" signature="verifyUserIsAvailableInListUsersTableByClickingSearchButtonAndEnteringValueInNameField(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.VerifyUsersTest@1a04f701]" name="verifyUserIsAvailableInListUsersTableByClickingSearchButtonAndEnteringValueInNameField" duration-ms="6344" started-at="2023-05-05T20:08:51 IST" finished-at="2023-05-05T20:08:58 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserIsAvailableInListUsersTableByClickingSearchButtonAndEnteringValueInNameField -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.VerifyUsersTest@1a04f701]" name="browserQuit" is-config="true" duration-ms="7790" started-at="2023-05-05T20:08:58 IST" finished-at="2023-05-05T20:09:05 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserIsAvailableInListUsersTableByClickingSearchButtonAndEnteringValueInNameField status=SUCCESS method=VerifyUsersTest.verifyUserIsAvailableInListUsersTableByClickingSearchButtonAndEnteringValueInNameField(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.VerifyUsersTest@1a04f701] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+      </class> <!-- com.sevenRMartSuperMarketTestScripts.VerifyUsersTest -->
+      <class name="com.sevenRMartSuperMarketTestScripts.ManageOfferCodeTest">
+        <test-method status="PASS" signature="initialiseBrowser(java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManageOfferCodeTest@318ba8c8]" name="initialiseBrowser" is-config="true" duration-ms="6351" started-at="2023-05-05T20:05:38 IST" finished-at="2023-05-05T20:05:44 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseBrowser -->
+        <test-method status="PASS" signature="verifyNewOfferCodeAddedIsDisplayedInListOfferCodeTableByClickingSearchButton(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManageOfferCodeTest@318ba8c8]" name="verifyNewOfferCodeAddedIsDisplayedInListOfferCodeTableByClickingSearchButton" duration-ms="3923" started-at="2023-05-05T20:05:44 IST" finished-at="2023-05-05T20:05:48 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNewOfferCodeAddedIsDisplayedInListOfferCodeTableByClickingSearchButton -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManageOfferCodeTest@318ba8c8]" name="browserQuit" is-config="true" duration-ms="4545" started-at="2023-05-05T20:05:48 IST" finished-at="2023-05-05T20:05:53 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyNewOfferCodeAddedIsDisplayedInListOfferCodeTableByClickingSearchButton status=SUCCESS method=ManageOfferCodeTest.verifyNewOfferCodeAddedIsDisplayedInListOfferCodeTableByClickingSearchButton(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManageOfferCodeTest@318ba8c8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method status="PASS" signature="initialiseBrowser(java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManageOfferCodeTest@318ba8c8]" name="initialiseBrowser" is-config="true" duration-ms="5678" started-at="2023-05-05T20:05:53 IST" finished-at="2023-05-05T20:05:59 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseBrowser -->
+        <test-method status="PASS" signature="verifyNewOfferCodeCanBeAddedByClickingNewButtonAndEnteringValidOfferDetails(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManageOfferCodeTest@318ba8c8]" name="verifyNewOfferCodeCanBeAddedByClickingNewButtonAndEnteringValidOfferDetails" duration-ms="6047" started-at="2023-05-05T20:05:59 IST" finished-at="2023-05-05T20:06:05 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNewOfferCodeCanBeAddedByClickingNewButtonAndEnteringValidOfferDetails -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManageOfferCodeTest@318ba8c8]" name="browserQuit" is-config="true" duration-ms="1041" started-at="2023-05-05T20:06:05 IST" finished-at="2023-05-05T20:06:06 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyNewOfferCodeCanBeAddedByClickingNewButtonAndEnteringValidOfferDetails status=SUCCESS method=ManageOfferCodeTest.verifyNewOfferCodeCanBeAddedByClickingNewButtonAndEnteringValidOfferDetails(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManageOfferCodeTest@318ba8c8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+      </class> <!-- com.sevenRMartSuperMarketTestScripts.ManageOfferCodeTest -->
+      <class name="com.sevenRMartSuperMarketTestScripts.ManageSliderTest">
+        <test-method status="PASS" signature="initialiseBrowser(java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManageSliderTest@6dbb137d]" name="initialiseBrowser" is-config="true" duration-ms="6197" started-at="2023-05-05T20:06:06 IST" finished-at="2023-05-05T20:06:12 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseBrowser -->
+        <test-method status="PASS" signature="verifyAnAlertMessageIsDisplayedByClickingDeleteButtonInListSlidersTable(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManageSliderTest@6dbb137d]" name="verifyAnAlertMessageIsDisplayedByClickingDeleteButtonInListSlidersTable" duration-ms="3367" started-at="2023-05-05T20:06:12 IST" finished-at="2023-05-05T20:06:15 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAnAlertMessageIsDisplayedByClickingDeleteButtonInListSlidersTable -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManageSliderTest@6dbb137d]" name="browserQuit" is-config="true" duration-ms="958" started-at="2023-05-05T20:06:15 IST" finished-at="2023-05-05T20:06:16 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAnAlertMessageIsDisplayedByClickingDeleteButtonInListSlidersTable status=SUCCESS method=ManageSliderTest.verifyAnAlertMessageIsDisplayedByClickingDeleteButtonInListSlidersTable(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManageSliderTest@6dbb137d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method status="PASS" signature="initialiseBrowser(java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManageSliderTest@6dbb137d]" name="initialiseBrowser" is-config="true" duration-ms="5481" started-at="2023-05-05T20:06:16 IST" finished-at="2023-05-05T20:06:22 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseBrowser -->
+        <test-method status="PASS" signature="verifyAnalertMessageIsDisplayedByClickingNewButton_AndUploadImageByClickingChooseImageButton_AndEnterLinkInLinkField_AndClickSaveButton(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManageSliderTest@6dbb137d]" name="verifyAnalertMessageIsDisplayedByClickingNewButton_AndUploadImageByClickingChooseImageButton_AndEnterLinkInLinkField_AndClickSaveButton" duration-ms="3708" started-at="2023-05-05T20:06:22 IST" finished-at="2023-05-05T20:06:25 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAnalertMessageIsDisplayedByClickingNewButton_AndUploadImageByClickingChooseImageButton_AndEnterLinkInLinkField_AndClickSaveButton -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManageSliderTest@6dbb137d]" name="browserQuit" is-config="true" duration-ms="2993" started-at="2023-05-05T20:06:25 IST" finished-at="2023-05-05T20:06:28 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAnalertMessageIsDisplayedByClickingNewButton_AndUploadImageByClickingChooseImageButton_AndEnterLinkInLinkField_AndClickSaveButton status=SUCCESS method=ManageSliderTest.verifyAnalertMessageIsDisplayedByClickingNewButton_AndUploadImageByClickingChooseImageButton_AndEnterLinkInLinkField_AndClickSaveButton(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManageSliderTest@6dbb137d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method status="PASS" signature="initialiseBrowser(java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManageSliderTest@6dbb137d]" name="initialiseBrowser" is-config="true" duration-ms="8434" started-at="2023-05-05T20:06:28 IST" finished-at="2023-05-05T20:06:37 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseBrowser -->
+        <test-method status="PASS" signature="verifyNewSlideraddedIsDispalyedInListSliderTableByFetchingLinkFromListSlidersTableAndCompareWithExpectedLinkValue(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManageSliderTest@6dbb137d]" name="verifyNewSlideraddedIsDispalyedInListSliderTableByFetchingLinkFromListSlidersTableAndCompareWithExpectedLinkValue" duration-ms="3334" started-at="2023-05-05T20:06:37 IST" finished-at="2023-05-05T20:06:40 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNewSlideraddedIsDispalyedInListSliderTableByFetchingLinkFromListSlidersTableAndCompareWithExpectedLinkValue -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManageSliderTest@6dbb137d]" name="browserQuit" is-config="true" duration-ms="1529" started-at="2023-05-05T20:06:40 IST" finished-at="2023-05-05T20:06:42 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyNewSlideraddedIsDispalyedInListSliderTableByFetchingLinkFromListSlidersTableAndCompareWithExpectedLinkValue status=SUCCESS method=ManageSliderTest.verifyNewSlideraddedIsDispalyedInListSliderTableByFetchingLinkFromListSlidersTableAndCompareWithExpectedLinkValue(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManageSliderTest@6dbb137d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+      </class> <!-- com.sevenRMartSuperMarketTestScripts.ManageSliderTest -->
+      <class name="com.sevenRMartSuperMarketTestScripts.ManageProductsTest">
+        <test-method status="PASS" signature="initialiseBrowser(java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManageProductsTest@4e91d63f]" name="initialiseBrowser" is-config="true" duration-ms="5757" started-at="2023-05-05T20:09:05 IST" finished-at="2023-05-05T20:09:11 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseBrowser -->
+        <test-method status="PASS" signature="verifyRadioButtonsInAddProductTypePageIsEnabled(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManageProductsTest@4e91d63f]" name="verifyRadioButtonsInAddProductTypePageIsEnabled" duration-ms="6587" started-at="2023-05-05T20:09:11 IST" finished-at="2023-05-05T20:09:18 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRadioButtonsInAddProductTypePageIsEnabled -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManageProductsTest@4e91d63f]" name="browserQuit" is-config="true" duration-ms="4557" started-at="2023-05-05T20:09:18 IST" finished-at="2023-05-05T20:09:22 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyRadioButtonsInAddProductTypePageIsEnabled status=SUCCESS method=ManageProductsTest.verifyRadioButtonsInAddProductTypePageIsEnabled(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManageProductsTest@4e91d63f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method status="PASS" signature="initialiseBrowser(java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManageProductsTest@4e91d63f]" name="initialiseBrowser" is-config="true" duration-ms="8167" started-at="2023-05-05T20:09:22 IST" finished-at="2023-05-05T20:09:30 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseBrowser -->
+        <test-method status="PASS" signature="verifyRandomDataIsGeneratedForCategoryAndSubCategorydropDownButtonInAddProductInformationFormByClickingCategoryAndSubCategory(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManageProductsTest@4e91d63f]" name="verifyRandomDataIsGeneratedForCategoryAndSubCategorydropDownButtonInAddProductInformationFormByClickingCategoryAndSubCategory" duration-ms="5225" started-at="2023-05-05T20:09:30 IST" finished-at="2023-05-05T20:09:36 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRandomDataIsGeneratedForCategoryAndSubCategorydropDownButtonInAddProductInformationFormByClickingCategoryAndSubCategory -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManageProductsTest@4e91d63f]" name="browserQuit" is-config="true" duration-ms="1839" started-at="2023-05-05T20:09:36 IST" finished-at="2023-05-05T20:09:37 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyRandomDataIsGeneratedForCategoryAndSubCategorydropDownButtonInAddProductInformationFormByClickingCategoryAndSubCategory status=SUCCESS method=ManageProductsTest.verifyRandomDataIsGeneratedForCategoryAndSubCategorydropDownButtonInAddProductInformationFormByClickingCategoryAndSubCategory(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManageProductsTest@4e91d63f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+      </class> <!-- com.sevenRMartSuperMarketTestScripts.ManageProductsTest -->
+      <class name="com.sevenRMartSuperMarketTestScripts.ManageUsersTest">
+        <test-method status="PASS" signature="initialiseBrowser(java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManageUsersTest@d4342c2]" name="initialiseBrowser" is-config="true" duration-ms="6366" started-at="2023-05-05T20:09:38 IST" finished-at="2023-05-05T20:09:44 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseBrowser -->
+        <test-method status="PASS" signature="VerifyUserIsAvailable_InListUsersTableByClickingSearchButtonAndEnteringValueInNameFieldAndClickSearchButtonInSearchListUsers()[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManageUsersTest@d4342c2]" name="VerifyUserIsAvailable_InListUsersTableByClickingSearchButtonAndEnteringValueInNameFieldAndClickSearchButtonInSearchListUsers" duration-ms="8847" started-at="2023-05-05T20:09:44 IST" finished-at="2023-05-05T20:09:53 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyUserIsAvailable_InListUsersTableByClickingSearchButtonAndEnteringValueInNameFieldAndClickSearchButtonInSearchListUsers -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManageUsersTest@d4342c2]" name="browserQuit" is-config="true" duration-ms="5644" started-at="2023-05-05T20:09:53 IST" finished-at="2023-05-05T20:09:58 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyUserIsAvailable_InListUsersTableByClickingSearchButtonAndEnteringValueInNameFieldAndClickSearchButtonInSearchListUsers status=SUCCESS method=ManageUsersTest.VerifyUserIsAvailable_InListUsersTableByClickingSearchButtonAndEnteringValueInNameFieldAndClickSearchButtonInSearchListUsers()[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManageUsersTest@d4342c2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method status="PASS" signature="initialiseBrowser(java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManageUsersTest@d4342c2]" name="initialiseBrowser" is-config="true" duration-ms="6522" started-at="2023-05-05T20:09:58 IST" finished-at="2023-05-05T20:10:05 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseBrowser -->
+        <test-method status="PASS" signature="verifyManageUsersPageResetButtonColorIsYellow()[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManageUsersTest@d4342c2]" name="verifyManageUsersPageResetButtonColorIsYellow" duration-ms="2308" started-at="2023-05-05T20:10:05 IST" finished-at="2023-05-05T20:10:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyManageUsersPageResetButtonColorIsYellow -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManageUsersTest@d4342c2]" name="browserQuit" is-config="true" duration-ms="1902" started-at="2023-05-05T20:10:07 IST" finished-at="2023-05-05T20:10:09 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyManageUsersPageResetButtonColorIsYellow status=SUCCESS method=ManageUsersTest.verifyManageUsersPageResetButtonColorIsYellow()[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManageUsersTest@d4342c2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method status="PASS" signature="initialiseBrowser(java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManageUsersTest@d4342c2]" name="initialiseBrowser" is-config="true" duration-ms="8592" started-at="2023-05-05T20:10:09 IST" finished-at="2023-05-05T20:10:18 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseBrowser -->
+        <test-method status="PASS" signature="verifyManageUsersSearchButtonBackGroundColorIsBlue()[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManageUsersTest@d4342c2]" name="verifyManageUsersSearchButtonBackGroundColorIsBlue" duration-ms="4975" started-at="2023-05-05T20:10:18 IST" finished-at="2023-05-05T20:10:23 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyManageUsersSearchButtonBackGroundColorIsBlue -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManageUsersTest@d4342c2]" name="browserQuit" is-config="true" duration-ms="3747" started-at="2023-05-05T20:10:23 IST" finished-at="2023-05-05T20:10:26 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyManageUsersSearchButtonBackGroundColorIsBlue status=SUCCESS method=ManageUsersTest.verifyManageUsersSearchButtonBackGroundColorIsBlue()[pri:0, instance:com.sevenRMartSuperMarketTestScripts.ManageUsersTest@d4342c2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+      </class> <!-- com.sevenRMartSuperMarketTestScripts.ManageUsersTest -->
+      <class name="com.sevenRMartSuperMarketTestScripts.PushNotificationsTest">
+        <test-method status="PASS" signature="initialiseBrowser(java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.PushNotificationsTest@163e4e87]" name="initialiseBrowser" is-config="true" duration-ms="7658" started-at="2023-05-05T20:10:57 IST" finished-at="2023-05-05T20:11:04 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseBrowser -->
+        <test-method status="PASS" signature="verifyAnAlertMessageIsDisplayed_ByEnteringTitleAndDescriptionAndClickSendButtonInPushNotiFicationPage(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.PushNotificationsTest@163e4e87]" name="verifyAnAlertMessageIsDisplayed_ByEnteringTitleAndDescriptionAndClickSendButtonInPushNotiFicationPage" duration-ms="7786" started-at="2023-05-05T20:11:04 IST" finished-at="2023-05-05T20:11:12 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAnAlertMessageIsDisplayed_ByEnteringTitleAndDescriptionAndClickSendButtonInPushNotiFicationPage -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.PushNotificationsTest@163e4e87]" name="browserQuit" is-config="true" duration-ms="5942" started-at="2023-05-05T20:11:12 IST" finished-at="2023-05-05T20:11:18 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAnAlertMessageIsDisplayed_ByEnteringTitleAndDescriptionAndClickSendButtonInPushNotiFicationPage status=SUCCESS method=PushNotificationsTest.verifyAnAlertMessageIsDisplayed_ByEnteringTitleAndDescriptionAndClickSendButtonInPushNotiFicationPage(java.lang.String,java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.PushNotificationsTest@163e4e87] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+      </class> <!-- com.sevenRMartSuperMarketTestScripts.PushNotificationsTest -->
+      <class name="com.sevenRMartSuperMarketTestScripts.LoginTest">
+        <test-method status="PASS" signature="initialiseBrowser(java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.LoginTest@3c9d0b9d]" name="initialiseBrowser" is-config="true" duration-ms="5375" started-at="2023-05-05T20:06:42 IST" finished-at="2023-05-05T20:06:47 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseBrowser -->
+        <test-method status="PASS" signature="verifyUserCanloginByEnteringValidCredentialsAndCLickSignInButton(java.lang.String,java.lang.String)[pri:1, instance:com.sevenRMartSuperMarketTestScripts.LoginTest@3c9d0b9d]" name="verifyUserCanloginByEnteringValidCredentialsAndCLickSignInButton" duration-ms="1313" started-at="2023-05-05T20:06:47 IST" finished-at="2023-05-05T20:06:48 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCanloginByEnteringValidCredentialsAndCLickSignInButton -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.LoginTest@3c9d0b9d]" name="browserQuit" is-config="true" duration-ms="1314" started-at="2023-05-05T20:06:48 IST" finished-at="2023-05-05T20:06:50 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserCanloginByEnteringValidCredentialsAndCLickSignInButton status=SUCCESS method=LoginTest.verifyUserCanloginByEnteringValidCredentialsAndCLickSignInButton(java.lang.String,java.lang.String)[pri:1, instance:com.sevenRMartSuperMarketTestScripts.LoginTest@3c9d0b9d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method status="PASS" signature="initialiseBrowser(java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.LoginTest@3c9d0b9d]" name="initialiseBrowser" is-config="true" duration-ms="6437" started-at="2023-05-05T20:06:50 IST" finished-at="2023-05-05T20:06:56 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseBrowser -->
+        <test-method status="PASS" signature="VerifyAnAlertMessageIsShownByEnteringInValidCredentialsAndClickSignInButton(java.lang.String,java.lang.String)[pri:2, instance:com.sevenRMartSuperMarketTestScripts.LoginTest@3c9d0b9d]" name="VerifyAnAlertMessageIsShownByEnteringInValidCredentialsAndClickSignInButton" duration-ms="1429" started-at="2023-05-05T20:06:56 IST" data-provider="LoginProvider" finished-at="2023-05-05T20:06:58 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyAnAlertMessageIsShownByEnteringInValidCredentialsAndClickSignInButton -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.LoginTest@3c9d0b9d]" name="browserQuit" is-config="true" duration-ms="3948" started-at="2023-05-05T20:06:58 IST" finished-at="2023-05-05T20:07:02 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyAnAlertMessageIsShownByEnteringInValidCredentialsAndClickSignInButton status=SUCCESS method=LoginTest.VerifyAnAlertMessageIsShownByEnteringInValidCredentialsAndClickSignInButton(java.lang.String,java.lang.String)[pri:2, instance:com.sevenRMartSuperMarketTestScripts.LoginTest@3c9d0b9d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method status="PASS" signature="initialiseBrowser(java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.LoginTest@3c9d0b9d]" name="initialiseBrowser" is-config="true" duration-ms="6095" started-at="2023-05-05T20:07:02 IST" finished-at="2023-05-05T20:07:08 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseBrowser -->
+        <test-method status="PASS" signature="VerifyAnAlertMessageIsShownByEnteringInValidCredentialsAndClickSignInButton(java.lang.String,java.lang.String)[pri:2, instance:com.sevenRMartSuperMarketTestScripts.LoginTest@3c9d0b9d]" name="VerifyAnAlertMessageIsShownByEnteringInValidCredentialsAndClickSignInButton" duration-ms="1136" started-at="2023-05-05T20:07:08 IST" data-provider="LoginProvider" finished-at="2023-05-05T20:07:09 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyAnAlertMessageIsShownByEnteringInValidCredentialsAndClickSignInButton -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.LoginTest@3c9d0b9d]" name="browserQuit" is-config="true" duration-ms="2286" started-at="2023-05-05T20:07:09 IST" finished-at="2023-05-05T20:07:11 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyAnAlertMessageIsShownByEnteringInValidCredentialsAndClickSignInButton status=SUCCESS method=LoginTest.VerifyAnAlertMessageIsShownByEnteringInValidCredentialsAndClickSignInButton(java.lang.String,java.lang.String)[pri:2, instance:com.sevenRMartSuperMarketTestScripts.LoginTest@3c9d0b9d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method status="PASS" signature="initialiseBrowser(java.lang.String)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.LoginTest@3c9d0b9d]" name="initialiseBrowser" is-config="true" duration-ms="7008" started-at="2023-05-05T20:07:11 IST" finished-at="2023-05-05T20:07:18 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseBrowser -->
+        <test-method status="PASS" signature="VerifyAnAlertMessageIsShownByEnteringInValidCredentialsAndClickSignInButton(java.lang.String,java.lang.String)[pri:2, instance:com.sevenRMartSuperMarketTestScripts.LoginTest@3c9d0b9d]" name="VerifyAnAlertMessageIsShownByEnteringInValidCredentialsAndClickSignInButton" duration-ms="1139" started-at="2023-05-05T20:07:18 IST" data-provider="LoginProvider" finished-at="2023-05-05T20:07:19 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[adminnew]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyAnAlertMessageIsShownByEnteringInValidCredentialsAndClickSignInButton -->
+        <test-method status="PASS" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.sevenRMartSuperMarketTestScripts.LoginTest@3c9d0b9d]" name="browserQuit" is-config="true" duration-ms="1755" started-at="2023-05-05T20:07:19 IST" finished-at="2023-05-05T20:07:21 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyAnAlertMessageIsShownByEnteringInValidCredentialsAndClickSignInButton status=SUCCESS method=LoginTest.VerifyAnAlertMessageIsShownByEnteringInValidCredentialsAndClickSignInButton(java.lang.String,java.lang.String)[pri:2, instance:com.sevenRMartSuperMarketTestScripts.LoginTest@3c9d0b9d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+      </class> <!-- com.sevenRMartSuperMarketTestScripts.LoginTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

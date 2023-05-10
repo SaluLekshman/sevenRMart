@@ -16,6 +16,7 @@ import Utilities.WaitUtility;
 
 public class ManageOfferCodePage {
 	public WebDriver driver;
+	PageUtility pageUtility=new PageUtility();
 	
 	 public ManageOfferCodePage(WebDriver driver)
 	 {
@@ -47,9 +48,8 @@ public class ManageOfferCodePage {
 	 }
 	 public ManageOfferCodePage enterTheOfferCode(String offerCodeInput)
 	 {
-		 PageUtility.enterText(enterTheOfferCode, RandomdataUtility.fakerNumber(enterTheOfferCode));
-     
-		return this;
+		 pageUtility.enterText(enterTheOfferCode, RandomdataUtility.fakerNumber(enterTheOfferCode));
+		 return this;
 	 }
 	 public ManageOfferCodePage clickOnFirstOrderUserYesButton() 
 	 {
@@ -72,11 +72,17 @@ public class ManageOfferCodePage {
 		return this;
 	 }
 
-	 public ManageOfferCodePage imageChoseFile() throws IOException
+	 public void  imageChoseFile() throws IOException
 	 {
+		 try
+		 {
 		 imageChoseFile.sendKeys("C:\\Users\\SHALU\\OneDrive\\Desktop\\grocery.jpeg");
+		 }
+		 catch(Exception e)
+		 {
+			 e.printStackTrace();
+		 }
 		 
-		 return this;
 	 }
 	 
 	 
@@ -87,12 +93,12 @@ public class ManageOfferCodePage {
 	 }
 	 public String addNewOffer()
 	 {
-		return PageUtility.getElementText(alertOfferCodeCreatedSuccessfully);
+		return pageUtility.getElementText(alertOfferCodeCreatedSuccessfully);
 			 
 	 }
 	 public Boolean addNewOfferCode()
 	 {
-		return PageUtility.isElementDisplayed(alertOfferCodeCreatedSuccessfully);
+		return pageUtility.isElementDisplayed(alertOfferCodeCreatedSuccessfully);
 			 
 	 }
 	 

@@ -1,5 +1,6 @@
 package com.sevenRMartSuperMarketPages;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,7 +15,7 @@ import Utilities.WaitUtility;
 
 public class ManageSliderPage {
 	public WebDriver driver;
-	
+	PageUtility pageUtility=new PageUtility();
 	 public  ManageSliderPage(WebDriver driver)
 	 {
 		 this.driver=driver;
@@ -24,30 +25,37 @@ public class ManageSliderPage {
 	 @FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/list-slider']") WebElement clickOnMoreInfo;
 	 @FindBy(xpath="//a[@onclick='click_button(1)']") WebElement clickOnNewButton;
 	 @FindBy(xpath="//input[@id='main_img']") WebElement imageChooseFile;
-	 @FindBy(xpath="//input[@id='link']") WebElement enterLink;
+	 @FindBy(xpath="//input[@id='link']") WebElement enterLinkInLinkfield;
 	 @FindBy(xpath="//button[@type='submit']") WebElement clickOnsaveButton;
-	 @FindBy(xpath="//div[contains(@class,'alert-success')]") WebElement alertSliderCreatedSuccessfully;
-	 @FindBy(xpath="//i[@class='fas fa-trash-alt']") WebElement clickOnDeleteSliderFromListSliderTable;
-	 @FindBy(xpath="//div[contains(@class,\"alert-success \")]") WebElement alertSliderdeletedSuccessfully;
+	 @FindBy(xpath="//div[contains(@class,'alert-success')]") WebElement alertMessage;
+	 @FindBy(xpath="//i[@class='fas fa-trash-alt']") WebElement clickOnDeleteButtonInListSliderTable;
+	 @FindBy(xpath="//tr//th//following::td") List<WebElement> listSliderTable;
 	 public void clickOnMoreInfo()
 	 {
 		 clickOnMoreInfo.click();
 
-		
 	 }
 	 public void clickOnNewButton()
 	 {
 		clickOnNewButton.click();
 		
 	 }
-	 public void imageChoseFile() 
+	 public void imageChoseFile() throws IOException
 	 {
+		 try 
+		 {
 		 imageChooseFile.sendKeys("C:\\Users\\SHALU\\OneDrive\\Desktop\\grocery.jpeg");
+		 }
+		 catch(Exception e)
+		 {
+			 e.printStackTrace();
+		 }
+		 
 		 
 	 }
-	 public void enterTheOfferCode(String offerCodeInput)
+	 public void enterTheLink(String linkInput)
 	 {
-		 enterLink.sendKeys(offerCodeInput);
+		 enterLinkInLinkfield.sendKeys(linkInput);
 
 	 }
 	 
@@ -58,14 +66,14 @@ public class ManageSliderPage {
 	 }
 	 public Boolean  isNewSliderCreatedSuccessfully()
 	 {
-		return PageUtility.isElementDisplayed(alertSliderCreatedSuccessfully);
+		return pageUtility.isElementDisplayed(alertMessage);
 			 
 	 }
 
-	 public String searchNewSliderAdded(String expectedSearchValue) 
+	 public String listSliderTable(String expectedSearchValue) 
 	 {
 	 	 
-	 	 List<WebElement> row=driver.findElements(By.xpath("//tr//th//following::td"));
+	 	 List<WebElement> row=listSliderTable;
 	 	  for(WebElement tablerow:row)
 	 	  {
 	 		  ArrayList<String> rowvalue=new ArrayList<String>();
@@ -82,21 +90,21 @@ public class ManageSliderPage {
 	 	return expectedSearchValue;
 	
 	 }
-	 public void clickOnDeleteSliderFromListSliderTable () 
+	 public void clickOnDeleteSliderInListSliderTable () 
 	 {
-		
-		 clickOnDeleteSliderFromListSliderTable.click();
+		 
+		 clickOnDeleteButtonInListSliderTable.click();
 		 driver.switchTo().alert().accept();
 	 }
 	 public String getAlertMessageText() 
 	 {
-		 WaitUtility.waitForElement(driver, alertSliderCreatedSuccessfully);
-		 return PageUtility.getElementText(alertSliderCreatedSuccessfully);
+		 WaitUtility.waitForElement(driver, alertMessage);
+		 return pageUtility.getElementText(alertMessage);
 	 }
-	 public Boolean isSliderDeletedFromListSliderTable() 
+	 public Boolean alertMessageIsDisplayed() 
 	 {
-		 WaitUtility.waitForElement(driver, alertSliderCreatedSuccessfully);
-		 return PageUtility.isElementDisplayed(alertSliderCreatedSuccessfully);
+		 WaitUtility.waitForElement(driver,alertMessage);
+		 return pageUtility.isElementDisplayed(alertMessage);
 	 }
 	 
 }

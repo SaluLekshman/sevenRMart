@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import com.github.javafaker.Faker;
 public class RandomdataUtility  
 {
-	WebDriver driver;
+
 	
 	public static void fakerName(WebElement element)
 	{
@@ -25,6 +25,7 @@ public class RandomdataUtility
        String foodName= faker.food().dish();
        System.out.println("The name of food  is "+foodName);
 	   return true;
+	   
 	}
 	public static void fakerCityName(WebElement element)
 	{

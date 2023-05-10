@@ -12,34 +12,34 @@ import com.sevenRMartSuperMarketPages.HomePagePage;
 import com.sevenRMartSuperMarketPages.LoginPage;
 
 import Utilities.ExcelUtility;
+import Utilities.GeneralUtilities;
 import retry.Retry;
+
 
 public class AdminUsersTest extends Base {
 	 LoginPage loginpage;
 	 AdminUsersPage adminuserspage;
-		Retry retry;
-
-		@Test
+		@Test(retryAnalyzer = Retry.class)
 		@Parameters({ "usernameInput", "PasswordInput" })
-		public void VerifyNewAdminUserCanBeAddedInAdminUsersPage(String usernameInput,String PasswordInput) 
+		public void VerifyNewAdminUserCanBeAddedInAdminUsersTableByClickingNewButton(String usernameInput,String PasswordInput) 
 		{
 			
-			String expectedsearchvalue=ExcelUtility.getString(1,0,constants.Constants.TESTDATAFILEPATH,"loginPageData");
+			String expectedsearchvalue=ExcelUtility.getString(1,0,GeneralUtilities.FILEPATH,"loginPageData");
 			loginpage = new LoginPage(driver);
-			loginpage.enterUsername(usernameInput).enterPassword(PasswordInput).clicksignIn();
+			loginpage.enterUsername(usernameInput).enterPassword(PasswordInput).clickOnsignInButton();
 			adminuserspage= new AdminUsersPage(driver);
 			adminuserspage.clickOnAdminUsersMoreInfo().clickOnNewButtonInAdminUsersPage().enterUserNameInNewAdminUsersPage(usernameInput).enterpasswordInNewAdminUsersPage(PasswordInput);
 			String actualSearchValue=adminuserspage.searchNewUseraddedIsUpdatedInAdminUsersTable(expectedsearchvalue);
-			assertEquals(actualSearchValue,expectedsearchvalue,"New admin user  cannot be added ");
+			assertEquals(actualSearchValue,expectedsearchvalue,"New admin user cannot be added ");
 		}
-		@Test
+		@Test(retryAnalyzer = Retry.class)
 		@Parameters({ "usernameInput", "PasswordInput" })
-		public void searchAdminUsersInAdminUsersPage(String usernameInput,String PasswordInput)  
+		public void toCheckNewAdminUserAddedIsAvailableInAdminUsersTableByClickingSearchButton(String usernameInput,String PasswordInput)  
 		{
 			
-			String expectedsearchvalue=ExcelUtility.getString(1,0,constants.Constants.TESTDATAFILEPATH,"loginPageData");
+			String expectedsearchvalue=ExcelUtility.getString(1,0,GeneralUtilities.FILEPATH,"loginPageData");
 			loginpage = new LoginPage(driver);
-			loginpage.enterUsername(usernameInput).enterPassword(PasswordInput).clicksignIn();
+			loginpage.enterUsername(usernameInput).enterPassword(PasswordInput).clickOnsignInButton();
 			adminuserspage= new AdminUsersPage(driver);
 			adminuserspage.clickOnAdminUsersMoreInfo();
 			adminuserspage.clickOnSearchInadminUsersTable();

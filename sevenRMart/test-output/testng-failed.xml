@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <parameter name="browser" value="chrome"/>
   <listeners>
     <listener class-name="com.sevenRMartSuperMarketTestScripts.Listeners"/>
@@ -9,13 +9,13 @@
     <parameter name="usernameInput" value="admin"/>
     <parameter name="PasswordInput" value="admin"/>
     <classes>
-      <class name="com.sevenRMartSuperMarketTestScripts.ManagePagesTest">
+      <class name="com.sevenRMartSuperMarketTestScripts.LoginTest">
         <methods>
-          <include name="serachPageIsPresentInListPagesTable" invocation-numbers="0"/>
+          <include name="VerifyAnAlertMessageIsShownByEnteringInValidCredentialsAndClickSignInButton"/>
           <include name="browserQuit"/>
           <include name="initialiseBrowser"/>
         </methods>
-      </class> <!-- com.sevenRMartSuperMarketTestScripts.ManagePagesTest -->
+      </class> <!-- com.sevenRMartSuperMarketTestScripts.LoginTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

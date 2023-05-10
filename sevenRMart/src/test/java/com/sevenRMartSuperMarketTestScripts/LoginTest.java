@@ -1,45 +1,44 @@
 package com.sevenRMartSuperMarketTestScripts;
 
-import static org.testng.Assert.assertEquals;
+
 import static org.testng.Assert.assertTrue;
-import java.io.IOException;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-
 import com.sevenRMartSuperMarketPages.LoginPage;
 
 import Utilities.ExcelUtility;
+import Utilities.GeneralUtilities;
 import retry.Retry;
 
 public class LoginTest extends Base 
 {
 	LoginPage loginpage;
-	@Test(priority=1)
+	@Test(priority=1,retryAnalyzer = Retry.class)
 	@Parameters({"usernameInput","PasswordInput"})
-	public void loginWithValidCredentials(String usernameInput,String PasswordInput) throws IOException
-	{    Retry retry;
+	public void verifyUserCanloginByEnteringValidCredentialsAndCLickSignInButton(String usernameInput,String PasswordInput)
+	{  
 		 loginpage=new LoginPage(driver);
-		 loginpage.enterUsername(usernameInput).enterPassword(PasswordInput).clickRememberMe().clicksignIn();
-		 boolean IsSiteNameDiplayed=loginpage.siteNameIsDisplayed();
-		 assertTrue(IsSiteNameDiplayed,"The logged in fails");
+		 loginpage.enterUsername(usernameInput).enterPassword(PasswordInput).clickOnRememberMeButton().clickOnsignInButton();
+		 boolean IsSiteNameDiplayed=loginpage.verifySiteNameIsDisplayed();
+		 assertTrue(IsSiteNameDiplayed,"The logged in fails with valid usernmae and password");
 	}
 	
 	@Test(priority=2,dataProvider="LoginProvider")
-	public void loginWithInValidCredentials(String usernameInput,String PasswordInput) throws IOException
+	public void VerifyAnAlertMessageIsShownByEnteringInValidCredentialsAndClickSignInButton(String usernameInput,String PasswordInput)
 	{
 		 loginpage=new LoginPage(driver);
-		 loginpage.enterUsername(usernameInput).enterPassword(PasswordInput).clickRememberMe().clicksignIn();
-		 boolean isDispalyedalertElement=loginpage.alertMessage();
-		 assertTrue(isDispalyedalertElement,"The alert message is not displayed"); 
+		 loginpage.enterUsername(usernameInput).enterPassword(PasswordInput).clickOnRememberMeButton().clickOnsignInButton();
+		 boolean isDispalyedalertMessage=loginpage.verifyAlertMessageIsDisplayed();
+		 assertTrue(isDispalyedalertMessage,"The an alert message is not displayed"); 
 	}
 
 	@DataProvider(name="LoginProvider")
-    public Object[][] getDataFromDataprovider() throws IOException
+    public Object[][] getDataFromDataprovider()
 	{
     return new Object[][] 
     	{
-    		{"admin","admin123"}, 
+    		{"admin","Admin"},
     		{"admin1","admin"}, 
     		{"Admin","adminnew"} 
     	};

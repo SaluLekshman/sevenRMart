@@ -11,20 +11,19 @@ import org.openqa.selenium.support.ui.Select;
 
 public class PageUtility
 {
-	 public static boolean clickOnElement(WebElement element)
+	 public  boolean clickOnElement(WebElement element)
      {
-		 element.click();
-		return false;
-		 
+		element.click();
+		return false; 
      }
 	
-	public static boolean isDisplay(WebElement element) 
+	public boolean isDisplay(WebElement element) 
 	{
 		boolean status = element.isDisplayed();
 		return status;
 	}
 
-	public static WebElement enterText(WebElement element, String value) 
+	public WebElement enterText(WebElement element, String value) 
 	{
 		element.sendKeys(value);
 		return element;
@@ -35,70 +34,70 @@ public class PageUtility
 		element.sendKeys(s);
 	}
 
-	public static String getElementText(WebElement element) 
+	public  String getElementText(WebElement element) 
 	{
 		return element.getText();
 	}
 
-	public static void clickAndHoldOnElement(WebElement element, WebDriver driver) 
+	public  void clickAndHoldOnElement(WebElement element, WebDriver driver) 
 	{
 		Actions actions = new Actions(driver);
 		actions.clickAndHold(element).build().perform();
 	}
-	public static void doubleClick(WebElement element, WebDriver driver) 
+	public  void doubleClick(WebElement element, WebDriver driver) 
 	{
 		Actions actions = new Actions(driver);
 		actions.doubleClick(element).perform();
 	}
-	public static void rightClick(WebElement element, WebDriver driver) 
+	public  void rightClick(WebElement element, WebDriver driver) 
 	{
 		Actions actions = new Actions(driver);
 		actions.contextClick(element).perform();
 	}
-	public static void dragAnddrop(WebElement dragableItem,WebElement dropItem, WebDriver driver) 
+	public  void dragAnddrop(WebElement dragableItem,WebElement dropItem, WebDriver driver) 
 	{
 		Actions actions = new Actions(driver);
 		actions.clickAndHold(dragableItem).moveToElement(dropItem).release(dropItem).build().perform();
 	}
 
-	public static void selectDropdownbyText(WebElement element, String text)
+	public void selectDropdownbyText(WebElement element, String text)
 	{
 		Select select = new Select(element);
 		select.selectByVisibleText(text);
 	}
 
-	public static void selectDropdownbyIndex(WebElement element, int index) 
+	public  void selectDropdownbyIndex(WebElement element, int index) 
 	{
 		Select select = new Select(element);
 		select.selectByIndex(index);
 	}
 
 
-	public static WebElement enterIntValue(WebElement element, CharSequence[] value) 
+	public  WebElement enterIntValue(WebElement element, CharSequence[] value) 
 	{
 		element.sendKeys(value);
 		return element;
 	}
 
-	public static Boolean isElementDisplayed(WebElement element) 
+	public   Boolean isElementDisplayed(WebElement element) 
 	{
 		return element.isDisplayed();
 	}
-	public static boolean elementIsEnabled(WebElement element)
+	public  boolean elementIsEnabled(WebElement element)
 	{
 		return element.isEnabled();
 	}
-	public static boolean isSelected(WebElement element)
+	public  boolean isSelected(WebElement element)
 	{
 		return element.isSelected();
 	}
-	public static void ScrollBy(WebDriver driver) 
+	public  void ScrollBy(WebDriver driver) 
 	{
 		JavascriptExecutor Js1 = (JavascriptExecutor) driver;
 		Js1.executeScript("window.scrollBy(0,2500)");
 	}
 
-	public static void stopPageRefresh(WebDriver driver) 
+	public void stopPageRefresh(WebDriver driver) 
 	{
 	JavascriptExecutor Js1 = (JavascriptExecutor) driver;
 	Js1.executeScript("window.stop();");
@@ -170,7 +169,7 @@ public class PageUtility
 	}
 
 	
-	public static String stylePropertyValidation(WebElement element, String propertyType) 
+	public  String stylePropertyValidation(WebElement element, String propertyType) 
 	{
 		return element.getCssValue(propertyType);
 	}

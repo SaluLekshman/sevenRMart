@@ -1,19 +1,16 @@
 package com.sevenRMartSuperMarketPages;
-
-import java.io.IOException;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import Utilities.ExcelUtility;
 import Utilities.RandomdataUtility;
 import Utilities.PageUtility;
 import Utilities.WaitUtility;
 
 public class ManageProductsPage {
 	public WebDriver driver;
+	PageUtility pageUtility = new PageUtility();
 	
 	 public ManageProductsPage (WebDriver driver)
 	 {
@@ -28,8 +25,8 @@ public class ManageProductsPage {
 	 @FindBy(xpath="//input[@value='Veg']") WebElement vegProductTypeRadioButton;
 	 @FindBy(xpath="//input[@value='Nonveg']") WebElement nonVegProductTypeRadioButton;
 	 @FindBy(xpath="//input[@value='Others']") WebElement otherProductTypeRadioButton;
-	 @FindBy(xpath="//select[@id='cat_id']") WebElement enterValueOnCategory;
-	 @FindBy(xpath="//select[@id='sub_id']") WebElement enterVaueOnSubCategory;
+	 @FindBy(xpath="//select[@id='cat_id']") WebElement selectCategorydropDownButton;
+	 @FindBy(xpath="//select[@id='sub_id']") WebElement selectSubCategorydropDownButton;
 	 @FindBy(xpath="//input[@value='weight']") WebElement pricetypeWeightRadioButton;
 	 @FindBy(xpath="//input[@value='piece']") WebElement pricetypePieceRadioButton;
 	 @FindBy(xpath="//input[@value='litre']") WebElement pricetypeLitreRadioButton;
@@ -38,45 +35,46 @@ public class ManageProductsPage {
 	 public void clickOnmanageaproduct()
 	 {
 		 WaitUtility.waitForElementClickable(driver,ClickOnManageaproductPage );
-		 PageUtility.clickOnElement(ClickOnManageaproductPage);
+		 pageUtility.clickOnElement(ClickOnManageaproductPage);
 	 }
 	 public boolean isdisplayedlistProduct()
 	 {
 		 WaitUtility.waitForElement(driver,listProduct);
-		 return PageUtility.isElementDisplayed(listProduct);
+		 return pageUtility.isElementDisplayed(listProduct);
 	 }
 	 public void clickOnnew()
 	 {
-		 WaitUtility.waitForElementClickable(driver, ClickOnNewButton);
-		 PageUtility.clickOnElement(ClickOnNewButton);
+		 WaitUtility.waitForElementClickable(driver,ClickOnNewButton);
+		 pageUtility.clickOnElement(ClickOnNewButton);
 	 }
 	 public void EnterTitle( String inputTitleText) 
 	 {  
-		 WaitUtility.waitForElement(driver, EnterTitle);
-		 PageUtility.enterText(EnterTitle,inputTitleText);
+		 WaitUtility.waitForElement(driver,EnterTitle);
+		 pageUtility.enterText(EnterTitle,inputTitleText);
 	 }
-	 public boolean nonVegProductTypeIsEnabled() 
+	 public boolean nonVegProductTypeRadioButtonIsEnabled() 
 	 {
 		 WaitUtility.waitForElement(driver, nonVegProductTypeRadioButton);
-		 return PageUtility.elementIsEnabled(nonVegProductTypeRadioButton);
+		 return pageUtility.elementIsEnabled(nonVegProductTypeRadioButton);
 	 }
-	 public boolean clickNonVegProductType() 
+	 public boolean clickOnNonVegProductTypeRadioButton() 
 	 {
-		 WaitUtility.waitForElementClickable(driver,nonVegProductTypeRadioButton );
-		 return PageUtility.clickOnElement(nonVegProductTypeRadioButton);
+		 WaitUtility.waitForElementClickable(driver,nonVegProductTypeRadioButton);
+		 return pageUtility.clickOnElement(nonVegProductTypeRadioButton);
 	 }
-	 public void categoryElementFaker( ) 
+	 public boolean getRanadomdataValueForTextFieldCategory() 
 	 {  
-		 WaitUtility.waitForElement(driver, enterValueOnCategory); 
-		 RandomdataUtility.fakerFoodName(enterValueOnCategory);
+		 WaitUtility.waitForElement(driver,selectCategorydropDownButton); 
+		 boolean randomDataForCategory=RandomdataUtility.fakerFoodName(selectCategorydropDownButton);
+		 return randomDataForCategory;
 		
 	 }
 	 
-	 public boolean subCategoryFaker( ) 
+	 public boolean getRanadomdataValueForTextFieldSubCategory() 
 	 {  
-		 WaitUtility.waitForElement(driver, enterVaueOnSubCategory); 
-		 return  RandomdataUtility.fakerFoodName(enterVaueOnSubCategory);
-		
+		 WaitUtility.waitForElement(driver,selectSubCategorydropDownButton); 
+		 boolean randomDataForSubCategory=RandomdataUtility.fakerFoodName(selectSubCategorydropDownButton);
+		 return randomDataForSubCategory;
 	 }
 	 
 	 public void clickOnpricetypeLitreRadioButton()
@@ -85,7 +83,7 @@ public class ManageProductsPage {
 	 }
 	 public boolean isEnabledpricetypeLitreRadioButton()
 	 {
-		 return PageUtility.elementIsEnabled(pricetypeLitreRadioButton);
+		 return pageUtility.elementIsEnabled(pricetypeLitreRadioButton);
 	 }
 	 
 }
